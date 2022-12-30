@@ -1,4 +1,4 @@
-// /** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 
 // This file sets a custom webpack configuration to use your Next.js app
 // with Sentry.
