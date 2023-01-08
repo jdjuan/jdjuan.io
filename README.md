@@ -1,4 +1,4 @@
-<table><tr><td valign="top" width="75%">
+<table width="100%"><tr><td valign="top" width="75%">
 
 # Hi, I'm Juan 👋 
 
@@ -8,7 +8,7 @@
 - ✅ Cofounded [HeadScroll](https://headscroll.io)
 - 🚀 Currently building more products
  
-</td><td valign="top" width="25%">
+</td><td valign="top" width="35%">
 
 # Tech:
 
