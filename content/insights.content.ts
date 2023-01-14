@@ -1,4 +1,4 @@
-import { Highlight } from "./highlights.interface";
+import { Highlight } from "../models/highlights.interface";
 
 export const insights: Highlight = {
   title: "Insights",
