@@ -1,7 +1,7 @@
 import Head from "next/head";
 import cx from "classnames";
 import { Inter } from "@next/font/google";
-import { insights } from "./_insights";
+import { insights } from "../content/_insights";
 
 const inter = Inter({ subsets: ["latin"] });
 
