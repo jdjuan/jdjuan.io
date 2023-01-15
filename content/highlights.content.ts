@@ -7,6 +7,7 @@ export const highlights: Highlight[] = [
     items: [
       {
         title: "Behavior",
+        link: "behavior",
         topics: [
           "✅ Dealing with bad habits",
           "✅ Increasing productivity",
@@ -16,11 +17,13 @@ export const highlights: Highlight[] = [
       },
       {
         title: "Communication",
+        link: "communication",
         topics: ["✅ Apologizing", "✅ Public speaking", "✅ Writing your curriculum", "✅ Asking for mentorship"],
       },
       {
         title: "Relationships",
-        topics: ["✅ Open relationships", "✅ Polyamory", "🟡 Living together"],
+        link: "relationships",
+        topics: ["✅ Open relationships", "✅ Polyamory", "🟡 Relationship spectrum"],
       },
     ],
   },
@@ -30,15 +33,42 @@ export const highlights: Highlight[] = [
     items: [
       {
         title: "HeadScroll",
+        link: "https://headscroll.io/",
+        isExternalLink: true,
         topics: ["✅ Play music with ease", "✅ Co-founded in 2021", "✅ 10 user per day"],
       },
       {
         title: "Der Die Das",
+        link: "http://derdiedas.jdjuan.io",
+        isExternalLink: true,
         topics: ["✅ Learn German genders", "✅ Built in 2020", "✅ 278 users"],
       },
       {
         title: "P.A.D.A.",
+        link: "http://pada.jdjuan.io",
+        isExternalLink: true,
         topics: ["✅ Plan better meetings", "✅ Launched in 2019", "✅ Anybody?"],
+      },
+    ],
+  },
+  {
+    title: "About",
+    description: "A little more about me:",
+    items: [
+      {
+        title: "Frequently Asked Questions",
+        link: "about",
+        topics: ["🟢 What am I good at?", "🟢 What do I struggle with?", "🟢 What are my beliefs?"],
+      },
+      {
+        title: "Book Recommendations",
+        link: "books",
+        topics: ["🟢 Reviews", "🟢 Rating", "🟢 Year read"],
+      },
+      {
+        title: "Timeline of events",
+        link: "timeline",
+        topics: ["🟢 Accomplishments", "🟢 Lucky Events", "🟢 Side Projects"],
       },
     ],
   },

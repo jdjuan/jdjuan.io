@@ -23,14 +23,14 @@ export const Home: NextPageWithLayout = () => {
       {highlights.map((highlight) => (
         <div className='mb-16' key={highlight.title}>
           <h2 className='mb-2 text-4xl'>{highlight.title}</h2>
-          <p className='text-slate-300'>{highlight.description}</p>
+          <p className='text-sm text-slate-400'>{highlight.description}</p>
           {/* HIGHLIGHT ITEM */}
-          {highlight.items.map(({ title, topics }) => (
-            <div className='my-7' key={title}>
+          {highlight.items.map(({ title, link, isExternalLink, topics }) => (
+            <div className='my-5' key={title}>
               {/* HIGHLIGHT TITLE */}
               <h3 className='mb-2 text-xl'>{title}</h3>
               {/* HIGHLIGHT BLOCK */}
-              <Link href={title.toLowerCase()}>
+              <Link passHref={isExternalLink} target={isExternalLink ? "_blank" : "_self"} href={link}>
                 <div className='grid grid-cols-12 items-center gap-4 rounded-lg bg-slate-900 p-4 hover:bg-black'>
                   {/* HIGHLIGHT ICON */}
                   <div className='col-span-4'>
@@ -51,7 +51,6 @@ export const Home: NextPageWithLayout = () => {
         </div>
       ))}
       {/* END HIGHLIGHTS */}
-      {/* NEWSLETTER */}
       <Updates></Updates>
 
       {/* END PRODUCTS */}

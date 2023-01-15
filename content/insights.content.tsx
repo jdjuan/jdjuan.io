@@ -1,7 +1,7 @@
 import HighlightText from "../components/highlight-text";
-import { Insight } from "../models/insights.interface";
+import { QuestionSheet } from "../models/insights.interface";
 
-export const insights: Insight[] = [
+export const insights: QuestionSheet[] = [
   {
     title: "Behavior",
     items: [
@@ -129,7 +129,7 @@ export const insights: Insight[] = [
         ),
       },
       {
-        question: "Why is love so complicated?",
+        question: "Why are relationships hard?",
         answer: () => (
           <>
             Because we constrict our needs to the relationship types that we know, instead of adjusting our
@@ -150,10 +150,10 @@ export const insights: Insight[] = [
           </>
         ),
       },
-      {
-        question: "What is a weekly meeting?",
-        upcomingArticle: true,
-      },
+      // {
+      //   question: "What is a weekly meeting?",
+      //   upcomingArticle: true,
+      // },
     ],
   },
 ];
