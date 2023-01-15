@@ -25,10 +25,10 @@ const QuestionSheet = ({ questionSheet }: Props) => {
                   </div>
                 )}
                 {item.list && (
-                  <div className='mt-3 text-xs text-slate-400'>
-                    {item.list.map((element) => (
-                      <div key={element} className='mb-2 mr-2 inline-block rounded-sm bg-slate-800 p-2'>
-                        {element}
+                  <div className='mt-4 text-xs text-slate-400'>
+                    {item.list.map(({ text, link }) => (
+                      <div key={text} className='mb-2 mr-2 inline-block rounded-md bg-slate-800 p-2'>
+                        {text}
                       </div>
                     ))}
                   </div>

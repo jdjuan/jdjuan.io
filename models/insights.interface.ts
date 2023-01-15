@@ -3,7 +3,7 @@ export interface QuestionSheet {
   items: {
     question: string;
     answer?: () => JSX.Element;
-    list?: string[];
+    list?: { text: string; link?: string }[];
     upcomingArticle?: boolean;
   }[];
 }
