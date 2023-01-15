@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 type Props = { children?: ReactNode };
 const HighlightText = ({ children }: Props) => {
-  return <span className='text-slate-300'>{children}</span>;
+  return <span className='text-slate-100'>{children}</span>;
 };
 
 export default HighlightText;

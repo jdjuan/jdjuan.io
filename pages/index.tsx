@@ -1,6 +1,5 @@
 import cx from "classnames";
-import { insights } from "../content/insights.content";
-import { products } from "../content/products.content";
+import { highlights } from "../content/highlights.content";
 import { ReactElement } from "react";
 import MainLayout from "../components/main-layout";
 import type { NextPageWithLayout } from "./_app";
@@ -8,7 +7,6 @@ import Link from "next/link";
 import Updates from "../components/updates";
 
 export const Home: NextPageWithLayout = () => {
-  const highlights = [insights, products];
   return (
     <>
       {/* INTRO */}
