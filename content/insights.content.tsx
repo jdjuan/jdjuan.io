@@ -150,6 +150,10 @@ export const insights: Insight[] = [
           </>
         ),
       },
+      {
+        question: "What is a weekly meeting?",
+        upcomingArticle: true,
+      },
     ],
   },
 ];
