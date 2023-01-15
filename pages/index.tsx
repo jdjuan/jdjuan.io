@@ -5,6 +5,7 @@ import { ReactElement } from "react";
 import MainLayout from "../components/main-layout";
 import type { NextPageWithLayout } from "./_app";
 import Link from "next/link";
+import Updates from "../components/updates";
 
 export const Home: NextPageWithLayout = () => {
   const highlights = [insights, products];
@@ -13,7 +14,7 @@ export const Home: NextPageWithLayout = () => {
       {/* INTRO */}
       <div className='mb-20'>
         <h1 className='mb-4 text-4xl'>Juan Herrera</h1>
-        <div className=''>
+        <div className='text-slate-300'>
           <p>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
           <br />
           <p>Currently building a different app every month (during 2023).</p>
@@ -24,40 +25,35 @@ export const Home: NextPageWithLayout = () => {
       {highlights.map((highlight) => (
         <div className='mb-16' key={highlight.title}>
           <h2 className='mb-2 text-4xl'>{highlight.title}</h2>
-          <p>{highlight.description}</p>
+          <p className='text-slate-300'>{highlight.description}</p>
+          {/* HIGHLIGHT ITEM */}
           {highlight.items.map(({ title, topics }) => (
             <div className='my-7' key={title}>
+              {/* HIGHLIGHT TITLE */}
               <h3 className='mb-2 text-xl'>{title}</h3>
-              <div className='grid grid-cols-12 items-center gap-4'>
-                <div className='col-span-4'>
-                  <Link href={title.toLowerCase()}>
+              <Link href={title.toLowerCase()}>
+                <div className='grid grid-cols-12 items-center gap-4 rounded-lg bg-slate-900 p-2 hover:bg-black'>
+                  {/* HIGHLIGHT ICON */}
+                  <div className='col-span-4'>
                     <div className='aspect-square w-full rounded-md bg-slate-700 bg-clip-content'></div>
-                  </Link>
+                  </div>
+                  {/* HIGHLIGHT TOPICS */}
+                  <div className='col-span-8'>
+                    {topics.map((topic) => (
+                      <p className='text-slate-400' key={topic}>
+                        {topic}
+                      </p>
+                    ))}
+                  </div>
                 </div>
-                <div className='col-span-8'>
-                  {topics.map((topic) => (
-                    <p key={topic}>{topic}</p>
-                  ))}
-                </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>
       ))}
       {/* END HIGHLIGHTS */}
       {/* NEWSLETTER */}
-      <div className='mb-16 text-sm'>
-        <h2 className='mb-4 text-4xl'>Updates</h2>
-        <p>
-          Once a month I share my latest insights over email. To receive them{" "}
-          <a className='text-slate-50 underline' href='mailto:david.juanherrera@gmail.com'>
-            introduce yourself
-          </a>
-          .
-        </p>
-        <br />
-        <p>I reply to all emails</p>
-      </div>
+      <Updates></Updates>
 
       {/* END PRODUCTS */}
       {/* <div className='grid items-center gap-10 sm:grid-cols-2 sm:gap-14 md:gap-y-8 lg:gap-2 portrait:gap-16 landscape:gap-14'>

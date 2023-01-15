@@ -2,9 +2,7 @@ export interface Insight {
   title: string;
   items: {
     question: string;
-    answer: string;
-    link: string;
-    linkText: string;
+    answer?: () => JSX.Element;
     upcomingArticle?: boolean;
   }[];
 }
