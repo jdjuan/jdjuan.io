@@ -12,7 +12,7 @@ export const Home: NextPageWithLayout = () => {
   return (
     <>
       {/* INTRO */}
-      <div className='mb-20'>
+      <div className='mb-16'>
         <h1 className='mb-4 text-4xl'>Juan Herrera</h1>
         <div className='text-slate-300'>
           <p>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
@@ -31,8 +31,9 @@ export const Home: NextPageWithLayout = () => {
             <div className='my-7' key={title}>
               {/* HIGHLIGHT TITLE */}
               <h3 className='mb-2 text-xl'>{title}</h3>
+              {/* HIGHLIGHT BLOCK */}
               <Link href={title.toLowerCase()}>
-                <div className='grid grid-cols-12 items-center gap-4 rounded-lg bg-slate-900 p-2 hover:bg-black'>
+                <div className='grid grid-cols-12 items-center gap-4 rounded-lg bg-slate-900 p-4 hover:bg-black'>
                   {/* HIGHLIGHT ICON */}
                   <div className='col-span-4'>
                     <div className='aspect-square w-full rounded-md bg-slate-700 bg-clip-content'></div>

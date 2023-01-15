@@ -18,20 +18,25 @@ export const Insights: NextPageWithLayout = () => {
       </div>
       {insight && (
         <>
+          {/* MAIN TITLE */}
           <h1 className='mb-6 text-4xl'>{insight.title}</h1>
           <div className='mb-16'>
+            {/* ITEM */}
             {insight.items.map((item) => (
-              <div className='mb-10' key={item.question}>
+              <div className='mb-6 rounded-md bg-slate-900 p-4' key={item.question}>
+                {/* QUESTION */}
                 <h2 className='mb-2 text-xl'>{item.question}</h2>
+                {/* ANSWER */}
                 {item.answer && (
-                  <p className='whitespace-pre-line text-slate-400'>
+                  <p className='whitespace-pre-line text-xs text-slate-500'>
                     <item.answer></item.answer>
                   </p>
                 )}
+                {/* UPCOMING ARTICLE */}
                 {item.upcomingArticle && (
-                  <p className='text-xs text-slate-500'>
+                  <p className='text-xs text-slate-600'>
                     There&apos;s an upcoming article on this.{" "}
-                    <a className='text-slate-400 underline' href='mailto:david.juanherrera@gmail.com'>
+                    <a className='text-slate-500 underline' href='mailto:david.juanherrera@gmail.com'>
                       Introduce yourself
                     </a>{" "}
                     in an email to be notified, or simply come back in a few weeks.

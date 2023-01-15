@@ -6,15 +6,15 @@ export const products: Highlight = {
   items: [
     {
       title: "HeadScroll",
-      topics: ["✅ Helps you play guitar", "✅ Co-founded in 2021", "✅ 10 user per day"],
+      topics: ["✅ Play music with ease", "✅ Co-founded in 2021", "✅ 10 user per day"],
     },
     {
       title: "Der Die Das",
-      topics: ["✅ Helps you learn German", "✅ Built in 2020", "✅ 278 users"],
+      topics: ["✅ Learn German genders", "✅ Built in 2020", "✅ 278 users"],
     },
     {
       title: "P.A.D.A.",
-      topics: ["✅ Helps you plan meetings", "✅ Launched in 2019", "✅ Anybody?"],
+      topics: ["✅ Plan better meetings", "✅ Launched in 2019", "✅ Anybody?"],
     },
   ],
 };
