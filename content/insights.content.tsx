@@ -1,4 +1,5 @@
 import HighlightText from "../components/highlight-text";
+import UpcomingArticle from "../components/upcoming-article";
 import { QuestionSheet } from "../models/insights.interface";
 
 export const insights: QuestionSheet[] = [
@@ -140,13 +141,7 @@ export const insights: QuestionSheet[] = [
             doesn&apos;t match reality.
             <br />
             <br />
-            <p className='bg-slate-800 p-2 text-xs text-slate-500'>
-              There&apos;s an upcoming article on this.{" "}
-              <a className='text-slate-400 underline' href='mailto:david.juanherrera@gmail.com'>
-                Introduce yourself
-              </a>{" "}
-              in an email to be notified, or simply come back in a few weeks.
-            </p>
+            <UpcomingArticle></UpcomingArticle>
           </>
         ),
       },

@@ -32,7 +32,7 @@ export const about: QuestionSheet = {
       answer: () => (
         <>
           I believe that our <HighlightText>dreams and desires have a price</HighlightText>, not necessarily monetary,
-          and that refusing to pay for them is what holds us back the most.
+          and that refusing to pay it is what holds us back the most.
           <br />
           <br />I also believe we constantly <HighlightText>escape reality</HighlightText> through our vices because we
           don&apos;t know a better way to deal with the anxiety that we have{" "}
@@ -106,19 +106,38 @@ export const about: QuestionSheet = {
         },
         { text: "Bowflex", link: "https://global.bowflex.com/en/1090i/8000865.html?cgidmaster=accessories#start=4" },
         { text: "Moonlander", link: "https://www.zsa.io/moonlander/" },
-        { text: "Standing desk", link: "" },
-        { text: "Alarmy", link: "" },
-        { text: "One+ Phone", link: "" },
-        { text: "El Gato light", link: "" },
-        { text: "HeadSpace", link: "" },
-        { text: "Kindle", link: "" },
-        { text: "App Blockers", link: "" },
-        { text: "Toilet squat stool", link: "" },
-        { text: "Kneeling chair", link: "" },
-        { text: "LastPass", link: "" },
-        { text: "Tandem", link: "" },
-        { text: "Thesaurus", link: "" },
+        {
+          text: "Standing desk",
+          link: "https://www.ikea.com/gb/en/p/bekant-desk-sit-stand-white-stained-oak-veneer-black-s69281823/#content",
+        },
+        { text: "Alarmy", link: "https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US" },
+        { text: "One+ Phone", link: "https://www.oneplus.com/" },
+        { text: "El Gato light", link: "https://www.elgato.com/en/key-light-air" },
+        { text: "HeadSpace", link: "https://www.headspace.com/" },
+        {
+          text: "Kindle",
+          link: "https://www.amazon.de/All-new-Kindle-adjustable-Waterproof-Graphite/dp/B07L5GK1KY/ref=sr_1_8_sspa?crid=371FE1SRBC456&keywords=kindle&qid=1673802946&sprefix=kindl%2Caps%2C165&sr=8-8-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1",
+        },
+        {
+          text: "App Blockers",
+          link: "https://play.google.com/store/apps/details?id=cz.mobilesoft.appblock&hl=de_AT&gl=US",
+        },
+        {
+          text: "Toilet squat stool",
+          link: "https://www.amazon.de/toilet-stool-effective-haemorrhoids-constipation-flatulence/dp/B07FDBFZ1C/ref=sr_1_2_sspa?keywords=toilette+hockhocker&qid=1673803006&sprefix=toilet+squa%2Caps%2C159&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+        },
+        {
+          text: "Kneeling chair",
+          link: "https://www.amazon.de/-/en/Himimi-Ergonomic-Adjustable-Stool-Office/dp/B07ZJ7L4GT/ref=sr_1_6?keywords=kniehocker&qid=1673803025&sprefix=kneeling%2B%2Caps%2C149&sr=8-6&th=1",
+        },
+        { text: "LastPass", link: "https://lastpass.com/" },
+        { text: "Tandem", link: "https://www.tandem.net/" },
+        {
+          text: "Thesaurus",
+          link: "https://chrome.google.com/webstore/detail/power-thesaurus/hhnjkanigjoiglnlopahbbjdbfhkndjk?hl=en",
+        },
       ],
     },
+    { question: "How do you track habits?", upcomingArticle: true },
   ],
 };

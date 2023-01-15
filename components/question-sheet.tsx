@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { QuestionSheet } from "../models/insights.interface";
+import UpcomingArticle from "./upcoming-article";
 type Props = { questionSheet: QuestionSheet };
 
 const QuestionSheet = ({ questionSheet }: Props) => {
@@ -27,22 +28,13 @@ const QuestionSheet = ({ questionSheet }: Props) => {
                 {item.list && (
                   <div className='mt-4 text-xs text-slate-400'>
                     {item.list.map(({ text, link }) => (
-                      <div key={text} className='mb-2 mr-2 inline-block rounded-md bg-slate-800 p-2'>
-                        {text}
-                      </div>
+                      <a href={link} key={text} target='_blank' rel='noreferrer'>
+                        <div className='mb-2 mr-2 inline-block rounded-md bg-slate-800 p-2'>{text}</div>
+                      </a>
                     ))}
                   </div>
                 )}
-                {/* UPCOMING ARTICLE */}
-                {item.upcomingArticle && (
-                  <p className='text-xs text-slate-500 '>
-                    There&apos;s an upcoming article on this.{" "}
-                    <a className='text-slate-400 underline' href='mailto:david.juanherrera@gmail.com'>
-                      Introduce yourself
-                    </a>{" "}
-                    in an email to be notified, or simply come back in a few weeks.
-                  </p>
-                )}
+                {item.upcomingArticle && <UpcomingArticle></UpcomingArticle>}
               </div>
             ))}
           </div>
