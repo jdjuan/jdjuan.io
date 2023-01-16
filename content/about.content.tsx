@@ -63,11 +63,11 @@ export const about: QuestionSheet = {
         { text: "+30°" },
         { text: "Coffee" },
         { text: "Beer" },
-        { text: "Exoterism" },
+        { text: "Esotericism" },
       ],
     },
     {
-      question: "You had a vasectomy?",
+      question: "Why did I do a vasectomy?",
       answer: () => (
         <>
           Yes. To avoid an <HighlightText>unintended pregnancy</HighlightText> and so that my partner can stop taking
@@ -81,10 +81,10 @@ export const about: QuestionSheet = {
       ),
     },
     {
-      question: "Do you have a diary?",
+      question: "What is in my diary?",
       answer: () => (
         <>
-          Yes. I answer these questions every day: <br />
+          It has 3 questions I answer every day: <br />
           <br />
           1. What is making me anxious and what would a kind friend say about it?
           <br />
@@ -97,7 +97,7 @@ export const about: QuestionSheet = {
       ),
     },
     {
-      question: "What tools do you use?",
+      question: "What tools do I use?",
       list: [
         { text: "Todoist", link: "https://todoist.com/" },
         {
@@ -138,6 +138,6 @@ export const about: QuestionSheet = {
         },
       ],
     },
-    { question: "How do you track habits?", upcomingArticle: true },
+    { question: "How do I track habits?", upcomingArticle: true },
   ],
 };

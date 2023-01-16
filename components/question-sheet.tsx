@@ -1,14 +1,12 @@
-import Link from "next/link";
 import { QuestionSheet } from "../models/insights.interface";
+import Navbar from "./navbar";
 import UpcomingArticle from "./upcoming-article";
 type Props = { questionSheet: QuestionSheet };
 
 const QuestionSheet = ({ questionSheet }: Props) => {
   return (
     <>
-      <div className='mb-10 text-sm underline'>
-        <Link href='/'>Back to home</Link>
-      </div>
+      <Navbar></Navbar>
       {questionSheet && (
         <>
           {/* MAIN TITLE */}
@@ -16,7 +14,7 @@ const QuestionSheet = ({ questionSheet }: Props) => {
           <div className='mb-16'>
             {/* ITEM */}
             {questionSheet.items.map((item) => (
-              <div className='mb-6 rounded-md bg-slate-900 p-4' key={item.question}>
+              <div className='mb-6 rounded-md bg-slate-900 p-4 pt-3' key={item.question}>
                 {/* QUESTION */}
                 <h2 className='mb-2 text-xl'>{item.question}</h2>
                 {/* ANSWER */}

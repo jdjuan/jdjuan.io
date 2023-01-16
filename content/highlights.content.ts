@@ -56,7 +56,7 @@ export const highlights: Highlight[] = [
     description: "A little more about me:",
     items: [
       {
-        title: "Frequently Asked Questions",
+        title: "Personal Questions",
         link: "about",
         topics: ["🟢 What am I good at?", "🟢 What do I struggle with?", "🟢 What are my beliefs?"],
       },
