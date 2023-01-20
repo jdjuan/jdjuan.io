@@ -1,4 +1,4 @@
-import { ReactElement, useCallback, useEffect, useState } from "react";
+import { ReactElement, useState } from "react";
 import MainLayout from "../components/main-layout";
 import Navbar from "../components/navbar";
 import { booksContent } from "../content/books.content";
@@ -7,15 +7,15 @@ import { NextPageWithLayout } from "./_app";
 
 export const Books: NextPageWithLayout = () => {
   const [books, setBooks] = useState<Book[]>(booksContent);
-  const [ratingOrderDirection, setRatingOrderDirection] = useState(true);
-  const orderBooksByRating = () => {
-    if (ratingOrderDirection) {
-      setBooks([...books].sort((a, b) => (a.rating > b.rating ? -1 : 1)));
-    } else {
-      setBooks([...books].sort((b, a) => (a.rating > b.rating ? -1 : 1)));
-    }
-    setRatingOrderDirection(!ratingOrderDirection);
-  };
+  // const [ratingOrderDirection, setRatingOrderDirection] = useState(true);
+  // const orderBooksByRating = () => {
+  //   if (ratingOrderDirection) {
+  //     setBooks([...books].sort((a, b) => (a.rating > b.rating ? -1 : 1)));
+  //   } else {
+  //     setBooks([...books].sort((b, a) => (a.rating > b.rating ? -1 : 1)));
+  //   }
+  //   setRatingOrderDirection(!ratingOrderDirection);
+  // };
 
   return (
     <>

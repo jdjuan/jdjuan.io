@@ -20,7 +20,7 @@ export const booksContent: Book[] = [
     author: "Jonathan Glover",
     yearRead: 2020,
     rating: 5,
-    comment: "Deep insights from our cruelest atrocities.",
+    comment: "Insights from our cruelest atrocities.",
   },
   {
     title: "Sapiens",
@@ -55,7 +55,7 @@ export const booksContent: Book[] = [
     author: "Kate Murphy",
     yearRead: 2020,
     rating: 4,
-    comment: "Improve your listening skills.",
+    comment: "Great examples on how to listen better.",
   },
   {
     title: "Bloodchild",
@@ -84,7 +84,7 @@ export const booksContent: Book[] = [
     author: "Daniel Kahneman",
     yearRead: 2018,
     rating: 4,
-    comment: "Understand how you think, better.",
+    comment: "Deep insights into how we think",
   },
   {
     title: "The Rational Optimist",
@@ -186,7 +186,7 @@ export const booksContent: Book[] = [
     author: "Jordan Peterson",
     yearRead: 2021,
     rating: 3,
-    comment: "",
+    comment: "One rule stuck with me until this day",
   },
   {
     title: "Rework",
