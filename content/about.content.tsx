@@ -35,7 +35,7 @@ export const about: QuestionSheet = {
           and that refusing to pay it is what holds us back the most.
           <br />
           <br />I also believe we constantly <HighlightText>escape reality</HighlightText> through our vices because we
-          don&apos;t know a better way to deal with the anxiety that we have{" "}
+          don&apos;t know a better way to cope with the anxiety that we have{" "}
           <HighlightText>failed to address and integrate</HighlightText> into our lives.
         </>
       ),
