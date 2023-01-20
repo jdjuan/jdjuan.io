@@ -28,12 +28,15 @@ export const Books: NextPageWithLayout = () => {
         or <span className='cursor-pointer underline'>year read</span>
       </p> */}
       {books.map(({ author, comment, rating, title, yearRead }) => (
-        <div key={title} className='place-contents-center mb-4 grid grid-cols-12 gap-3 rounded-lg bg-slate-900 p-3'>
+        <div
+          key={title}
+          className='place-contents-center group mb-4 grid grid-cols-12 gap-3 rounded-lg bg-slate-900 p-3'
+        >
           <div className='col-span-2'>
             <p className='inline-block rounded-md bg-slate-700 p-1 text-lg text-slate-100'>{rating}/5</p>
           </div>
           <div className='col-span-10'>
-            <p title={title} className='-mt-1 truncate text-lg capitalize hover:whitespace-normal'>
+            <p title={title} className='-mt-1 truncate text-lg capitalize group-hover:whitespace-normal'>
               {title}
             </p>
             <p className='text-sm capitalize text-slate-400'>{author}</p>
