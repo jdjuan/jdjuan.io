@@ -12,9 +12,8 @@ export const Home: NextPageWithLayout = () => {
       {/* INTRO */}
       <div className='mb-16'>
         <h1 className='mb-4 text-4xl'>Juan Herrera</h1>
-        <div className='text-slate-300'>
-          <p>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
-          <br />
+        <div className='max-w-lg text-slate-300'>
+          <p className='mb-2'>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
           <p>Currently building a different app every month (during 2023).</p>
         </div>
       </div>
@@ -24,14 +23,15 @@ export const Home: NextPageWithLayout = () => {
         <div className='mb-16' key={highlight.title}>
           <h2 className='mb-2 text-4xl'>{highlight.title}</h2>
           <p className='text-sm text-slate-400'>{highlight.description}</p>
-          {/* HIGHLIGHT ITEM */}
-          {highlight.items.map(({ title, link, isExternalLink, topics }) => (
-            <div className='my-5' key={title}>
-              {/* HIGHLIGHT TITLE */}
-              <h3 className='mb-2 text-xl'>{title}</h3>
-              {/* HIGHLIGHT BLOCK */}
-              <Link passHref={isExternalLink} target={isExternalLink ? "_blank" : "_self"} href={link}>
-                <div className='grid grid-cols-12 items-center gap-4 rounded-lg bg-slate-900 p-4 hover:bg-black'>
+
+          {/* HIGHLIGHTS GRID */}
+          <div className='my-5 grid gap-6 md:max-w-3xl md:grid-cols-2'>
+            {/* HIGHLIGHT BLOCK */}
+            {highlight.items.map(({ title, link, isExternalLink, topics }) => (
+              <Link passHref={isExternalLink} key={title} target={isExternalLink ? "_blank" : "_self"} href={link}>
+                {/* HIGHLIGHT TITLE */}
+                <h3 className='mb-2 text-xl'>{title}</h3>
+                <div className='grid max-w-sm grid-cols-12 items-center gap-4 rounded-lg bg-slate-900 p-4 hover:bg-black'>
                   {/* HIGHLIGHT ICON */}
                   <div className='col-span-4'>
                     <div className='aspect-square w-full rounded-md bg-slate-700 bg-clip-content'></div>
@@ -46,8 +46,8 @@ export const Home: NextPageWithLayout = () => {
                   </div>
                 </div>
               </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       ))}
       {/* END HIGHLIGHTS */}

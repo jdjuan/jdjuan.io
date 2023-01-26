@@ -27,30 +27,32 @@ export const Books: NextPageWithLayout = () => {
         </span>{" "}
         or <span className='cursor-pointer underline'>year read</span>
       </p> */}
-      {books.map(({ author, comment, rating, title, yearRead }) => (
-        <div
-          key={title}
-          className='place-contents-center group mb-4 grid grid-cols-12 gap-3 rounded-lg bg-slate-900 p-3'
-        >
-          <div className='col-span-2'>
-            <p className='inline-block rounded-md bg-slate-700 p-1 text-lg text-slate-100'>{rating}/5</p>
-          </div>
-          <div className='col-span-10'>
-            <p title={title} className='-mt-1 truncate text-lg capitalize group-hover:whitespace-normal'>
-              {title}
-            </p>
-            <p className='text-sm capitalize text-slate-400'>{author}</p>
-            <p className='text-xs text-slate-600'>Read in {yearRead}</p>
-          </div>
-          {!!comment && (
-            <div className='col-span-full rounded-sm bg-slate-800 p-2'>
-              <p className='text-xs '>
-                <span className='font-semibold'>Note:</span> <span className='text-slate-300'>{comment}</span>
-              </p>
+      <div className='grid gap-4 sm:grid-cols-2 md:max-w-3xl lg:max-w-full lg:grid-cols-3'>
+        {books.map(({ author, comment, rating, title, yearRead }) => (
+          <div
+            key={title}
+            className='place-contents-center group grid max-w-sm grid-cols-12 gap-3 rounded-lg bg-slate-900 p-3'
+          >
+            <div className='col-span-2'>
+              <p className='inline-block rounded-md bg-slate-700 p-1 text-lg text-slate-100'>{rating}/5</p>
             </div>
-          )}
-        </div>
-      ))}
+            <div className='col-span-10'>
+              <p title={title} className='-mt-1 truncate text-lg capitalize group-hover:whitespace-normal'>
+                {title}
+              </p>
+              <p className='text-sm capitalize text-slate-400'>{author}</p>
+              <p className='text-xs text-slate-600'>Read in {yearRead}</p>
+            </div>
+            {!!comment && (
+              <div className='col-span-full rounded-sm bg-slate-800 p-2'>
+                <p className='text-xs '>
+                  <span className='font-semibold'>Note:</span> <span className='text-slate-300'>{comment}</span>
+                </p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </>
   );
 };
