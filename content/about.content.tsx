@@ -70,8 +70,8 @@ export const about: QuestionSheet = {
       question: "Why did I do a vasectomy?",
       answer: () => (
         <>
-          Yes. To avoid an <HighlightText>unintended pregnancy</HighlightText> and so that my partner can stop taking
-          the pill.
+          To avoid an <HighlightText>unintended pregnancy</HighlightText> and so that my partner can stop taking the
+          pill.
           <br />
           <br />
           Vasectomy doesn&apos;t mean no children, it means no children with my DNA on them,{" "}
