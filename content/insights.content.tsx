@@ -50,7 +50,7 @@ export const insights: QuestionSheet[] = [
         question: "How to apologize?",
         answer: () => (
           <>
-            An apology is ultimately an opportunity to <HighlightText>acknowledge the victim</HighlightText>. To give
+            An apology is ultimately an opportunity to <HighlightText>acknowledge the victim</HighlightText>, to give
             them visibility and represent them.
             {/* Failing to do so, make them sound dull and fake. */}
             <br />

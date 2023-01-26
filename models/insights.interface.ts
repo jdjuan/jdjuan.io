@@ -4,6 +4,7 @@ export interface QuestionSheet {
     question: string;
     answer?: () => JSX.Element;
     list?: { text: string; link?: string }[];
+    link?: string;
     upcomingArticle?: boolean;
   }[];
 }

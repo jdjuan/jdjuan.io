@@ -22,6 +22,8 @@ const Timeline = () => {
   return (
     <>
       <Navbar></Navbar>
+      <div className='text-slate-300'>Each square is a year of my life:</div>
+      <br />
       <div className='grid grid-cols-5 gap-4'>
         {new Array(age).fill(true).map((_, index) => {
           const yearTimeline = fullTimeline.find(({ year }) => year === index);

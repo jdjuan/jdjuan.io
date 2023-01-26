@@ -1,6 +1,7 @@
 import { Inter } from "@next/font/google";
 import { ReactNode } from "react";
 import Head from "next/head";
+import Footer from "./footer";
 const inter = Inter({ subsets: ["latin"] });
 type Props = { children?: ReactNode };
 
@@ -13,7 +14,10 @@ export default function MainLayout({ children }: Props) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className={`${inter.className} max-w-sm p-6 pt-6 text-sm text-slate-50 lg:mx-auto`}>{children}</main>
+      <main className={`${inter.className} max-w-sm p-6 pt-6 text-sm text-slate-50 lg:mx-auto`}>
+        {children}
+        <Footer></Footer>
+      </main>
     </>
   );
 }

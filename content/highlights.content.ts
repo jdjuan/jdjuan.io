@@ -68,7 +68,7 @@ export const highlights: Highlight[] = [
       {
         title: "Timeline of events",
         link: "timeline",
-        topics: ["🟢 What happened to me", "🟢 What I made sure happen", "🟢 Everything in between"],
+        topics: ["🟢 Becoming a developer", "🟢 My first job", "🟢 Moving to Europe"],
       },
     ],
   },
