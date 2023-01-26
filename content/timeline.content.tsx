@@ -67,7 +67,7 @@ export const fullTimeline: YearTimeline[] = [
     highlights: [
       {
         text: () => <>Learned how to play chess</>,
-        subtext: "I just wanted to join my father and brother who used to play often. It took me years to beat them.",
+        subtext: "Just wanted to join my father and brother who played often. It took me years to beat them.",
         type: [HighlighType.Achievement],
       },
     ],
@@ -101,7 +101,7 @@ export const fullTimeline: YearTimeline[] = [
       },
       {
         text: () => <>Met a hacker who taught me how to code</>,
-        subtext: "We met every saturday. Not gotchas. Just a passionate developer finding a curious pupil.",
+        subtext: "We met every Saturday. He was just a passionate developer finding a curious pupil.",
         type: [HighlighType.Lucky],
       },
     ],
@@ -110,8 +110,8 @@ export const fullTimeline: YearTimeline[] = [
     year: 15,
     highlights: [
       {
-        text: () => <>Went to MIT to compete at iGEM</>,
-        subtext: "We didn't win the competition but it was an honor.",
+        text: () => <>Joined a science competition in MIT</>,
+        subtext: "We didn't win the competition (iGEM) but it was an honor.",
         type: [HighlighType.Achievement],
       },
       {
@@ -156,7 +156,7 @@ export const fullTimeline: YearTimeline[] = [
     highlights: [
       {
         text: () => <>Enrrolled in the choir of the University</>,
-        subtext: "I continued playing in choirs for the next 10 years",
+        subtext: "I continued singing in choirs for the next 10 years.",
       },
       {
         text: () => <>Learned how to ride a bike</>,
@@ -164,7 +164,7 @@ export const fullTimeline: YearTimeline[] = [
         type: [HighlighType.Achievement],
       },
       {
-        text: () => <>Had my first a job as a translator</>,
+        text: () => <>Had my first job as a translator</>,
         subtext: "I translated soap operas, manuals, and legal docs.",
         type: [HighlighType.Professional, HighlighType.Achievement],
       },
@@ -222,7 +222,7 @@ export const fullTimeline: YearTimeline[] = [
     highlights: [
       {
         text: () => <>Launched The Compliment Project</>,
-        subtext: "It was inspired in my father. He passed just a few months before.",
+        subtext: "It was inspired by my father's passing.",
         type: [HighlighType.Professional, HighlighType.Achievement],
       },
       {
@@ -259,7 +259,7 @@ export const fullTimeline: YearTimeline[] = [
     year: 22,
     highlights: [
       {
-        text: () => <>Launched Kindd.org</>,
+        text: () => <>Co-founded Kindd</>,
         subtext: "We challenged people to do randon acts of kindness and share them on social media.",
         type: [HighlighType.Professional, HighlighType.Achievement],
       },
@@ -274,8 +274,8 @@ export const fullTimeline: YearTimeline[] = [
         type: [HighlighType.Professional],
       },
       {
-        text: () => <>Got a job as a frontend developer in Medellin</>,
-        subtext: "Moving to Medellin was the right choice.",
+        text: () => <>Moved to Medellin</>,
+        subtext: "I got a job as a Frontend Developer.",
         type: [HighlighType.Professional],
       },
       {
@@ -285,7 +285,7 @@ export const fullTimeline: YearTimeline[] = [
       },
       {
         text: () => <>Started learning Angular</>,
-        subtext: "It pivoted my professional career tremendously.",
+        subtext: "It pivoted my professional career hugely  .",
         type: [HighlighType.Lucky, HighlighType.Professional],
       },
     ],
@@ -324,7 +324,7 @@ export const fullTimeline: YearTimeline[] = [
             </a>
           </>
         ),
-        subtext: "The first Angular conference in Latin America. It was heavily supported by Yuxi Global",
+        subtext: "The first Angular conference in Latin America. It was heavily supported by Yuxi Global.",
         type: [HighlighType.Achievement, HighlighType.Professional],
       },
     ],
@@ -338,13 +338,13 @@ export const fullTimeline: YearTimeline[] = [
         type: [HighlighType.Achievement, HighlighType.Professional],
       },
       {
-        text: () => <>Played in a Opera</>,
-        subtext: "We sang Otello by Vivaldi.",
+        text: () => <>Sang in a Opera</>,
+        subtext: "We performed Otello by Vivaldi.",
         type: [HighlighType.Achievement],
       },
       {
         text: () => <>Co-founded She Codes Angular</>,
-        subtext: "It encourage women to join the IT field through Angular.",
+        subtext: "It encouraged women to join the IT field.",
         type: [HighlighType.Achievement, HighlighType.Professional],
       },
     ],
@@ -419,7 +419,7 @@ export const fullTimeline: YearTimeline[] = [
         type: [],
       },
       {
-        text: () => <>Run the Grazatlhon</>,
+        text: () => <>Run the Grazathlon</>,
         subtext: "An obstacle race I promised not to do again.",
         type: [HighlighType.Achievement],
       },
@@ -431,6 +431,11 @@ export const fullTimeline: YearTimeline[] = [
       {
         text: () => <>Run my first quarter marathon</>,
         subtext: "Pace was 4'40\". Yes, I'm bragging again.",
+        type: [HighlighType.Achievement],
+      },
+      {
+        text: () => <>Threw a sex-positivity party</>,
+        subtext: "Well, I'm proud of it.",
         type: [HighlighType.Achievement],
       },
     ],

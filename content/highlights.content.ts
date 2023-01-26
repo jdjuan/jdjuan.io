@@ -63,12 +63,12 @@ export const highlights: Highlight[] = [
       {
         title: "Book Recommendations",
         link: "books",
-        topics: ["🟢 Rating", "🟢 Review", "🟢 Year read"],
+        topics: ["🟢 Ratings", "🟢 Reviews"],
       },
       {
         title: "Timeline of events",
         link: "timeline",
-        topics: ["🟢 Accomplishments", "🟢 Lucky Events", "🟢 Side Projects"],
+        topics: ["🟢 What happened to me", "🟢 What I made sure happen", "🟢 Everything in between"],
       },
     ],
   },
