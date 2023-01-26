@@ -1,4 +1,4 @@
-import { ReactElement, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import MainLayout from "../components/main-layout";
 import Navbar from "../components/navbar";
 import { fullTimeline } from "../content/timeline.content";
@@ -9,11 +9,16 @@ import { prevent } from "../utils/ui";
 export const age = new Date().getFullYear() - 1993;
 
 const Timeline = () => {
-  const [selectedYearTimeline, setSelectedYearTimeline] = useState<YearTimeline | undefined>(fullTimeline[21]);
+  const [selectedYearTimeline, setSelectedYearTimeline] = useState<YearTimeline | undefined>();
   const select = (yearTimeline: YearTimeline) => {
     const selection = yearTimeline.year === selectedYearTimeline?.year ? undefined : yearTimeline;
     setSelectedYearTimeline(selection);
   };
+
+  useEffect(() => {
+    const randomEvent = fullTimeline[Math.floor(Math.random() * fullTimeline.length)];
+    setSelectedYearTimeline(randomEvent);
+  }, []);
   return (
     <>
       <Navbar></Navbar>
