@@ -1,4 +1,3 @@
-import cx from "classnames";
 import { highlights } from "../content/highlights.content";
 import { ReactElement } from "react";
 import MainLayout from "../components/main-layout";
@@ -10,8 +9,8 @@ export const Home: NextPageWithLayout = () => {
   return (
     <>
       {/* INTRO */}
-      <div className='mb-16'>
-        <h1 className='mb-4 text-4xl'>Juan Herrera</h1>
+      <div className='mb-16 lg:mb-28'>
+        <h1 className='mb-4 text-4xl sm:text-5xl lg:text-6xl'>Juan Herrera</h1>
         <div className='max-w-lg text-slate-300'>
           <p className='mb-2'>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
           <p>Currently building a different app every month (during 2023).</p>
@@ -23,15 +22,14 @@ export const Home: NextPageWithLayout = () => {
         <div className='mb-16' key={highlight.title}>
           <h2 className='mb-2 text-4xl'>{highlight.title}</h2>
           <p className='text-sm text-slate-400'>{highlight.description}</p>
-
           {/* HIGHLIGHTS GRID */}
-          <div className='my-5 grid gap-6 md:max-w-3xl md:grid-cols-2'>
+          <div className='my-5 grid gap-6 md:max-w-2xl md:grid-cols-2 lg:max-w-5xl lg:grid-cols-3'>
             {/* HIGHLIGHT BLOCK */}
             {highlight.items.map(({ title, link, isExternalLink, topics }) => (
               <Link passHref={isExternalLink} key={title} target={isExternalLink ? "_blank" : "_self"} href={link}>
                 {/* HIGHLIGHT TITLE */}
-                <h3 className='mb-2 text-xl'>{title}</h3>
-                <div className='grid max-w-sm grid-cols-12 items-center gap-4 rounded-lg bg-slate-900 p-4 hover:bg-black'>
+                <h3 className='mb-2 text-xl text-slate-300'>{title}</h3>
+                <div className='grid max-w-xs grid-cols-12 items-center gap-4 rounded-lg bg-slate-900 p-4 hover:bg-black'>
                   {/* HIGHLIGHT ICON */}
                   <div className='col-span-4'>
                     <div className='aspect-square w-full rounded-md bg-slate-700 bg-clip-content'></div>

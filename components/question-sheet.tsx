@@ -10,10 +10,10 @@ const QuestionSheet = ({ questionSheet }: Props) => {
       {questionSheet && (
         <>
           {/* MAIN TITLE */}
-          <h1 className='mb-6 text-4xl '>{questionSheet.title}</h1>
+          <h1 className='mb-6 text-4xl md:mb-10 '>{questionSheet.title}</h1>
           <div className='mb-16'>
             {/* QUESTIONS */}
-            <div className='grid gap-4 md:grid-cols-2'>
+            <div className='grid gap-4 md:grid-cols-2 md:gap-6'>
               {questionSheet.items.map((item) => (
                 <div className='max-w-lg rounded-md bg-slate-900 p-4 pt-3' key={item.question}>
                   {/* QUESTION */}

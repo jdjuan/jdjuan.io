@@ -27,6 +27,7 @@ export const Books: NextPageWithLayout = () => {
         </span>{" "}
         or <span className='cursor-pointer underline'>year read</span>
       </p> */}
+      <h1 className='mb-6 text-4xl md:mb-10 '>Books Reviews</h1>
       <div className='grid gap-4 sm:grid-cols-2 md:max-w-3xl lg:max-w-full lg:grid-cols-3'>
         {books.map(({ author, comment, rating, title, yearRead }) => (
           <div

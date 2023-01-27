@@ -9,16 +9,16 @@ export const highlights: Highlight[] = [
         title: "Behavior",
         link: "behavior",
         topics: [
-          "✅ Dealing with bad habits",
+          "✅ Quitting bad habits",
           "✅ Increasing productivity",
           "✅ Coping with bad days",
-          "🟡 Sleeping earlier",
+          // "🟡 Sleeping earlier",
         ],
       },
       {
         title: "Communication",
         link: "communication",
-        topics: ["✅ Apologizing", "✅ Public speaking", "✅ Writing your curriculum", "✅ Asking for mentorship"],
+        topics: ["✅ Apologizing", "✅ Public speaking", "✅ Writing your curriculum"],
       },
       {
         title: "Relationships",
@@ -58,10 +58,10 @@ export const highlights: Highlight[] = [
       {
         title: "Personal Questions",
         link: "about",
-        topics: ["🟢 What am I good at?", "🟢 What do I struggle with?", "🟢 What are my beliefs?"],
+        topics: ["🟢 What am I good at?", "🟢 What am I bad at?", "🟢 What are my beliefs?"],
       },
       {
-        title: "Book Recommendations",
+        title: "Book Reviews",
         link: "books",
         topics: ["🟢 Ratings", "🟢 Reviews"],
       },

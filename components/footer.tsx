@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className='my-8 text-xs text-slate-600'>
+    <div className='my-8 border-t border-slate-700 pt-2 text-xs text-slate-600'>
       <a href='http://' target='_blank' className=' mr-2 text-slate-500 underline' rel='noopener noreferrer'>
         Blog
       </a>

@@ -5,7 +5,7 @@ export const fullTimeline: YearTimeline[] = [
     year: 0,
     highlights: [
       {
-        text: () => <>I was born in 1993 in Manizales, Colombia</>,
+        text: () => <>Was born in 1993 in Manizales, Colombia</>,
         subtext: "",
         type: [HighlighType.Lucky],
       },
@@ -15,7 +15,7 @@ export const fullTimeline: YearTimeline[] = [
     year: 4,
     highlights: [
       {
-        text: () => <>I used a computer for the first time</>,
+        text: () => <>Used a computer for the first time</>,
         subtext: "It profoundly influenced my interest for software.",
         type: [HighlighType.Lucky],
       },
@@ -174,7 +174,7 @@ export const fullTimeline: YearTimeline[] = [
     year: 18,
     highlights: [
       {
-        text: () => <>I was featured in movie theathers in Colombia</>,
+        text: () => <>Was featured in movie theathers in Colombia</>,
         subtext: "It was mini documentary about the International Park of Creativity.",
         type: [HighlighType.Achievement],
       },
