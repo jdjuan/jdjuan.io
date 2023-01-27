@@ -3,7 +3,7 @@ import { Highlight } from "../models/highlights.interface";
 export const highlights: Highlight[] = [
   {
     title: "Insights",
-    description: "My latest insights under 1 minute:",
+    description: "My thoughts summarized",
     items: [
       {
         title: "Behavior",
@@ -18,7 +18,7 @@ export const highlights: Highlight[] = [
       {
         title: "Communication",
         link: "communication",
-        topics: ["✅ Apologizing", "✅ Public speaking", "✅ Writing your curriculum"],
+        topics: ["✅ Apologizing", "✅ Public speaking", "✅ Writing your CV"],
       },
       {
         title: "Relationships",
@@ -28,8 +28,8 @@ export const highlights: Highlight[] = [
     ],
   },
   {
-    title: "Products",
-    description: "Three products I'm proud of:",
+    title: "Apps",
+    description: "Three projects I'm proud of",
     items: [
       {
         title: "HeadScroll",
@@ -41,7 +41,7 @@ export const highlights: Highlight[] = [
         title: "Der Die Das",
         link: "http://derdiedas.jdjuan.io",
         isExternalLink: true,
-        topics: ["✅ Learn German genders", "✅ Built in 2020", "✅ 278 users"],
+        topics: ["✅ German genders", "✅ Built in 2020", "✅ 278 users"],
       },
       {
         title: "P.A.D.A.",
@@ -53,22 +53,22 @@ export const highlights: Highlight[] = [
   },
   {
     title: "About",
-    description: "A little more about me:",
+    description: "Personal stuff",
     items: [
       {
         title: "Personal Questions",
         link: "about",
-        topics: ["🟢 What am I good at?", "🟢 What am I bad at?", "🟢 What are my beliefs?"],
+        topics: ["✅ What am I good at?", "✅ What am I bad at?", "✅ What are my beliefs?"],
       },
       {
         title: "Book Reviews",
         link: "books",
-        topics: ["🟢 Ratings", "🟢 Reviews"],
+        topics: ["✅ Reviews", "✅ Notes", "✅ Year"],
       },
       {
         title: "Timeline of events",
         link: "timeline",
-        topics: ["🟢 Becoming a developer", "🟢 My first job", "🟢 Moving to Europe"],
+        topics: ["✅ Becoming a developer", "✅ My first job", "✅ Moving to Europe"],
       },
     ],
   },
