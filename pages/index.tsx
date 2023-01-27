@@ -4,16 +4,30 @@ import MainLayout from "../components/main-layout";
 import type { NextPageWithLayout } from "./_app";
 import Link from "next/link";
 import Updates from "../components/updates";
+import Image from "next/image";
+import profilePic from "../public/me.jpg";
 
 export const Home: NextPageWithLayout = () => {
   return (
     <>
       {/* INTRO */}
-      <div className='mb-16 lg:mb-28'>
-        <h1 className='mb-4 text-4xl sm:text-5xl lg:text-6xl'>Juan Herrera</h1>
-        <div className='max-w-lg text-slate-300'>
-          <p className='mb-2'>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
-          <p>Currently building a different app every month (during 2023).</p>
+      <div className='mb-16 grid max-w-full grid-cols-12 gap-4 md:max-w-3xl lg:mb-28 lg:max-w-4xl lg:gap-6'>
+        <Image
+          src={profilePic}
+          alt='Picture of the author'
+          className='col-span-3 rounded-md border-2 border-slate-200 sm:border-4 md:col-span-2 lg:col-span-2 lg:mt-2'
+        />
+        <div className='col-span-9 md:col-span-10 lg:col-span-9'>
+          <h1 className='mb-4 text-4xl sm:text-5xl lg:text-6xl'>Juan Herrera</h1>
+          <div className=' text-slate-300'>
+            <p className='mb-2 lg:text-lg'>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
+            <p className='lg:text-base'>
+              <span className='rounded-md bg-slate-100 px-1 font-semibold text-slate-900 sm:p-1 sm:py-0.5'>
+                Currently:
+              </span>{" "}
+              Building a different app every month (during 2023).
+            </p>
+          </div>
         </div>
       </div>
       {/* END INTRO */}
