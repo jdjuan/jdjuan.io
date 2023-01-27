@@ -21,12 +21,7 @@ export const Home: NextPageWithLayout = () => {
           <h1 className='mb-4 text-4xl sm:text-5xl lg:text-6xl'>Juan Herrera</h1>
           <div className=' text-slate-300'>
             <p className='mb-2 lg:text-lg'>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
-            <p className='lg:text-base'>
-              <span className='rounded-md bg-slate-100 px-1 font-semibold text-slate-900 sm:p-1 sm:py-0.5'>
-                Currently:
-              </span>{" "}
-              Building a different app every month (during 2023).
-            </p>
+            <p className='lg:text-base'>Currently building one app per month.</p>
           </div>
         </div>
       </div>
