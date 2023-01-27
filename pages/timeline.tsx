@@ -25,8 +25,8 @@ const Timeline = () => {
       <h1 className='mb-6 text-4xl md:mb-10'>Timeline</h1>
       <div className='text-slate-300'>Each square is a year of my life:</div>
       <br />
-      <div className='max-w-sm sm:max-w-full '>
-        <div className='grid grid-cols-5 gap-4 sm:grid-cols-8 md:grid-cols-10'>
+      <div className='grid max-w-sm gap-8 sm:max-w-full sm:grid-cols-2'>
+        <div className='grid max-h-fit grid-cols-5 gap-4 self-start lg:grid-cols-6'>
           {new Array(age).fill(true).map((_, index) => {
             const yearTimeline = fullTimeline.find(({ year }) => year === index);
             const withouEvents = !yearTimeline?.highlights.length;
@@ -71,7 +71,7 @@ const Timeline = () => {
           })}
         </div>
         {selectedYearTimeline !== undefined && (
-          <div className='mt-4 rounded-md bg-slate-900 p-5 pt-4'>
+          <div className='self-start rounded-md bg-slate-900 p-5 pt-4'>
             <div className='mb-3 text-lg'>When I was {selectedYearTimeline?.year + 1 || 0}</div>
             <div>
               {selectedYearTimeline?.highlights.map((highlight, index) => (

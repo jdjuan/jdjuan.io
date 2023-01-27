@@ -9,8 +9,7 @@ const Updates = () => {
         </a>
         .
       </p>
-      <br />
-      <p className='text-slate-300'>I reply to all emails.</p>
+      <p className='mt-2 italic text-slate-300'>I reply to all emails.</p>
     </div>
   );
 };
