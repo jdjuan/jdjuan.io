@@ -30,12 +30,9 @@ const QuestionSheet = ({ questionSheet }: Props) => {
                     {item.list.map(({ text, link }) => (
                       <a href={link} key={text} target='_blank' rel='noreferrer'>
                         <div
-                          className={cx(
-                            "mb-2 mr-2 inline-block select-none rounded-md border border-slate-700 bg-slate-800 p-2 ",
-                            {
-                              "hover:border-slate-50": !!link,
-                            }
-                          )}
+                          className={cx("mb-2 mr-2 inline-block rounded-md border border-slate-700 bg-slate-800 p-2 ", {
+                            "hover:border-slate-50": !!link,
+                          })}
                         >
                           {text}
                         </div>

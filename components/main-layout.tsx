@@ -17,7 +17,7 @@ export default function MainLayout({ children }: Props) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main
-        className={`${inter.variable} ${roboto.variable} ${inter.className} relative border-slate-200 text-sm text-slate-50 `}
+        className={`${inter.variable} ${roboto.variable} ${inter.className} relative select-none border-slate-200 text-sm text-slate-50 antialiased`}
       >
         <div className='p-6 sm:p-12 md:p-16 lg:mx-auto lg:max-w-6xl'>
           {children}

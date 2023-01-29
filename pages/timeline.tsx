@@ -50,7 +50,7 @@ const Timeline = () => {
                 )}
                 key={index}
               >
-                <span className='select-none'>{index + 1}</span>
+                <span>{index + 1}</span>
                 {/* LITTLE DOTS */}
                 <div className='flex'>
                   {yearTimeline?.highlights.map((_, indexEvent) => (
