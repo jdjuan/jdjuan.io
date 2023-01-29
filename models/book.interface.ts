@@ -6,4 +6,5 @@ export interface Book {
   comment?: string;
   isbn?: string;
   imgUrl?: string;
+  link: string;
 }

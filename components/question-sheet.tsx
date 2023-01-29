@@ -2,6 +2,7 @@ import { QuestionSheet } from "../models/insights.interface";
 import Navbar from "./navbar";
 import UpcomingArticle from "./upcoming-article";
 type Props = { questionSheet: QuestionSheet };
+import cx from "classnames";
 
 const QuestionSheet = ({ questionSheet }: Props) => {
   return (
@@ -23,11 +24,21 @@ const QuestionSheet = ({ questionSheet }: Props) => {
                     <item.answer></item.answer>
                   </div>
                 )}
+                {/* LIST */}
                 {item.list && (
                   <div className='mt-4 text-xs text-slate-400'>
                     {item.list.map(({ text, link }) => (
                       <a href={link} key={text} target='_blank' rel='noreferrer'>
-                        <div className='mb-2 mr-2 inline-block rounded-md bg-slate-800 p-2'>{text}</div>
+                        <div
+                          className={cx(
+                            "mb-2 mr-2 inline-block select-none rounded-md border border-slate-700 bg-slate-800 p-2 ",
+                            {
+                              "hover:border-slate-50": !!link,
+                            }
+                          )}
+                        >
+                          {text}
+                        </div>
                       </a>
                     ))}
                   </div>

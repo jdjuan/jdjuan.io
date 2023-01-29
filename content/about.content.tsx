@@ -41,6 +41,22 @@ export const about: QuestionSheet = {
       ),
     },
     {
+      question: "What is in my diary?",
+      answer: () => (
+        <>
+          It has 3 questions I answer every day: <br />
+          <br />
+          1. What is making me anxious and what would a kind friend say about it?
+          <br />
+          <br />
+          2. What am I grateful for and what am I proud of?
+          <br />
+          <br />
+          3. What was the best thing that happened today and what do I look forward to tomorrow?
+        </>
+      ),
+    },
+    {
       question: "What do I like?",
       list: [
         { text: "Improv Theather" },
@@ -63,6 +79,7 @@ export const about: QuestionSheet = {
         { text: "+30°" },
         { text: "Coffee" },
         { text: "Beer" },
+        { text: "Too many meetings" },
         { text: "Esotericism" },
       ],
     },
@@ -80,22 +97,7 @@ export const about: QuestionSheet = {
         </>
       ),
     },
-    {
-      question: "What is in my diary?",
-      answer: () => (
-        <>
-          It has 3 questions I answer every day: <br />
-          <br />
-          1. What is making me anxious and what would a kind friend say about it?
-          <br />
-          <br />
-          2. What am I grateful for and what am I proud of?
-          <br />
-          <br />
-          3. What was the best thing that happened today and what do I look forward to tomorrow?
-        </>
-      ),
-    },
+
     {
       question: "What tools do I use?",
       list: [

@@ -201,8 +201,8 @@ export const fullTimeline: YearTimeline[] = [
     year: 19,
     highlights: [
       {
-        text: () => <>Got a job as developer for a Taxi startup</>,
-        subtext: "I was doing fullstack.",
+        text: () => <>Worked as fullstack developer for a Taxi startup</>,
+        subtext: "I introduced them to GitHub.",
         type: [HighlighType.Professional],
       },
       {
@@ -211,8 +211,8 @@ export const fullTimeline: YearTimeline[] = [
         type: [HighlighType.Professional, HighlighType.Achievement],
       },
       {
-        text: () => <>Got a job at the design department of Uni</>,
-        subtext: "Being surrounded by designers turned out very fruitful.",
+        text: () => <>Worked for University at the design department</>,
+        subtext: "Being surrounded by designers taught me a lot.",
         type: [HighlighType.Professional],
       },
     ],
@@ -249,7 +249,7 @@ export const fullTimeline: YearTimeline[] = [
         type: [HighlighType.Achievement],
       },
       {
-        text: () => <>Got a job developing mobile apps</>,
+        text: () => <>Worked as mobile developer</>,
         subtext: "It was a difficult place.",
         type: [HighlighType.Professional, HighlighType.Achievement],
       },
@@ -264,24 +264,14 @@ export const fullTimeline: YearTimeline[] = [
         type: [HighlighType.Professional, HighlighType.Achievement],
       },
       {
-        text: () => <>Started working as a freelancer</>,
-        subtext: "I worked mostly with WordPress because I was afraid of coding.",
-        type: [HighlighType.Professional],
-      },
-      {
-        text: () => <>Got a job as fullstack developer at a startup</>,
-        subtext: "",
+        text: () => <>Worked as a fullstack developer</>,
+        subtext: "I was building governmental software to support unemployed people.",
         type: [HighlighType.Professional],
       },
       {
         text: () => <>Moved to Medellin</>,
         subtext: "I got a job as a Frontend Developer.",
         type: [HighlighType.Professional],
-      },
-      {
-        text: () => <>Launched Shared Lunch</>,
-        subtext: "It encouraged people to have lunch together. It was released only inside my company.",
-        type: [HighlighType.Achievement],
       },
       {
         text: () => <>Started learning Angular</>,
@@ -293,6 +283,11 @@ export const fullTimeline: YearTimeline[] = [
   {
     year: 23,
     highlights: [
+      {
+        text: () => <>Launched Shared Lunch</>,
+        subtext: "It encouraged people to have lunch together. It was released only inside my company.",
+        type: [HighlighType.Achievement],
+      },
       {
         text: () => (
           <>
@@ -371,7 +366,7 @@ export const fullTimeline: YearTimeline[] = [
             </a>
           </>
         ),
-        subtext: "",
+        subtext: "I did it because I don't enjoy meetings.",
         type: [HighlighType.Achievement, HighlighType.Professional],
       },
     ],
@@ -388,7 +383,7 @@ export const fullTimeline: YearTimeline[] = [
             </a>
           </>
         ),
-        subtext: "",
+        subtext: "I did it to help me learn german.",
         type: [HighlighType.Achievement, HighlighType.Professional],
       },
       {
@@ -410,7 +405,7 @@ export const fullTimeline: YearTimeline[] = [
             </a>
           </>
         ),
-        subtext: "",
+        subtext: "This is the project that I'm most proud of.",
         type: [HighlighType.Achievement, HighlighType.Professional],
       },
       {
