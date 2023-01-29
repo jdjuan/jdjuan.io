@@ -21,7 +21,8 @@ export const insights: QuestionSheet[] = [
         question: "How to be more productive?",
         answer: () => (
           <>
-            Allocate time for <HighlightText>leisure</HighlightText>, not just productivity, and stick to it. <br />
+            Allocate time for <HighlightText>leisure</HighlightText>, not just productivity.
+            <br />
             <br />
             Use the <HighlightText>pomodoro technique</HighlightText> as a starting point but define the intervals on a
             case-by-case basis, don&apos;t just fall back to 25/5.
@@ -61,15 +62,6 @@ export const insights: QuestionSheet[] = [
         ),
       },
       {
-        question: "How to do public speaking?",
-        answer: () => (
-          <>
-            Speak to your audience like you talk to your friends. <HighlightText>Authenticity</HighlightText>{" "}
-            mesmerizes.
-          </>
-        ),
-      },
-      {
         question: "How to write my curriculum?",
         answer: () => (
           <>
@@ -82,6 +74,24 @@ export const insights: QuestionSheet[] = [
         ),
       },
       {
+        question: "How to do public speaking?",
+        answer: () => (
+          <>
+            Speak to your audience like you talk to your friends. <HighlightText>Authenticity</HighlightText>{" "}
+            mesmerizes.
+          </>
+        ),
+      },
+
+      {
+        question: "Cómo aprender Inglés?",
+        answer: () => (
+          <>
+            Hazlo parte de <HighlightText>tu vida</HighlightText> contidiana.
+          </>
+        ),
+      },
+      {
         question: "How to ask for mentorship?",
         answer: () => (
           <>
@@ -89,14 +99,6 @@ export const insights: QuestionSheet[] = [
             and sharing the most relevant details. <br />
             <br />
             <HighlightText>Highlight</HighlightText> your preliminary findings and your current hypothesis.
-          </>
-        ),
-      },
-      {
-        question: "Cómo aprender Inglés?",
-        answer: () => (
-          <>
-            Hazlo parte de <HighlightText>tu vida</HighlightText> contidiana.
           </>
         ),
       },

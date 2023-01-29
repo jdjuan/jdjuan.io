@@ -1,48 +1,44 @@
-import { ReactElement, useState } from "react";
+import { ReactElement } from "react";
 import MainLayout from "../components/main-layout";
 import Navbar from "../components/navbar";
 import { booksContent } from "../content/books.content";
-import { Book } from "../models/book.interface";
 import { NextPageWithLayout } from "./_app";
+import cx from "classnames";
 
 export const Books: NextPageWithLayout = () => {
-  const [books, setBooks] = useState<Book[]>(booksContent);
-  // const [ratingOrderDirection, setRatingOrderDirection] = useState(true);
-  // const orderBooksByRating = () => {
-  //   if (ratingOrderDirection) {
-  //     setBooks([...books].sort((a, b) => (a.rating > b.rating ? -1 : 1)));
-  //   } else {
-  //     setBooks([...books].sort((b, a) => (a.rating > b.rating ? -1 : 1)));
-  //   }
-  //   setRatingOrderDirection(!ratingOrderDirection);
-  // };
-
+  const isLongTitle = (title: string) => title.length > 24;
+  const isReallyLongTitle = (title: string) => title.length > 49;
   return (
     <>
       <Navbar></Navbar>
-      {/* <p className='mb-4'>
-        Order by{" "}
-        <span className='cursor-pointer underline' onClick={orderBooksByRating}>
-          rating
-        </span>{" "}
-        or <span className='cursor-pointer underline'>year read</span>
-      </p> */}
-      <h1 className='mb-6 text-4xl md:mb-10 '>Books Reviews</h1>
-      <div className='grid gap-4 sm:grid-cols-2 md:max-w-3xl lg:max-w-full lg:grid-cols-3'>
-        {books.map(({ author, comment, rating, title, yearRead }) => (
+      <h1 className='mb-6 text-4xl md:mb-10'>Books Reviews</h1>
+      <div className='grid gap-4 sm:grid-cols-2 md:max-w-3xl md:gap-5 lg:max-w-full lg:gap-8'>
+        {booksContent.map(({ author, comment, rating, title, yearRead }) => (
           <div
             key={title}
-            className='place-contents-center group grid max-w-sm grid-cols-12 gap-3 rounded-lg bg-slate-900 p-3'
+            className='place-contents-center group grid max-w-sm grid-cols-12 gap-2 rounded-lg bg-slate-900 p-3 sm:gap-2 sm:p-5 md:gap-4 lg:max-w-full'
           >
             <div className='col-span-2'>
-              <p className='inline-block rounded-md bg-slate-700 p-1 text-lg text-slate-100'>{rating}/5</p>
+              <p className='flex aspect-square w-11/12 items-center justify-center rounded-md bg-slate-700 text-lg text-slate-100 sm:w-full lg:text-xl xl:text-2xl'>
+                {rating}/5
+              </p>
             </div>
             <div className='col-span-10'>
-              <p title={title} className='-mt-1 truncate text-lg capitalize group-hover:whitespace-normal'>
+              <p
+                title={title}
+                className={cx("-mt-1 truncate text-lg capitalize ", {
+                  "group-hover:whitespace-normal": isLongTitle(title),
+                  "group-hover:text-base": isReallyLongTitle(title),
+                })}
+              >
                 {title}
               </p>
-              <p className='text-sm capitalize text-slate-400'>{author}</p>
-              <p className='text-xs text-slate-600'>Read in {yearRead}</p>
+              <p className={cx("text-sm capitalize text-slate-400", { "group-hover:hidden": isLongTitle(title) })}>
+                {author}
+              </p>
+              <p className={cx("text-xs capitalize text-slate-600", { "group-hover:hidden": isLongTitle(title) })}>
+                Read in {yearRead}
+              </p>
             </div>
             {!!comment && (
               <div className='col-span-full rounded-sm bg-slate-800 p-2'>

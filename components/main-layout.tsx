@@ -14,7 +14,7 @@ export default function MainLayout({ children }: Props) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className={`${inter.className} p-6 text-sm text-slate-50 sm:p-12 md:p-16 lg:mx-auto xl:max-w-6xl`}>
+      <main className={`${inter.className} relative p-6 text-sm text-slate-50 sm:p-12 md:p-16 lg:mx-auto xl:max-w-6xl`}>
         {children}
         <Footer></Footer>
       </main>

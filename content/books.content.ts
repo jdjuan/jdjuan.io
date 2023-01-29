@@ -179,14 +179,12 @@ export const booksContent: Book[] = [
     author: "Christopher Ryan",
     yearRead: 2020,
     rating: 3,
-    comment: "Don't believe everything in it.",
   },
   {
     title: "12 Rules for Life",
     author: "Jordan Peterson",
     yearRead: 2021,
     rating: 3,
-    comment: "One rule stuck with me until this day",
   },
   {
     title: "Rework",

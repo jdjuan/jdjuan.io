@@ -9,7 +9,7 @@ import profilePic from "../public/me.jpg";
 
 export const Home: NextPageWithLayout = () => {
   return (
-    <div className='grid gap-8 lg:gap-16'>
+    <div className='grid gap-8 sm:gap-12 lg:gap-16'>
       {/* INTRO */}
       <div className='grid max-w-full grid-cols-12 items-center gap-4 md:max-w-3xl lg:max-w-4xl lg:gap-5'>
         <Image
@@ -20,7 +20,7 @@ export const Home: NextPageWithLayout = () => {
         <div className='col-span-9 md:col-span-10 lg:col-span-9'>
           <h1 className='text-4xl sm:text-5xl lg:text-6xl'>Juan Herrera</h1>
         </div>
-        <div className='col-span-full text-slate-300 sm:col-span-9 sm:col-start-4 md:col-start-3'>
+        <div className='col-span-full font-light text-slate-300 sm:col-span-9 sm:col-start-4 md:col-start-3'>
           <p className='mb-1 lg:text-lg'>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
           <p className='text-slate-500 lg:text-base'>Currently building one app per month.</p>
         </div>
@@ -29,10 +29,10 @@ export const Home: NextPageWithLayout = () => {
       {/* HIGHLIGHTS */}
       <div className='grid gap-10 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-5'>
         {highlights.map((highlight) => (
-          <div className='rounded-lg bg-slate-700' key={highlight.title}>
+          <div className='max-w-xs rounded-lg bg-slate-700' key={highlight.title}>
             <div className='rounded-t-lg bg-slate-900 p-4 md:p-5'>
               <h2 className='mb-2 text-2xl md:text-3xl lg:text-4xl'>{highlight.title}</h2>
-              <p className='text-sm text-slate-400'>{highlight.description}</p>
+              <p className='text-sm font-light text-slate-400'>{highlight.description}</p>
             </div>
             {/* HIGHLIGHTS GRID */}
             <div className='grid gap-4 p-4 md:gap-5 md:p-5'>
@@ -42,8 +42,8 @@ export const Home: NextPageWithLayout = () => {
                   <div className='bordder box-border grid max-w-xs grid-cols-12 items-center gap-3 rounded-lg border-2 border-transparent bg-slate-800 transition hover:scale-105 hover:border-slate-50 sm:gap-4'>
                     {/* HIGHLIGHT TITLE */}
                     <h3
-                      className='col-span-full rounded-t-lg bg-slate-900 
-                    px-3 py-1.5 text-lg text-slate-300 sm:px-4 sm:py-2 md:text-xl'
+                      className='col-span-full rounded-t-lg bg-slate-900 px-3 
+                    py-1.5 text-lg font-extralight text-slate-300 sm:px-4 sm:py-2 md:text-xl'
                     >
                       {title}
                     </h3>
@@ -54,7 +54,7 @@ export const Home: NextPageWithLayout = () => {
                     {/* HIGHLIGHT TOPICS */}
                     <div className='col-span-9 pr-4 pb-4'>
                       {topics.map((topic) => (
-                        <p className='text-xs text-slate-400 sm:text-sm' key={topic}>
+                        <p className='text-xs font-extralight text-slate-400 sm:text-sm' key={topic}>
                           {topic}
                         </p>
                       ))}
