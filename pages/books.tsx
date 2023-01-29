@@ -12,7 +12,7 @@ export const Books: NextPageWithLayout = () => {
   return (
     <>
       <Navbar></Navbar>
-      <h1 className='mb-6 text-4xl md:mb-10'>Books Reviews</h1>
+      <h1 className='mb-6 font-headline text-4xl md:mb-10'>Books Reviews</h1>
       <div className='grid gap-4 md:gap-5 lg:grid-cols-2 lg:gap-6'>
         {/* BOOK BLOCKS */}
         {booksContent.map(({ author, comment, rating, title, yearRead, isbn, imgUrl, link }) => (
@@ -21,7 +21,7 @@ export const Books: NextPageWithLayout = () => {
             href={link}
             key={title}
             target='_blank'
-            className='relative box-border flex max-w-sm cursor-pointer rounded-lg border-2 border-transparent border-slate-800 bg-slate-900 p-4 hover:border-slate-50 sm:max-w-lg sm:p-5 lg:max-w-full'
+            className='relative box-border flex max-w-sm cursor-pointer rounded-xl border-2 border-transparent border-slate-800 bg-slate-900 p-4 hover:border-slate-50 sm:max-w-lg sm:p-5 lg:max-w-full'
           >
             {/* RATING */}
             <div className='absolute -top-3 -left-3 w-12'>
@@ -42,7 +42,7 @@ export const Books: NextPageWithLayout = () => {
               {/* META DATA */}
               <div className='mb-4 font-light'>
                 <p
-                  className={cx("-mt-1 w-fit text-lg capitalize text-slate-100 sm:text-2xl", {
+                  className={cx("-mt-1 w-fit font-headline text-lg capitalize text-slate-100 sm:text-2xl", {
                     "mb-7": !isTitleShort(title) && !!comment,
                   })}
                 >

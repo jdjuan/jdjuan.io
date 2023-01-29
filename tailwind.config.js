@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,6 +12,10 @@ module.exports = {
     extend: {
       animation: {
         highlight: "highlight 1s ease-in-out",
+      },
+      fontFamily: {
+        headline: ["var(--font-roboto)", ...fontFamily.mono],
+        ui: ["var(--font-inter)", ...fontFamily.sans],
       },
       keyframes: {
         highlight: {

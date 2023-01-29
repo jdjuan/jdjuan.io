@@ -18,7 +18,7 @@ export const Home: NextPageWithLayout = () => {
           className='col-span-3 rounded-md border-2 border-slate-200 sm:row-span-2 sm:border-4 md:col-span-2 lg:col-span-2'
         />
         <div className='col-span-9 md:col-span-10 lg:col-span-9'>
-          <h1 className='text-4xl sm:text-5xl lg:text-6xl'>Juan Herrera</h1>
+          <h1 className='font-headline text-4xl sm:text-5xl lg:text-6xl'>Juan Herrera</h1>
         </div>
         <div className='col-span-full font-light text-slate-300 sm:col-span-9 sm:col-start-4 md:col-start-3'>
           <p className='mb-1 lg:text-lg'>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
@@ -31,7 +31,7 @@ export const Home: NextPageWithLayout = () => {
         {highlights.map((highlight) => (
           <div className='max-w-xs rounded-lg bg-slate-700' key={highlight.title}>
             <div className='rounded-t-lg bg-slate-900 p-4 md:p-5'>
-              <h2 className='mb-2 text-2xl md:text-3xl lg:text-4xl'>{highlight.title}</h2>
+              <h2 className='mb-2 font-headline text-2xl md:text-3xl lg:text-4xl'>{highlight.title}</h2>
               <p className='text-sm font-light text-slate-400'>{highlight.description}</p>
             </div>
             {/* HIGHLIGHTS GRID */}
@@ -39,11 +39,11 @@ export const Home: NextPageWithLayout = () => {
               {/* HIGHLIGHT BLOCK */}
               {highlight.items.map(({ title, link, isExternalLink, topics }) => (
                 <Link passHref={isExternalLink} key={title} target={isExternalLink ? "_blank" : "_self"} href={link}>
-                  <div className='bordder box-border grid max-w-xs grid-cols-12 items-center gap-3 rounded-lg border-2 border-transparent bg-slate-800 transition hover:scale-105 hover:border-slate-50 sm:gap-4'>
+                  <div className='bordder box-border grid max-w-xs grid-cols-12 items-center gap-3 rounded-lg border-2 border-transparent bg-slate-800 transition hover:border-slate-50 sm:gap-4'>
                     {/* HIGHLIGHT TITLE */}
                     <h3
                       className='col-span-full rounded-t-lg bg-slate-900 px-3 
-                    py-1.5 text-lg font-extralight text-slate-300 sm:px-4 sm:py-2 md:text-xl'
+                    py-1.5 text-lg font-extralight  text-slate-300 sm:px-4 sm:py-2 md:text-xl'
                     >
                       {title}
                     </h3>

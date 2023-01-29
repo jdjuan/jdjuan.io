@@ -22,7 +22,7 @@ const Timeline = () => {
   return (
     <>
       <Navbar></Navbar>
-      <h1 className='mb-6 text-4xl md:mb-10'>Timeline</h1>
+      <h1 className='mb-6 font-headline text-4xl md:mb-10'>Timeline</h1>
       <div className='text-slate-300'>Each square is a year of my life:</div>
       <br />
       {/* YEAR BOXES */}

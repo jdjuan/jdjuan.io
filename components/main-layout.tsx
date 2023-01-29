@@ -1,8 +1,10 @@
+import { Roboto } from "@next/font/google";
 import { Inter } from "@next/font/google";
 import { ReactNode } from "react";
 import Head from "next/head";
 import Footer from "./footer";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500"], variable: "--font-roboto" });
 type Props = { children?: ReactNode };
 
 export default function MainLayout({ children }: Props) {
@@ -14,9 +16,13 @@ export default function MainLayout({ children }: Props) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className={`${inter.className} relative p-6 text-sm text-slate-50 sm:p-12 md:p-16 lg:mx-auto lg:max-w-6xl`}>
-        {children}
-        <Footer></Footer>
+      <main
+        className={`${inter.variable} ${roboto.variable} ${inter.className} relative border-slate-200 text-sm text-slate-50 `}
+      >
+        <div className='p-6 sm:p-12 md:p-16 lg:mx-auto lg:max-w-6xl'>
+          {children}
+          <Footer></Footer>
+        </div>
       </main>
     </>
   );

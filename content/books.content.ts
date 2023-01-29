@@ -268,6 +268,15 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/6732019-rework?ref=nav_sb_ss_1_6",
   },
   {
+    title: "rich dad poor dad",
+    author: "Robert T. Kiyosaki, Sharon L. Lechter",
+    yearRead: 2012,
+    rating: 3,
+    comment: "",
+    imgUrl: "https://m.media-amazon.com/images/I/51u8ZRDCVoL._SX330_BO1,204,203,200_.jpg",
+    link: "https://www.goodreads.com/book/show/69571.Rich_Dad_Poor_Dad",
+  },
+  {
     title: "The way of the Superior Man",
     author: "David Deida",
     yearRead: 2018,
