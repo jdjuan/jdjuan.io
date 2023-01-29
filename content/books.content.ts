@@ -7,6 +7,7 @@ export const booksContent: Book[] = [
     yearRead: 2022,
     rating: 5,
     comment: "I could not recommend this book more.",
+    isbn: "9780307377340",
   },
   {
     title: "Atomic Habits",
@@ -14,6 +15,15 @@ export const booksContent: Book[] = [
     yearRead: 2021,
     rating: 5,
     comment: "The best book about habits there is.",
+    isbn: "1847941842",
+  },
+  {
+    title: "How to Win Friends & Influence People",
+    author: "Dale Carnegie",
+    yearRead: 2017,
+    rating: 5,
+    comment: "My favorite book about communication.",
+    imgUrl: "https://m.media-amazon.com/images/I/71vK0WVQ4rL.jpg",
   },
   {
     title: "Humanity",
@@ -21,6 +31,7 @@ export const booksContent: Book[] = [
     yearRead: 2020,
     rating: 5,
     comment: "Insights from our cruelest atrocities.",
+    isbn: "0300186401",
   },
   {
     title: "Sapiens",
@@ -28,6 +39,7 @@ export const booksContent: Book[] = [
     yearRead: 2019,
     rating: 5,
     comment: "History for everyone.",
+    isbn: "0062316117",
   },
   {
     title: "The Manual",
@@ -35,6 +47,7 @@ export const booksContent: Book[] = [
     yearRead: 2022,
     rating: 5,
     comment: "Stoicism stoicly explained.",
+    isbn: "1545461112",
   },
   {
     title: "Start with Why",
@@ -42,6 +55,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 5,
     comment: "Make your sales pitch inspiring.",
+    isbn: "9780241958223",
   },
   {
     title: "Crucial Conversations",
@@ -49,6 +63,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 4,
     comment: "Lead difficult conversations gracefully.",
+    isbn: "9780071401944",
   },
   {
     title: "You are not listening",
@@ -56,6 +71,7 @@ export const booksContent: Book[] = [
     yearRead: 2020,
     rating: 4,
     comment: "Great examples on how to listen better.",
+    isbn: "9781250297198",
   },
   {
     title: "Bloodchild",
@@ -63,14 +79,15 @@ export const booksContent: Book[] = [
     yearRead: 2021,
     rating: 4,
     comment: "My favorite fiction book.",
+    isbn: "1583226982",
   },
-
   {
     title: "Man's Search for Meaning",
     author: "Viktor Frankl",
     yearRead: 2022,
     rating: 4,
     comment: "Research under the toughest conditions.",
+    isbn: "0807014273",
   },
   {
     title: "The six pillars of self-steem",
@@ -78,6 +95,7 @@ export const booksContent: Book[] = [
     yearRead: 2021,
     rating: 4,
     comment: "Very thorough analysis on self-esteem.",
+    isbn: "0553374397",
   },
   {
     title: "Thinking fast and slow",
@@ -85,6 +103,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 4,
     comment: "Deep insights into how we think",
+    isbn: "9780141033570",
   },
   {
     title: "The Rational Optimist",
@@ -92,6 +111,7 @@ export const booksContent: Book[] = [
     yearRead: 2021,
     rating: 4,
     comment: "An optimistic view into the future.",
+    isbn: "9780007267118",
   },
   {
     title: "Los Cuatro Acuerdos",
@@ -99,6 +119,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 4,
     comment: "Practical knowledge simplified.",
+    isbn: "9781878424938",
   },
   {
     title: "Leaders Eat Last",
@@ -106,18 +127,21 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 4,
     comment: "",
+    isbn: "9780670923175",
   },
   {
     title: "Meditations",
     author: "Marcus Aurelius",
     yearRead: 2022,
     rating: 4,
+    imgUrl: "https://i.ebayimg.com/images/g/HggAAOSwimBjL4BI/s-l1600.jpg",
   },
   {
     title: "Make",
     author: "Pieter Levels",
     yearRead: 2021,
     rating: 4,
+    imgUrl: "https://readmake.com/media-book-small.jpg",
   },
   {
     title: "Managing Oneself",
@@ -125,6 +149,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 3,
     comment: "",
+    isbn: "9781422123126",
   },
   {
     title: "Designer Relationships",
@@ -132,12 +157,15 @@ export const booksContent: Book[] = [
     yearRead: 2021,
     rating: 3,
     comment: "",
+    isbn: "9781627781473",
   },
   {
     title: "Polysecure",
     author: "Jessica Fern",
     yearRead: 2021,
     rating: 3,
+    imgUrl:
+      "https://images.thalia.media/07/-/92885d86a7474687a7998d7b72ca95da/polysecure-taschenbuch-jessica-fern-englisch.jpeg",
   },
   {
     title: "The Gentleman's Guide to Vice and Virtue",
@@ -145,6 +173,7 @@ export const booksContent: Book[] = [
     yearRead: 2022,
     rating: 3,
     comment: "",
+    isbn: "9780062382801",
   },
   {
     title: "The Power of Habit",
@@ -152,6 +181,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 3,
     comment: "",
+    isbn: "9780812981605",
   },
   {
     title: "The leader who had no tittle",
@@ -159,6 +189,7 @@ export const booksContent: Book[] = [
     yearRead: 2019,
     rating: 3,
     comment: "",
+    isbn: "9781439109120",
   },
   {
     title: "Sprint",
@@ -166,6 +197,7 @@ export const booksContent: Book[] = [
     yearRead: 2019,
     rating: 3,
     comment: "",
+    isbn: "9780593076118",
   },
   {
     title: "The subtle art of not giving a fuck",
@@ -173,18 +205,21 @@ export const booksContent: Book[] = [
     yearRead: 2020,
     rating: 3,
     comment: "",
+    isbn: "9780062641540",
   },
   {
     title: "Sex at dawn",
     author: "Christopher Ryan",
     yearRead: 2020,
     rating: 3,
+    isbn: "9780061707803",
   },
   {
     title: "12 Rules for Life",
     author: "Jordan Peterson",
     yearRead: 2021,
     rating: 3,
+    isbn: "9780345816023",
   },
   {
     title: "Rework",
@@ -192,6 +227,7 @@ export const booksContent: Book[] = [
     yearRead: 2020,
     rating: 3,
     comment: "",
+    isbn: "9780307463746",
   },
   {
     title: "The way of the Superior Man",
@@ -199,6 +235,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 2,
     comment: "",
+    isbn: "1889762105",
   },
   {
     title: "Exactly What to Say",
@@ -206,6 +243,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 2,
     comment: "",
+    imgUrl: "https://m.media-amazon.com/images/I/51uZii1hhnL.jpg",
   },
   {
     title: "Outwitting the Devil",
@@ -213,6 +251,7 @@ export const booksContent: Book[] = [
     yearRead: 2018,
     rating: 2,
     comment: "",
+    isbn: "9781402784538",
   },
 
   {
@@ -221,6 +260,7 @@ export const booksContent: Book[] = [
     yearRead: 2021,
     rating: 2,
     comment: "",
+    isbn: "1524781665",
   },
   {
     title: "La ridícula idea de no volver a verte",
@@ -228,6 +268,7 @@ export const booksContent: Book[] = [
     yearRead: 2022,
     rating: 2,
     comment: "",
+    isbn: "9789584235701",
   },
   {
     title: "Tropic of Cancer",
@@ -235,6 +276,7 @@ export const booksContent: Book[] = [
     yearRead: 2022,
     rating: 2,
     comment: "",
+    imgUrl: "https://m.media-amazon.com/images/I/41PEqpOEB1L.jpg",
   },
   {
     title: "The Love Secret",
@@ -242,13 +284,14 @@ export const booksContent: Book[] = [
     yearRead: 2021,
     rating: 1,
     comment: "",
+    isbn: "9780749955533",
   },
-
   {
     title: "Talking to Robots",
     author: "David Ewing Duncan",
     yearRead: 2019,
     rating: 1,
     comment: "",
+    imgUrl: "https://m.media-amazon.com/images/I/41WjbGvYdSL._AC_SY780_.jpg",
   },
 ];

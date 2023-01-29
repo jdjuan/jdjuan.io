@@ -4,4 +4,6 @@ export interface Book {
   yearRead: number;
   rating: number;
   comment?: string;
+  isbn?: string;
+  imgUrl?: string;
 }
