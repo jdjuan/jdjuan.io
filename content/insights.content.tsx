@@ -135,12 +135,12 @@ export const insights: QuestionSheet[] = [
         question: "Why are relationships hard?",
         answer: () => (
           <>
-            Because we constrict our needs to the relationship types that we know, instead of adjusting our
-            relationships to fulfill our needs.
+            Because we <HighlightText>constrict our needs</HighlightText> to the relationship types that we know,
+            instead of adjusting our relationships to fulfill our needs.
             <br />
             <br />
-            Relationships are a continous phenomenon marketed as a discrete one, and such oversimplification
-            doesn&apos;t match reality.
+            Relationships are a <HighlightText>continous phenomenon</HighlightText> marketed as a discrete one, and such
+            oversimplification doesn&apos;t match reality.
           </>
         ),
       },

@@ -25,7 +25,7 @@ const Intro = () => {
           </h1>
         </div>
         <div className='col-span-full font-light  sm:col-span-9 sm:col-start-4 md:col-start-3'>
-          <p className='mb-1 text-neutral-600 dark:text-slate-300 lg:text-lg'>
+          <p className='mb-1 text-neutral-900 dark:text-slate-300 lg:text-lg'>
             Google Developer Expert in Angular and Web Technologies based in Austria.
           </p>
           <p className='text-neutral-400 dark:text-slate-500 lg:text-base'>Currently building one app per month.</p>

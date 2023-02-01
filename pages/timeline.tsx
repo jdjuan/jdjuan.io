@@ -74,13 +74,13 @@ const Timeline = () => {
         {/* HIGHLIGHTS */}
         {selectedYearTimeline !== undefined && (
           <div className='self-start rounded-md bg-neutral-100 p-5 pt-4 dark:bg-slate-900 md:p-7 md:pt-6'>
-            <div className='mb-3 text-lg font-medium sm:mb-4 sm:text-xl lg:mb-5 lg:text-2xl'>
+            <div className='mb-3 text-lg font-medium text-neutral-900 dark:text-slate-200 sm:mb-4 sm:text-xl lg:mb-5 lg:text-2xl'>
               When I was {selectedYearTimeline?.year + 1 || 0}
             </div>
             {selectedYearTimeline?.highlights.map((highlight, index) => (
               <div
                 key={index}
-                className='mb-4 rounded-md bg-neutral-50 p-3 text-xs last:mb-0 dark:bg-slate-800 md:text-sm lg:text-base'
+                className='mb-4 rounded-md bg-neutral-200 p-3 text-xs font-medium text-neutral-800 last:mb-0 dark:bg-slate-800 dark:text-slate-50 md:text-sm lg:text-base'
               >
                 <highlight.text></highlight.text>
                 {highlight.subtext && (

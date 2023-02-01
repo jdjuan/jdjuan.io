@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  transition-property: background-color, color;
+  transition-property: background-color, color, border;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
