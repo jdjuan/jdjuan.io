@@ -14,7 +14,7 @@ const HighlightBlock = ({ highlighBlock }: Props) => {
           </h3>
           {/* HIGHLIGHT ICON */}
           <div className='col-span-3 pl-3 pb-3 sm:pl-4 sm:pb-4'>
-            <div className='aspect-square w-full rounded-md bg-clip-content dark:bg-slate-700'></div>
+            <div className='aspect-square w-full rounded-md bg-neutral-100 bg-clip-content dark:bg-slate-700'></div>
           </div>
           {/* HIGHLIGHT TOPICS */}
           <div className='col-span-9 pr-4 pb-4'>
