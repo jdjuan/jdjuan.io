@@ -12,11 +12,11 @@ export default function MainLayout({ children }: Props) {
   const [darkModeEmoji, setDarkModeEmoji] = useState<string>();
   useEffect(() => {
     if (isDarkMode) {
-      setDarkModeEmoji("🌚");
-      document.documentElement.classList.remove("dark");
-    } else {
       setDarkModeEmoji("🌝");
       document.documentElement.classList.add("dark");
+    } else {
+      setDarkModeEmoji("🌚");
+      document.documentElement.classList.remove("dark");
     }
   }, [isDarkMode]);
   return (
