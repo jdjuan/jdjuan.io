@@ -141,16 +141,13 @@ export const insights: QuestionSheet[] = [
             <br />
             Relationships are a continous phenomenon marketed as a discrete one, and such oversimplification
             doesn&apos;t match reality.
-            <br />
-            <br />
-            <UpcomingArticle></UpcomingArticle>
           </>
         ),
       },
-      // {
-      //   question: "What is a weekly meeting?",
-      //   upcomingArticle: true,
-      // },
+      {
+        question: "What is a relationship spectrum?",
+        upcomingArticle: true,
+      },
     ],
   },
 ];

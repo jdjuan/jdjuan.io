@@ -1,12 +1,24 @@
 import { Roboto, Inter } from "@next/font/google";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import Head from "next/head";
 import Footer from "./footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500"], variable: "--font-roboto" });
 type Props = { children?: ReactNode };
+import { useDarkMode } from "usehooks-ts";
 
 export default function MainLayout({ children }: Props) {
+  const { isDarkMode, toggle } = useDarkMode();
+  const [darkModeEmoji, setDarkModeEmoji] = useState<string>();
+  useEffect(() => {
+    if (isDarkMode) {
+      setDarkModeEmoji("🌚");
+      document.documentElement.classList.remove("dark");
+    } else {
+      setDarkModeEmoji("🌝");
+      document.documentElement.classList.add("dark");
+    }
+  }, [isDarkMode]);
   return (
     <>
       <Head>
@@ -16,9 +28,15 @@ export default function MainLayout({ children }: Props) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main
-        className={`${inter.variable} ${roboto.variable} ${inter.className} relative select-none text-sm dark:border-slate-200 dark:text-slate-50`}
+        className={`${inter.variable} ${roboto.variable} ${inter.className} relative select-none text-sm text-neutral-800 dark:text-slate-50`}
       >
         <div className='p-6 sm:p-12 md:p-16 lg:mx-auto lg:max-w-6xl'>
+          <button
+            onClick={toggle}
+            className='absolute top-4 right-4 rounded-full p-0.5 px-1 text-3xl shadow-sm hover:scale-125  dark:bg-slate-700 '
+          >
+            {darkModeEmoji}
+          </button>
           {children}
           <Footer></Footer>
         </div>

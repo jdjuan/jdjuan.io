@@ -1,8 +1,8 @@
 const UpcomingArticle = () => {
   return (
-    <p className='rounded-sm p-2 text-xs dark:bg-slate-800 dark:text-slate-500 sm:text-sm'>
+    <p className='rounded-md bg-neutral-200 p-2 text-xs font-light text-neutral-600 dark:bg-slate-800 dark:font-normal dark:text-slate-500 sm:text-sm lg:mt-3'>
       There&apos;s an upcoming article on this topic.{" "}
-      <a className='underline dark:text-slate-400' href='mailto:david.juanherrera@gmail.com'>
+      <a className='text-neutral-900 underline dark:text-slate-400' href='mailto:david.juanherrera@gmail.com'>
         Introduce yourself
       </a>{" "}
       in an email get an update, or simply come back in a few weeks.

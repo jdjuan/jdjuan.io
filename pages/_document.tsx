@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head></Head>
-      <body className={cx("dark:bg-slate-800", { "debug-screens": isDev })}>
+      <body className={cx("bg-neutral-50 dark:bg-slate-800", { "debug-screens": isDev })}>
         <Main />
         <NextScript />
       </body>

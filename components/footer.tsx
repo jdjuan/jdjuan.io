@@ -1,4 +1,3 @@
-import { link } from "fs";
 import { Link } from "../models/link.interface";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
     { text: "LinkedIn", link: "https://www.linkedin.com/in/jdjuan" },
   ];
   return (
-    <div className='mt-16 -mb-10  pt-2 text-xs dark:text-slate-600'>
+    <div className='mt-16 -mb-10 pt-2 text-xs text-neutral-500 dark:text-slate-600'>
       {links.map(({ text, link }) => (
         <a
           key={text}

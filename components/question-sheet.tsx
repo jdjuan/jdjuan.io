@@ -16,14 +16,16 @@ const QuestionSheet = ({ questionSheet }: Props) => {
           <div className='grid max-w-5xl gap-4 md:grid-cols-2 md:gap-6'>
             {questionSheet.items.map((item) => (
               <div
-                className='max-w-lg rounded-md p-4 dark:bg-slate-900 md:p-5 md:pt-4 lg:p-6 lg:pt-5'
+                className='max-w-lg rounded-md bg-neutral-100 p-4 dark:bg-slate-900 md:p-5 md:pt-4 lg:p-6 lg:pt-5'
                 key={item.question}
               >
                 {/* QUESTION */}
-                <h2 className='mb-2 text-xl font-medium md:text-2xl'>{item.question}</h2>
+                <h2 className='mb-2 text-xl font-medium text-neutral-900 dark:text-slate-200 md:text-2xl'>
+                  {item.question}
+                </h2>
                 {/* ANSWER */}
                 {item.answer && (
-                  <div className='whitespace-pre-line text-xs font-light dark:text-slate-400 sm:text-sm lg:text-base'>
+                  <div className='whitespace-pre-line text-xs font-light text-neutral-900 dark:text-slate-400 sm:text-sm lg:text-base'>
                     <item.answer></item.answer>
                   </div>
                 )}
@@ -34,7 +36,7 @@ const QuestionSheet = ({ questionSheet }: Props) => {
                       <a href={link} key={text} target='_blank' rel='noreferrer'>
                         <div
                           className={cx(
-                            "mb-2 mr-2 inline-block rounded-md border p-2 dark:border-slate-700 dark:bg-slate-800 ",
+                            "mb-2 mr-2 inline-block rounded-md border border-neutral-700 p-2 dark:border-slate-700 dark:bg-slate-800 ",
                             {
                               "hover:dark:border-slate-50": !!link,
                             }

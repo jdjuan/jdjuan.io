@@ -46,13 +46,14 @@ export const about: QuestionSheet = {
         <>
           It has 3 questions I answer every day: <br />
           <br />
-          1. What is making me anxious and what would a kind friend say about it?
+          1. What is making me <HighlightText>anxious</HighlightText> and what would a kind friend say about it?
+          {/* <br /> */}
           <br />
+          2. What am I <HighlightText>grateful</HighlightText> for and what am I proud of?
+          {/* <br /> */}
           <br />
-          2. What am I grateful for and what am I proud of?
-          <br />
-          <br />
-          3. What was the best thing that happened today and what do I look forward to tomorrow?
+          3. What was the best thing that happened today and what do I <HighlightText>look forward</HighlightText> to
+          tomorrow?
         </>
       ),
     },

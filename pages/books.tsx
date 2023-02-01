@@ -21,11 +21,12 @@ export const Books: NextPageWithLayout = () => {
             href={link}
             key={title}
             target='_blank'
-            className='relative box-border flex max-w-sm cursor-pointer rounded-xl border-2 border-transparent p-4 dark:border-slate-800 dark:bg-slate-900 hover:dark:border-slate-50 sm:max-w-lg sm:p-5 lg:max-w-full'
+            className='border-transparent relative box-border flex max-w-sm cursor-pointer rounded-xl 
+            border-2 border-slate-50 bg-neutral-100 p-4 hover:border-neutral-600 dark:border-slate-800 dark:bg-slate-900 hover:dark:border-slate-50 sm:max-w-lg sm:p-5 lg:max-w-full'
           >
             {/* RATING */}
             <div className='absolute -top-3 -left-3 w-12'>
-              <p className='flex aspect-square items-center justify-center rounded-lg border-2 text-base font-medium dark:border-slate-100 dark:bg-slate-800 dark:text-slate-50  '>
+              <p className='flex aspect-square items-center justify-center rounded-lg border-2 border-neutral-900 bg-slate-50 text-base font-medium text-neutral-900 dark:border-slate-100 dark:bg-slate-800 dark:text-slate-50  '>
                 {rating}/5
               </p>
             </div>
@@ -57,7 +58,7 @@ export const Books: NextPageWithLayout = () => {
               </div>
               {/* COMMENT */}
               {!!comment && (
-                <p className='rounded-md p-2 text-xs dark:bg-slate-800 sm:text-sm'>
+                <p className='rounded-md bg-neutral-50 p-2 text-xs dark:bg-slate-800 sm:text-sm'>
                   <span className='font-medium'>Note:</span>{" "}
                   <span className='font-light dark:text-slate-300'>{comment}</span>
                 </p>

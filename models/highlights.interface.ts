@@ -1,5 +1,12 @@
 export interface Highlight {
   title: string;
   description: string;
-  items: { title: string; topics: string[]; link: string; isExternalLink?: boolean }[];
+  items: HighlighBlock[];
+}
+
+export interface HighlighBlock {
+  title: string;
+  topics: string[];
+  link: string;
+  isExternalLink?: boolean;
 }
