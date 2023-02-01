@@ -15,46 +15,46 @@ export const Home: NextPageWithLayout = () => {
         <Image
           src={profilePic}
           alt='Picture of the author'
-          className='col-span-3 rounded-md border-2 border-slate-200 sm:row-span-2 sm:border-4 md:col-span-2 lg:col-span-2'
+          className='col-span-3 rounded-md border-2 dark:border-slate-200 sm:row-span-2 sm:border-4 md:col-span-2 lg:col-span-2'
         />
         <div className='col-span-9 md:col-span-10 lg:col-span-9'>
           <h1 className='font-headline text-4xl sm:text-5xl lg:text-6xl'>Juan Herrera</h1>
         </div>
-        <div className='col-span-full font-light text-slate-300 sm:col-span-9 sm:col-start-4 md:col-start-3'>
+        <div className='col-span-full font-light dark:text-slate-300 sm:col-span-9 sm:col-start-4 md:col-start-3'>
           <p className='mb-1 lg:text-lg'>Google Developer Expert in Angular and Web Technologies based in Austria.</p>
-          <p className='text-slate-500 lg:text-base'>Currently building one app per month.</p>
+          <p className='dark:text-slate-500 lg:text-base'>Currently building one app per month.</p>
         </div>
       </div>
       {/* END INTRO */}
       {/* HIGHLIGHTS */}
       <div className='grid gap-10 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-5'>
         {highlights.map((highlight) => (
-          <div className='max-w-xs rounded-lg bg-slate-700' key={highlight.title}>
-            <div className='rounded-t-lg bg-slate-900 p-4 md:p-5'>
+          <div className='max-w-xs rounded-lg dark:bg-slate-700' key={highlight.title}>
+            <div className='rounded-t-lg p-4 dark:bg-slate-900 md:p-5'>
               <h2 className='mb-2 font-headline text-2xl md:text-3xl lg:text-4xl'>{highlight.title}</h2>
-              <p className='text-sm font-light text-slate-400'>{highlight.description}</p>
+              <p className='text-sm font-light dark:text-slate-400'>{highlight.description}</p>
             </div>
             {/* HIGHLIGHTS GRID */}
             <div className='grid gap-4 p-4 md:gap-5 md:p-5'>
               {/* HIGHLIGHT BLOCK */}
               {highlight.items.map(({ title, link, isExternalLink, topics }) => (
                 <Link passHref={isExternalLink} key={title} target={isExternalLink ? "_blank" : "_self"} href={link}>
-                  <div className='bordder box-border grid max-w-xs grid-cols-12 items-center gap-3 rounded-lg border-2 border-transparent bg-slate-800 transition hover:border-slate-50 sm:gap-4'>
+                  <div className='bordder box-border grid max-w-xs grid-cols-12 items-center gap-3 rounded-lg border-2 border-transparent transition dark:bg-slate-800 hover:dark:border-slate-50 sm:gap-4'>
                     {/* HIGHLIGHT TITLE */}
                     <h3
-                      className='col-span-full rounded-t-lg bg-slate-900 px-3 
-                    py-1.5 text-lg font-extralight  text-slate-300 sm:px-4 sm:py-2 md:text-xl'
+                      className='col-span-full rounded-t-lg px-3 py-1.5 
+                    text-lg font-extralight dark:bg-slate-900  dark:text-slate-300 sm:px-4 sm:py-2 md:text-xl'
                     >
                       {title}
                     </h3>
                     {/* HIGHLIGHT ICON */}
                     <div className='col-span-3 pl-3 pb-3 sm:pl-4 sm:pb-4'>
-                      <div className='aspect-square w-full rounded-md bg-slate-700 bg-clip-content'></div>
+                      <div className='aspect-square w-full rounded-md bg-clip-content dark:bg-slate-700'></div>
                     </div>
                     {/* HIGHLIGHT TOPICS */}
                     <div className='col-span-9 pr-4 pb-4'>
                       {topics.map((topic) => (
-                        <p className='text-xs font-extralight text-slate-400 sm:text-sm' key={topic}>
+                        <p className='text-xs font-extralight dark:text-slate-400 sm:text-sm' key={topic}>
                           {topic}
                         </p>
                       ))}

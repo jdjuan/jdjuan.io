@@ -1,5 +1,4 @@
-import { Roboto } from "@next/font/google";
-import { Inter } from "@next/font/google";
+import { Roboto, Inter } from "@next/font/google";
 import { ReactNode } from "react";
 import Head from "next/head";
 import Footer from "./footer";
@@ -17,7 +16,7 @@ export default function MainLayout({ children }: Props) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main
-        className={`${inter.variable} ${roboto.variable} ${inter.className} relative select-none border-slate-200 text-sm text-slate-50`}
+        className={`${inter.variable} ${roboto.variable} ${inter.className} relative select-none text-sm dark:border-slate-200 dark:text-slate-50`}
       >
         <div className='p-6 sm:p-12 md:p-16 lg:mx-auto lg:max-w-6xl'>
           {children}

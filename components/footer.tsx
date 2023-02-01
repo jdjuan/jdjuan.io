@@ -8,9 +8,15 @@ const Footer = () => {
     { text: "LinkedIn", link: "https://www.linkedin.com/in/jdjuan" },
   ];
   return (
-    <div className='mt-16 -mb-10  pt-2 text-xs text-slate-600'>
+    <div className='mt-16 -mb-10  pt-2 text-xs dark:text-slate-600'>
       {links.map(({ text, link }) => (
-        <a key={text} href={link} target='_blank' className='col-span-1 mr-2 text-slate-500' rel='noopener noreferrer'>
+        <a
+          key={text}
+          href={link}
+          target='_blank'
+          className='col-span-1 mr-2 dark:text-slate-500'
+          rel='noopener noreferrer'
+        >
           {text}
         </a>
       ))}
