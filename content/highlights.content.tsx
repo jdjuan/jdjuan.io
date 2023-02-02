@@ -65,7 +65,7 @@ export const highlights: Highlight[] = [
         title: "HeadScroll",
         link: "https://headscroll.io/",
         isExternalLink: true,
-        topics: ["Play music with ease", "Co-founded in 2021", "10 user per day"],
+        topics: ["Play music with ease", "Co-founded in 2021", "10 users per day"],
         icon: (
           <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
             <path
