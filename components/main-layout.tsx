@@ -46,7 +46,7 @@ export default function MainLayout({ children }: Props) {
           property='og:description'
           content="This is my personal website in which I share my latest insights on the topics I\'m most interested in."
         />
-        <meta property='og:image' content='https://jdjuan-io.vercel.app/og-card.png' />
+        <meta property='og:image' content='https://jdjuan.io/og-card.png' />
         {/* TWITTER  */}
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content='https://jdjuan.io/' />
@@ -55,7 +55,7 @@ export default function MainLayout({ children }: Props) {
           property='twitter:description'
           content="This is my personal website in which I share my latest insights on the topics I\'m most interested in."
         />
-        <meta property='twitter:image' content='https://jdjuan-io.vercel.app/og-card.png'></meta>
+        <meta property='twitter:image' content='https://jdjuan.io/og-card.png'></meta>
       </Head>
       <main
         className={`${inter.variable} ${roboto.variable} ${inter.className} relative select-none text-sm text-neutral-800 dark:text-slate-50`}
