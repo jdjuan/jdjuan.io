@@ -1,12 +1,13 @@
 export interface Highlight {
   title: string;
   description: string;
-  items: HighlighBlock[];
+  items: HighlightBlock[];
 }
 
-export interface HighlighBlock {
+export interface HighlightBlock {
   title: string;
   topics: string[];
+  icon?: JSX.Element;
   link: string;
   isExternalLink?: boolean;
 }

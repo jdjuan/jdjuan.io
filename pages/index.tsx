@@ -1,10 +1,10 @@
-import { highlights } from "../content/highlights.content";
 import { ReactElement } from "react";
 import MainLayout from "../components/main-layout";
 import Updates from "../components/updates";
 import Intro from "../components/intro";
-import HighlightBlock from "../components/highlight-block";
+import HighlightBlockComponent from "../components/highlight-block";
 import type { NextPageWithLayout } from "./_app";
+import { highlights } from "../content/highlights.content";
 
 export const Home: NextPageWithLayout = () => {
   return (
@@ -22,7 +22,10 @@ export const Home: NextPageWithLayout = () => {
             <div className='grid gap-4 p-4 md:gap-5 md:p-5'>
               {/* HIGHLIGHT BLOCK */}
               {highlight.items.map((highlighBlock) => (
-                <HighlightBlock key={highlighBlock.title} highlighBlock={highlighBlock}></HighlightBlock>
+                <HighlightBlockComponent
+                  key={highlighBlock.title}
+                  highlightBlock={highlighBlock}
+                ></HighlightBlockComponent>
               ))}
             </div>
           </div>
