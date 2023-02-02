@@ -14,9 +14,9 @@ export const Home: NextPageWithLayout = () => {
       <div className='grid gap-10 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-5'>
         {highlights.map((highlight) => (
           <div className='max-w-sm rounded-lg bg-neutral-100 dark:bg-slate-700' key={highlight.title}>
-            <div className='rounded-t-lg bg-neutral-800 p-3 px-4 text-neutral-50 dark:bg-slate-900 md:p-5'>
+            <div className='rounded-t-lg bg-teal-900 p-3 px-4 text-neutral-50 dark:bg-slate-900 md:p-5'>
               <h2 className='mb-0.5 font-headline text-2xl sm:mb-2 md:text-3xl lg:text-4xl'>{highlight.title}</h2>
-              <p className='text-sm font-light text-neutral-200 dark:text-slate-400'>{highlight.description}</p>
+              <p className='text-sm font-light text-neutral-50 dark:text-slate-400'>{highlight.description}</p>
             </div>
             {/* HIGHLIGHTS GRID */}
             <div className='grid gap-4 p-4 md:gap-5 md:p-5'>

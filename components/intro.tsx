@@ -7,7 +7,9 @@ const Intro = () => {
   const { isDarkMode } = useDarkMode();
   const [photo, setPhoto] = useState<StaticImageData>(lightPhoto);
   useEffect(() => {
-    setPhoto(isDarkMode ? darkPhoto : lightPhoto);
+    setTimeout(() => {
+      setPhoto(isDarkMode ? darkPhoto : lightPhoto);
+    }, 200);
   }, [isDarkMode]);
   return (
     <div>

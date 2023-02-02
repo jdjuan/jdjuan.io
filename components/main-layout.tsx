@@ -12,10 +12,14 @@ export default function MainLayout({ children }: Props) {
   const [darkModeEmoji, setDarkModeEmoji] = useState<string>();
   useEffect(() => {
     if (isDarkMode) {
-      setDarkModeEmoji("🌝");
+      setTimeout(() => {
+        setDarkModeEmoji("🌝");
+      }, 200);
       document.documentElement.classList.add("dark");
     } else {
-      setDarkModeEmoji("🌚");
+      setTimeout(() => {
+        setDarkModeEmoji("🌚");
+      }, 200);
       document.documentElement.classList.remove("dark");
     }
   }, [isDarkMode]);
@@ -33,7 +37,7 @@ export default function MainLayout({ children }: Props) {
         <div className='p-6 sm:p-12 md:p-16 lg:mx-auto lg:max-w-6xl'>
           <button
             onClick={toggle}
-            className='absolute top-4 right-4 rounded-full p-0.5 px-1 text-3xl shadow-sm hover:scale-125  dark:bg-slate-700 '
+            className='absolute top-4 right-4 rounded-full p-0.5 px-1 text-3xl shadow-sm dark:bg-slate-700 '
           >
             {darkModeEmoji}
           </button>

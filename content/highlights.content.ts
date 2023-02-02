@@ -3,7 +3,7 @@ import { Highlight } from "../models/highlights.interface";
 export const highlights: Highlight[] = [
   {
     title: "Insights",
-    description: "My thoughts summarized",
+    description: "1-minute ideas",
     items: [
       {
         title: "Behavior",
@@ -29,7 +29,7 @@ export const highlights: Highlight[] = [
   },
   {
     title: "Apps",
-    description: "Three projects I'm proud of",
+    description: "Projects I'm proud of",
     items: [
       {
         title: "HeadScroll",

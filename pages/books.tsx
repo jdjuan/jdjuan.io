@@ -21,12 +21,13 @@ export const Books: NextPageWithLayout = () => {
             href={link}
             key={title}
             target='_blank'
-            className='border-transparent relative box-border flex max-w-sm cursor-pointer rounded-xl 
-            border-2 border-slate-50 bg-neutral-100 p-4 hover:border-neutral-600 dark:border-slate-800 dark:bg-slate-900 hover:dark:border-slate-50 sm:max-w-lg sm:p-5 lg:max-w-full'
+            className='border-transparent relative box-border flex  max-w-sm cursor-pointer 
+            rounded-bl-2xl rounded-br-2xl border-t-8 border-teal-800 bg-neutral-100 
+            p-4 hover:scale-105 dark:rounded-2xl dark:border-t-0 dark:bg-slate-900  sm:max-w-lg sm:p-5 lg:max-w-full'
           >
             {/* RATING */}
-            <div className='absolute -top-3 -left-3 w-12'>
-              <p className='flex aspect-square items-center justify-center rounded-lg border-2 border-neutral-900 bg-slate-50 text-base font-medium text-neutral-900 dark:border-slate-100 dark:bg-slate-800 dark:text-slate-50  '>
+            <div className='absolute top-3 right-3 w-12'>
+              <p className='flex aspect-square items-center justify-center rounded-lg border-2 border-teal-900 bg-neutral-50 text-base font-medium  text-neutral-900 dark:border-teal-500 dark:bg-slate-800 dark:text-slate-50 '>
                 {rating}/5
               </p>
             </div>
@@ -41,14 +42,14 @@ export const Books: NextPageWithLayout = () => {
             {/* CONTENT */}
             <div>
               {/* META DATA */}
-              <div className='mb-4 font-light'>
-                <p
-                  className={cx("-mt-1 w-fit font-headline text-lg capitalize dark:text-slate-100 sm:text-2xl", {
+              <div className='mb-4 pr-12 font-light'>
+                <h3
+                  className={cx("-mt-1 font-headline text-lg capitalize dark:text-slate-100 sm:text-2xl ", {
                     "mb-7": !isTitleShort(title) && !!comment,
                   })}
                 >
                   {title}
-                </p>
+                </h3>
                 {(isTitleShort(title) || !comment) && (
                   <>
                     <p className='text-sm capitalize dark:text-slate-400 sm:text-base'>{author}</p>
