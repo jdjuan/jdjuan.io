@@ -13,10 +13,10 @@ const QuestionSheet = ({ questionSheet }: Props) => {
           {/* MAIN TITLE */}
           <h1 className='mb-6 font-headline text-4xl md:mb-10'>{questionSheet.title}</h1>
           {/* QUESTIONS */}
-          <div className='grid max-w-5xl gap-4 md:grid-cols-2 md:gap-6'>
+          <div className='grid max-w-5xl gap-5 md:grid-cols-2 md:gap-6'>
             {questionSheet.items.map((item) => (
               <div
-                className='max-w-lg rounded-bl-2xl rounded-br-2xl border-t-8 border-teal-800 bg-neutral-100 p-4 pt-2 shadow-md dark:bg-slate-900 md:p-5 md:pt-3 lg:p-6 lg:pt-4'
+                className='max-w-lg rounded-bl-2xl rounded-br-2xl border-t-8 border-teal-800 bg-neutral-100 p-4 pt-2  dark:bg-slate-900 md:border-t-8 md:p-5 md:pt-3 md:shadow-md lg:p-6 lg:pt-4'
                 key={item.question}
               >
                 {/* QUESTION */}

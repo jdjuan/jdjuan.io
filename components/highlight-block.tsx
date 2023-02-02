@@ -13,7 +13,7 @@ const HighlightBlockComponent = ({ highlightBlock }: Props) => {
             {title}
           </h3>
           {/* HIGHLIGHT ICON */}
-          <div className='col-span-3 pl-3 pb-3 sm:pl-4 sm:pb-4'>
+          <div className='col-span-3 p-2 pr-1 pb-5 pl-4 sm:pl-4 sm:pb-4 sm:pr-0 sm:pt-0'>
             <div className='flex aspect-square w-full items-center justify-center rounded-md bg-clip-content '>
               {highlightBlock.icon}
             </div>
@@ -21,13 +21,13 @@ const HighlightBlockComponent = ({ highlightBlock }: Props) => {
           {/* HIGHLIGHT TOPICS */}
           <div className='col-span-9 pr-4 pb-4'>
             {topics.map((topic) => (
-              <p
+              <div
                 className='text-xs font-light text-neutral-700 dark:font-extralight dark:text-slate-400 sm:text-sm'
                 key={topic}
               >
                 <div className='mx-0.5 inline-block aspect-square w-1 rounded-full bg-teal-800 align-middle dark:bg-slate-400'></div>{" "}
                 {topic}
-              </p>
+              </div>
             ))}
           </div>
         </div>
