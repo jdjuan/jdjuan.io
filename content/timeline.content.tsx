@@ -207,7 +207,7 @@ export const fullTimeline: YearTimeline[] = [
       },
       {
         text: () => <>Earned the first place at a Game Jam</>,
-        subtext: "My team and I coded a JavaScript game using the the canvas.",
+        subtext: "My team and I coded a JavaScript game using the canvas.",
         type: [HighlighType.Professional, HighlighType.Achievement],
       },
       {
@@ -275,7 +275,7 @@ export const fullTimeline: YearTimeline[] = [
       },
       {
         text: () => <>Started learning Angular</>,
-        subtext: "It pivoted my professional career hugely  .",
+        subtext: "It pivoted my professional career hugely.",
         type: [HighlighType.Lucky, HighlighType.Professional],
       },
     ],
