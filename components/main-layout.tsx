@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500"], variable: "--font-roboto" });
 type Props = { children?: ReactNode };
 import { useDarkMode } from "usehooks-ts";
+import Script from "next/script";
 
 export default function MainLayout({ children }: Props) {
   const { isDarkMode, toggle } = useDarkMode();
@@ -51,6 +52,17 @@ export default function MainLayout({ children }: Props) {
         />
         <meta property='twitter:image' content='https://jdjuan.io/og-card.png'></meta>
       </Head>
+      <Script async src='https://www.googletagmanager.com/gtag/js?id=G-K9XYESQ0KL'></Script>
+      <Script
+        id='google-analytics'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-K9XYESQ0KL');`,
+        }}
+      ></Script>
       <main
         className={`${inter.variable} ${roboto.variable} ${inter.className} relative select-none text-sm text-neutral-800 dark:text-slate-50`}
       >
