@@ -33,19 +33,13 @@ export default function MainLayout({ children }: Props) {
 
         {/* Primary Meta Tags */}
         <meta name='title' content='Juan Herrera' />
-        <meta
-          name='description'
-          content="This is my personal website in which I share my latest insights on the topics I\'m most interested in."
-        />
+        <meta name='description' content="Find my latest insights on the topics I'm most passionate about." />
 
         {/* Open Graph / Facebook */}
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://jdjuan.io/' />
         <meta property='og:title' content='Juan Herrera' />
-        <meta
-          property='og:description'
-          content="This is my personal website in which I share my latest insights on the topics I\'m most interested in."
-        />
+        <meta property='og:description' content="Find my latest insights on the topics I'm most passionate about." />
         <meta property='og:image' content='https://jdjuan.io/og-card.png' />
         {/* TWITTER  */}
         <meta property='twitter:card' content='summary_large_image' />
@@ -53,7 +47,7 @@ export default function MainLayout({ children }: Props) {
         <meta property='twitter:title' content='Juan Herrera' />
         <meta
           property='twitter:description'
-          content="This is my personal website in which I share my latest insights on the topics I\'m most interested in."
+          content="Find my latest insights on the topics I'm most passionate about."
         />
         <meta property='twitter:image' content='https://jdjuan.io/og-card.png'></meta>
       </Head>
