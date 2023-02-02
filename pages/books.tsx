@@ -21,13 +21,13 @@ export const Books: NextPageWithLayout = () => {
             href={link}
             key={title}
             target='_blank'
-            className='border-transparent relative box-border flex  max-w-sm cursor-pointer 
-            rounded-bl-2xl rounded-br-2xl border-t-8 border-teal-800 bg-neutral-100 
-            p-4 hover:scale-105 dark:rounded-2xl dark:border-t-0 dark:bg-slate-900  sm:max-w-lg sm:p-5 lg:max-w-full'
+            className='border-transparent relative box-border flex max-w-sm  cursor-pointer rounded-bl-2xl 
+            rounded-br-2xl border-t-4 border-teal-800 bg-neutral-100 p-4 
+            shadow-md hover:scale-105 dark:rounded-2xl dark:border-t-0 dark:bg-slate-900  sm:max-w-lg sm:p-5 lg:max-w-full'
           >
             {/* RATING */}
             <div className='absolute top-3 right-3 w-12'>
-              <p className='flex aspect-square items-center justify-center rounded-lg border-2 border-teal-900 bg-neutral-50 text-base font-medium  text-neutral-900 dark:border-teal-500 dark:bg-slate-800 dark:text-slate-50 '>
+              <p className='flex aspect-square items-center justify-center rounded-lg border-2 border-teal-900 bg-neutral-50 text-base font-medium text-neutral-900  shadow-md dark:border-teal-500 dark:bg-slate-800 dark:text-slate-50 '>
                 {rating}/5
               </p>
             </div>

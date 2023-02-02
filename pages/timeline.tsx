@@ -40,7 +40,7 @@ const Timeline = () => {
               <div
                 onClick={(e) => withEvents && prevent(select, yearTimeline)(e)}
                 className={cx(
-                  "flex aspect-square flex-col items-center justify-center rounded-md bg-neutral-100 text-base last:bg-slate-50 dark:bg-slate-900 dark:text-slate-300 last:dark:bg-slate-800 sm:text-lg lg:text-xl ",
+                  "flex aspect-square flex-col items-center justify-center rounded-md bg-neutral-100 text-base shadow-md last:bg-slate-50 dark:bg-slate-900 dark:text-slate-300 last:dark:bg-slate-800 sm:text-lg lg:text-xl ",
                   {
                     "cursor-pointer": withEvents,
                     "text-neutral-200 dark:text-slate-700": notSelectedWithouEvents,
@@ -73,14 +73,14 @@ const Timeline = () => {
         </div>
         {/* HIGHLIGHTS */}
         {selectedYearTimeline !== undefined && (
-          <div className='self-start rounded-bl-2xl rounded-br-2xl border-t-8 border-teal-800 bg-neutral-100 p-5 pt-4 dark:bg-slate-900 md:p-7 md:pt-6'>
+          <div className='self-start rounded-bl-2xl rounded-br-2xl border-t-8 border-teal-800 bg-neutral-100 p-5 pt-4 shadow-md dark:bg-slate-900 md:p-7 md:pt-6'>
             <div className='mb-3 text-lg font-medium text-neutral-900 dark:text-slate-200 sm:mb-4 sm:text-xl lg:mb-5 lg:text-2xl'>
               When I was {selectedYearTimeline?.year + 1 || 0}
             </div>
             {selectedYearTimeline?.highlights.map((highlight, index) => (
               <div
                 key={index}
-                className='mb-4 rounded-md bg-neutral-200 p-3 text-xs font-medium text-neutral-800 last:mb-0 dark:bg-slate-800 dark:text-slate-50 md:text-sm lg:text-base'
+                className='mb-4 rounded-md bg-neutral-200 p-3 text-xs font-medium text-neutral-800 shadow-md last:mb-0 dark:bg-slate-800 dark:text-slate-50 md:text-sm lg:text-base'
               >
                 <highlight.text></highlight.text>
                 {highlight.subtext && (

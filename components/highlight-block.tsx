@@ -7,7 +7,7 @@ const HighlightBlockComponent = ({ highlightBlock }: Props) => {
   return (
     <div>
       <Link passHref={isExternalLink} target={isExternalLink ? "_blank" : "_self"} href={link}>
-        <div className='bordder box-border grid max-w-xs grid-cols-12 items-center gap-3 rounded-lg border-2 border-neutral-100 bg-neutral-50 hover:scale-105 hover:border-teal-900 dark:border-slate-700 dark:bg-slate-800 hover:dark:border-slate-50 sm:gap-4'>
+        <div className='bordder box-border grid max-w-xs grid-cols-12 items-center gap-3 rounded-lg border-2 border-neutral-100 bg-neutral-50 shadow-sm hover:scale-105 hover:border-teal-900 dark:border-slate-700 dark:bg-slate-800 hover:dark:border-slate-50 sm:gap-4'>
           {/* HIGHLIGHT TITLE */}
           <h3 className='col-span-full rounded-t-md bg-teal-800 px-3 py-1.5 text-lg font-extralight text-neutral-50 dark:bg-slate-900 dark:text-slate-300 sm:px-4 sm:py-2 md:text-xl'>
             {title}

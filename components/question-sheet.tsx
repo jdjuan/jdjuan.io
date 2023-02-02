@@ -16,7 +16,7 @@ const QuestionSheet = ({ questionSheet }: Props) => {
           <div className='grid max-w-5xl gap-4 md:grid-cols-2 md:gap-6'>
             {questionSheet.items.map((item) => (
               <div
-                className='max-w-lg rounded-bl-2xl rounded-br-2xl border-t-8 border-teal-800 bg-neutral-100 p-4 pt-2 dark:bg-slate-900 md:p-5 md:pt-3 lg:p-6 lg:pt-4'
+                className='max-w-lg rounded-bl-2xl rounded-br-2xl border-t-8 border-teal-800 bg-neutral-100 p-4 pt-2 shadow-md dark:bg-slate-900 md:p-5 md:pt-3 lg:p-6 lg:pt-4'
                 key={item.question}
               >
                 {/* QUESTION */}
@@ -38,7 +38,7 @@ const QuestionSheet = ({ questionSheet }: Props) => {
                           className={cx(
                             "mb-2 mr-2 inline-block rounded-md border border-neutral-700 p-2 dark:border-slate-700 dark:bg-slate-800 ",
                             {
-                              "hover:dark:border-slate-50": !!link,
+                              "hover:bg-teal-800 hover:text-neutral-50 hover:dark:border-slate-50": !!link,
                             }
                           )}
                         >
