@@ -64,7 +64,7 @@ export default function MainLayout({ children }: Props) {
         }}
       ></Script>
       <main
-        className={`${inter.variable} ${roboto.variable} ${inter.className} relative select-none text-sm text-neutral-800 dark:text-slate-50`}
+        className={`${inter.variable} ${roboto.variable} ${inter.className} relative text-sm text-neutral-800 dark:text-slate-50`}
       >
         <div className='p-6 sm:p-12 md:p-16 lg:mx-auto lg:max-w-6xl'>
           <button

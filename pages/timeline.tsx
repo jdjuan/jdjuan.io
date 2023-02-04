@@ -40,7 +40,7 @@ const Timeline = () => {
               <div
                 onClick={(e) => withEvents && prevent(select, yearTimeline)(e)}
                 className={cx(
-                  "flex aspect-square flex-col items-center justify-center rounded-md bg-neutral-100 text-base shadow-md last:bg-slate-50 dark:bg-slate-900 dark:text-slate-300 last:dark:bg-slate-800 sm:text-lg lg:text-xl ",
+                  "flex aspect-square select-none flex-col items-center justify-center rounded-md bg-neutral-100 text-base shadow-md last:bg-slate-50 dark:bg-slate-900 dark:text-slate-300 last:dark:bg-slate-800 sm:text-lg lg:text-xl ",
                   {
                     "cursor-pointer": withEvents,
                     "text-neutral-200 dark:text-slate-700": notSelectedWithouEvents,
