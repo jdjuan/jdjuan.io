@@ -80,6 +80,24 @@ export const highlights: Highlight[] = [
         ),
       },
       {
+        title: "Nine Questions",
+        link: "https://nine-questions.jdjuan.io",
+        isExternalLink: true,
+        topics: ["Challenge your gut feeling", "Built in 2023", "300 Users"],
+        icon: (
+          <svg height='100%' width='100%' viewBox='0 0 24 24'>
+            <path
+              className='fill-teal-500 dark:fill-teal-300'
+              d='M5 8a7 7 0 1 1 10.62 6l-.64 3.2a1 1 0 0 1-.98.8h-4a1 1 0 0 1-.98-.8L8.38 14A7 7 0 0 1 5 8zm12 0a5 5 0 0 0-5-5 1 1 0 0 0 0 2 3 3 0 0 1 3 3 1 1 0 0 0 2 0z'
+            />
+            <path
+              className='fill-teal-900 dark:fill-teal-700'
+              d='M15 21a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2 1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z'
+            />
+          </svg>
+        ),
+      },
+      {
         title: "Der Die Das",
         link: "http://derdiedas.jdjuan.io",
         isExternalLink: true,
@@ -93,24 +111,6 @@ export const highlights: Highlight[] = [
             <path
               className='fill-teal-800 dark:fill-teal-700'
               d='M13.33 18l-1.4 3.38a1 1 0 0 1-1.85-.76l5-12a1 1 0 0 1 1.84 0l5 12a1 1 0 0 1-1.84.76L18.67 18h-5.34zm.84-2h3.66L16 11.6 14.17 16z'
-            />
-          </svg>
-        ),
-      },
-      {
-        title: "P.A.D.A.",
-        link: "http://pada.jdjuan.io",
-        isExternalLink: true,
-        topics: ["Plan better meetings", "Launched in 2019", "Anybody?"],
-        icon: (
-          <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
-            <path
-              className='fill-teal-500 dark:fill-teal-300'
-              d='M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm0 5v10h14V9H5z'
-            />
-            <path
-              className='fill-teal-900 dark:fill-teal-700'
-              d='M13 13h3v3h-3v-3zM7 2a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm10 0a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1z'
             />
           </svg>
         ),
