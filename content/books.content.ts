@@ -340,6 +340,15 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/20706519-the-love-secret?ref=nav_sb_ss_2_20",
   },
   {
+    title: "The 5AM Club",
+    author: "Robin Sharma",
+    yearRead: 2023,
+    rating: 1,
+    comment: "",
+    isbn: "1443456624",
+    link: "https://www.goodreads.com/book/show/37502596-the-5-am-club",
+  },
+  {
     title: "Talking to Robots",
     author: "David Ewing Duncan",
     yearRead: 2019,
