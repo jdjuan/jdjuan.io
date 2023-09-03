@@ -65,7 +65,7 @@ export const highlights: Highlight[] = [
         title: "Tandem GPT",
         link: "https://www.tandem-gpt.com/",
         isExternalLink: true,
-        topics: ["Practice languages with AI", "Launched in 2023", "People said it was cool"],
+        topics: ["Practice languages with AI", "Launched in 2023", "+900 users"],
         icon: (
           <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
             <path
