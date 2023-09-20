@@ -357,4 +357,13 @@ export const booksContent: Book[] = [
     imgUrl: "https://m.media-amazon.com/images/I/41WjbGvYdSL._AC_SY780_.jpg",
     link: "https://www.goodreads.com/book/show/42835232-talking-to-robots?ref=nav_sb_ss_1_17",
   },
+  {
+    title: "Never Split the Difference",
+    author: "Chris Voss",
+    yearRead: 2023,
+    rating: 5,
+    comment: "",
+    imgUrl: "https://m.media-amazon.com/images/I/71II9VzdEhL._SY522_.jpg",
+    link: "https://www.goodreads.com/en/book/show/123857637",
+  },
 ];
