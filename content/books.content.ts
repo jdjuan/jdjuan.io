@@ -56,6 +56,15 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/34946912-the-manual?ref=nav_sb_ss_2_15",
   },
   {
+    title: "Never Split the Difference",
+    author: "Chris Voss",
+    yearRead: 2023,
+    rating: 5,
+    comment: "",
+    imgUrl: "https://m.media-amazon.com/images/I/71II9VzdEhL._SY522_.jpg",
+    link: "https://www.goodreads.com/en/book/show/123857637",
+  },
+  {
     title: "Start with Why",
     author: "Simon Sinek",
     yearRead: 2018,
@@ -358,12 +367,12 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/42835232-talking-to-robots?ref=nav_sb_ss_1_17",
   },
   {
-    title: "Never Split the Difference",
-    author: "Chris Voss",
+    title: "Enjoy Your Solo",
+    author: "Mary Delia Allen",
     yearRead: 2023,
-    rating: 5,
+    rating: 1,
     comment: "",
-    imgUrl: "https://m.media-amazon.com/images/I/71II9VzdEhL._SY522_.jpg",
-    link: "https://www.goodreads.com/en/book/show/123857637",
+    imgUrl: "https://m.media-amazon.com/images/I/71Dcw3Q9KZL._SY522_.jpg",
+    link: "https://www.goodreads.com/book/show/59566471-enjoy-your-solo",
   },
 ];
