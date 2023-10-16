@@ -30,7 +30,9 @@ const Intro = () => {
           <p className='mb-1 text-neutral-900 dark:text-slate-300 lg:text-lg'>
             Google Developer Expert in Angular and Web Technologies based in Austria.
           </p>
-          <p className='text-neutral-400 dark:text-slate-500 lg:text-base'>Currently building one app a month.</p>
+          <p className='text-neutral-400 dark:text-slate-500 lg:text-base'>
+            Currently building one app <span className='line-through'>a month</span> every few months.
+          </p>
         </div>
       </div>
       {/* END INTRO */}
