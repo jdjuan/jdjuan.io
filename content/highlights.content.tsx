@@ -62,10 +62,10 @@ export const highlights: Highlight[] = [
     description: "Projects I'm proud of",
     items: [
       {
-        title: "Tandem GPT",
-        link: "https://www.tandem-gpt.com/",
+        title: "Parlai",
+        link: "https://parlai.app/",
         isExternalLink: true,
-        topics: ["Practice languages with AI", "Launched in 2023", "+900 users"],
+        topics: ["WhatsApp Language Bot", "Co-founded in 2023", "It's ongoing!"],
         icon: (
           <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
             <path
@@ -80,10 +80,10 @@ export const highlights: Highlight[] = [
         ),
       },
       {
-        title: "HeadScroll",
-        link: "https://headscroll.io/",
+        title: "Tandem GPT",
+        link: "https://www.tandem-gpt.com/",
         isExternalLink: true,
-        topics: ["Play music with ease", "Co-founded in 2021", "10 users per day"],
+        topics: ["Practice scenarios with AI", "Launched in 2023", "+900 users"],
         icon: (
           <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
             <path
