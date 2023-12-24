@@ -28,10 +28,14 @@ const Intro = () => {
         </div>
         <div className='col-span-9 col-start-4 font-light sm:col-span-9 sm:col-start-4 md:col-start-3'>
           <p className='mb-1 text-neutral-900 dark:text-slate-300 lg:text-lg'>
-            Google Developer Expert in Angular and Web Technologies based in Austria.
+            Google Developer Expert based in Austria.
           </p>
           <p className='text-neutral-400 dark:text-slate-500 lg:text-base'>
-            Currently building one app <span className='line-through'>a month</span> every few months.
+            Currently building{" "}
+            <a href='https://www.parlai.app/' target='_blank' rel='noopener noreferrer' className='underline'>
+              Parlai
+            </a>{" "}
+            🚀
           </p>
         </div>
       </div>

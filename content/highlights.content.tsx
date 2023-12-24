@@ -4,6 +4,9 @@ export const highlights: Highlight[] = [
   {
     title: "Insights",
     description: "1-minute ideas",
+    footer: "My Blog",
+    footerUrl: "https://jdjuan.medium.com/",
+    isFooterUrlExternal: true,
     items: [
       {
         title: "Behavior",
@@ -60,6 +63,9 @@ export const highlights: Highlight[] = [
   {
     title: "Apps",
     description: "Projects I'm proud of",
+    footer: "Older Apps",
+    footerUrl: "apps",
+    isFooterUrlExternal: false,
     items: [
       {
         title: "Parlai",
@@ -67,41 +73,58 @@ export const highlights: Highlight[] = [
         isExternalLink: true,
         topics: ["WhatsApp Language Bot", "Co-founded in 2023", "It's ongoing!"],
         icon: (
-          <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+            <rect width='16' height='13' x='2' y='2' className='fill-teal-800 dark:fill-teal-700' rx='2' />
             <path
               className='fill-teal-400 dark:fill-teal-300'
-              d='M22 17a1 1 0 0 1-2 0v-5a8 8 0 1 0-16 0v5a1 1 0 0 1-2 0v-5a10 10 0 1 1 20 0v5z'
-            />
-            <path
-              className='fill-teal-800 dark:fill-teal-700'
-              d='M7 12a2 2 0 0 1 2 2v6a2 2 0 1 1-4 0v-6c0-1.1.9-2 2-2zm10 0a2 2 0 0 1 2 2v6a2 2 0 1 1-4 0v-6c0-1.1.9-2 2-2z'
+              d='M6 16V8c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v13a1 1 0 0 1-1.7.7L16.58 18H8a2 2 0 0 1-2-2z'
             />
           </svg>
+          // <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
+          //   <path
+          //     className='fill-teal-400 dark:fill-teal-300'
+          //     d='M22 17a1 1 0 0 1-2 0v-5a8 8 0 1 0-16 0v5a1 1 0 0 1-2 0v-5a10 10 0 1 1 20 0v5z'
+          //   />
+          //   <path
+          //     className='fill-teal-800 dark:fill-teal-700'
+          //     d='M7 12a2 2 0 0 1 2 2v6a2 2 0 1 1-4 0v-6c0-1.1.9-2 2-2zm10 0a2 2 0 0 1 2 2v6a2 2 0 1 1-4 0v-6c0-1.1.9-2 2-2z'
+          //   />
+          // </svg>
         ),
       },
       {
         title: "Tandem GPT",
         link: "https://www.tandem-gpt.com/",
         isExternalLink: true,
-        topics: ["Practice scenarios with AI", "Launched in 2023", "+900 users"],
+        topics: ["Practice languages with AI", "Launched in 2023", "+900 users"],
         icon: (
           <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
             <path
               className='fill-teal-400 dark:fill-teal-300'
-              d='M22 17a1 1 0 0 1-2 0v-5a8 8 0 1 0-16 0v5a1 1 0 0 1-2 0v-5a10 10 0 1 1 20 0v5z'
+              d='M10.41 10l1.3 1.3a1 1 0 0 1-1.42 1.4L9 11.42l-3.3 3.3a1 1 0 1 1-1.4-1.42L7.58 10l-1.3-1.3a1 1 0 0 1 1.42-1.4L9 8.58l.54-.54A5 5 0 0 0 10.98 5H3a1 1 0 1 1 0-2h5V2a1 1 0 1 1 2 0v1h5a1 1 0 0 1 0 2h-2.02a7 7 0 0 1-2.03 4.46l-.54.54z'
             />
             <path
               className='fill-teal-800 dark:fill-teal-700'
-              d='M7 12a2 2 0 0 1 2 2v6a2 2 0 1 1-4 0v-6c0-1.1.9-2 2-2zm10 0a2 2 0 0 1 2 2v6a2 2 0 1 1-4 0v-6c0-1.1.9-2 2-2z'
+              d='M13.33 18l-1.4 3.38a1 1 0 0 1-1.85-.76l5-12a1 1 0 0 1 1.84 0l5 12a1 1 0 0 1-1.84.76L18.67 18h-5.34zm.84-2h3.66L16 11.6 14.17 16z'
             />
           </svg>
+          // <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
+          //   <path
+          //     className='fill-teal-400 dark:fill-teal-300'
+          //     d='M22 17a1 1 0 0 1-2 0v-5a8 8 0 1 0-16 0v5a1 1 0 0 1-2 0v-5a10 10 0 1 1 20 0v5z'
+          //   />
+          //   <path
+          //     className='fill-teal-800 dark:fill-teal-700'
+          //     d='M7 12a2 2 0 0 1 2 2v6a2 2 0 1 1-4 0v-6c0-1.1.9-2 2-2zm10 0a2 2 0 0 1 2 2v6a2 2 0 1 1-4 0v-6c0-1.1.9-2 2-2z'
+          //   />
+          // </svg>
         ),
       },
       {
         title: "Nine Questions",
         link: "https://nine-questions.jdjuan.io",
         isExternalLink: true,
-        topics: ["Challenge your gut feeling", "Built in 2023", "300 Users"],
+        topics: ["Challenge your gut feeling", "Built in 2023", "+700 Users"],
         icon: (
           <svg height='100%' width='100%' viewBox='0 0 24 24'>
             <path
@@ -119,7 +142,7 @@ export const highlights: Highlight[] = [
       //   title: "Der Die Das",
       //   link: "http://derdiedas.jdjuan.io",
       //   isExternalLink: true,
-      //   topics: ["German genders", "Built in 2020", "278 users"],
+      //   topics: ["German genders", "Built in 2020", "+500 users"],
       //   icon: (
       //     <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 24 24'>
       //       <path
@@ -138,6 +161,9 @@ export const highlights: Highlight[] = [
   {
     title: "About",
     description: "Personal stuff",
+    footer: "Chronological Photos",
+    footerUrl: "https://photos.app.goo.gl/iJ5ycW5C3iTaouXu7",
+    isFooterUrlExternal: true,
     items: [
       {
         title: "Personal Questions",

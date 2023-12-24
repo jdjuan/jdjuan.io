@@ -28,6 +28,27 @@ export const Home: NextPageWithLayout = () => {
                 ></HighlightBlockComponent>
               ))}
             </div>
+            <a
+              className='flex justify-center items-center pb-6 text-neutral-50 dark:text-slate-300 hover:underline'
+              href={highlight.footerUrl}
+              target={highlight.isFooterUrlExternal ? "_blank" : "_self"}
+            >
+              {highlight.footer}
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 24 24'
+                className='w-5 ml-0.5 mb-0.5 mr-4 icon-external-window'
+              >
+                <path
+                  className='fill-teal-800 dark:fill-teal-400'
+                  d='M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z'
+                />
+                <path
+                  className='fill-teal-800 dark:fill-teal-400'
+                  d='M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z'
+                />
+              </svg>
+            </a>
           </div>
         ))}
       </div>

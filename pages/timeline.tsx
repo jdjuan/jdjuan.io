@@ -30,9 +30,9 @@ const Timeline = () => {
         <div className='grid max-h-fit grid-cols-6 gap-3 self-start sm:grid-cols-5 sm:gap-4 lg:grid-cols-6'>
           {new Array(age).fill(true).map((_, index) => {
             const yearTimeline = fullTimeline.find(({ year }) => year === index);
-            const withouEvents = !yearTimeline?.highlights.length;
-            const withEvents = !withouEvents;
-            const notSelectedWithouEvents = withouEvents && selectedYearTimeline?.year !== index;
+            const withoutEvents = !yearTimeline?.highlights.length;
+            const withEvents = !withoutEvents;
+            const notSelectedWithoutEvents = withoutEvents && selectedYearTimeline?.year !== index;
             const notSelectedWithEvents = withEvents && selectedYearTimeline?.year !== index;
             const selected = selectedYearTimeline?.year === index;
             return (
@@ -43,7 +43,7 @@ const Timeline = () => {
                   "flex aspect-square select-none flex-col items-center justify-center rounded-md bg-neutral-100 text-base shadow-md last:bg-slate-50 dark:bg-slate-900 dark:text-slate-300 last:dark:bg-slate-800 sm:text-lg lg:text-xl ",
                   {
                     "cursor-pointer": withEvents,
-                    "text-neutral-200 dark:text-slate-700": notSelectedWithouEvents,
+                    "text-neutral-200 dark:text-slate-700": notSelectedWithoutEvents,
                     "border-0 text-neutral-700 hover:border-2 hover:border-neutral-700 hover:dark:border-slate-200":
                       notSelectedWithEvents,
                     "scale-110 border-2 border-neutral-900 text-neutral-900 transition dark:border-slate-50 dark:text-slate-50":

@@ -1,6 +1,9 @@
 export interface Highlight {
   title: string;
   description: string;
+  footer: string;
+  footerUrl: string;
+  isFooterUrlExternal: boolean;
   items: HighlightBlock[];
 }
 
