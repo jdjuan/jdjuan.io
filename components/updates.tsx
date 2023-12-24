@@ -3,7 +3,7 @@ const Updates = () => {
     <div className='mb-16 text-sm'>
       <h2 className='mb-4 font-headline text-4xl'>Updates</h2>
       <p className='text-base font-light dark:font-extralight dark:text-slate-300'>
-        Once a month I share my latest insights over email. <br /> To receive them, subscribe{" "}
+        Once every few months I share updates over email. <br /> To receive them, subscribe{" "}
         <a className='underline dark:text-slate-200' target={"_blank"} href='http://eepurl.com/hp0sUn' rel='noreferrer'>
           here
         </a>
