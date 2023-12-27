@@ -5,8 +5,8 @@ export const fullTimeline: YearTimeline[] = [
     year: 0,
     highlights: [
       {
-        text: () => <>Was born in 1993 in Manizales, Colombia</>,
-        subtext: "",
+        text: () => <>I was born In Colombia</>,
+        subtext: "In the year of 1993.",
         type: [HighlighType.Lucky],
       },
     ],
@@ -155,7 +155,7 @@ export const fullTimeline: YearTimeline[] = [
     year: 17,
     highlights: [
       {
-        text: () => <>Enrrolled in the choir of the University</>,
+        text: () => <>Enrolled in University Choir</>,
         subtext: "I continued singing in choirs for the next 10 years.",
       },
       {
@@ -231,20 +231,7 @@ export const fullTimeline: YearTimeline[] = [
         type: [HighlighType.Professional, HighlighType.Achievement],
       },
       {
-        text: () => (
-          <>
-            Played{" "}
-            <a
-              href='https://photos.app.goo.gl/xjkFGofvrqcYeoyLA'
-              className='underline'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              songs
-            </a>{" "}
-            in the streets
-          </>
-        ),
+        text: () => <>Played songs in the streets</>,
         subtext: "A friend and I played guitar and sang songs for fun. We were invited to play at a bar.",
         type: [HighlighType.Achievement],
       },
@@ -377,7 +364,7 @@ export const fullTimeline: YearTimeline[] = [
       {
         text: () => (
           <>
-            Launched and built{" "}
+            Launched{" "}
             <a href='http://derdiedas.jdjuan.io' className='underline' target='_blank' rel='noopener noreferrer'>
               Der Die Das
             </a>
@@ -400,12 +387,17 @@ export const fullTimeline: YearTimeline[] = [
         text: () => (
           <>
             Co-founded{" "}
-            <a href='https://headscroll.io' target='_blank' className='underline' rel='noopener noreferrer'>
-              HeadScroll.io
+            <a
+              href='https://www.youtube.com/watch?v=oFL9mT2qML8'
+              className='underline'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              HeadScroll
             </a>
           </>
         ),
-        subtext: "This is the project that I'm most proud of.",
+        subtext: "App that helped people play instruments without interruptions.",
         type: [HighlighType.Achievement, HighlighType.Professional],
       },
       {
@@ -415,7 +407,7 @@ export const fullTimeline: YearTimeline[] = [
       },
       {
         text: () => <>Run the Grazathlon</>,
-        subtext: "An obstacle race I promised not to do again.",
+        subtext: "An obstacle race I promised myself never to run again.",
         type: [HighlighType.Achievement],
       },
     ],
@@ -433,6 +425,47 @@ export const fullTimeline: YearTimeline[] = [
         subtext: "Well, I'm proud of it.",
         type: [HighlighType.Achievement],
       },
+      {
+        text: () => <>Joined an improv theater group</>,
+        subtext: "Realized is something I enjoy a lot.",
+        type: [HighlighType.Achievement],
+      },
     ],
   },
+  {
+    year: 29,
+    highlights: [
+      {
+        text: () => <>Made money online for the first time</>,
+        subtext: "I co-founded TandemGPT and we reached 50€ MRR.",
+        type: [HighlighType.Achievement],
+      },
+      {
+        text: () => <>Achieved my fastest 10K run so far</>,
+        subtext: "Pace was 4'18\". I was 99 out 1300!",
+        type: [HighlighType.Achievement],
+      },
+      {
+        text: () => (
+          <>
+            Co-founded{" "}
+            <a href='https://www.parlai.app/' className='underline' target='_blank' rel='noopener noreferrer'>
+              Parlai
+            </a>
+          </>
+        ),
+        subtext: "The project I'm most proud of.",
+        type: [HighlighType.Achievement],
+      },
+      {
+        text: () => <>Spent Christmas secluded</>,
+        subtext: "I went to a cabin in the mountains and reflected on my life.",
+        type: [HighlighType.Achievement],
+      },
+    ],
+  },
+  // {
+  //   year: 30,
+  //   highlights: [],
+  // },
 ];
