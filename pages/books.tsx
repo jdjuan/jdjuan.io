@@ -12,7 +12,20 @@ export const Books: NextPageWithLayout = () => {
   return (
     <>
       <Navbar></Navbar>
-      <h1 className='mb-6 font-headline text-4xl md:mb-10'>Books Reviews</h1>
+      <div className='mb-4 flex flex-col items-center justify-between gap-2 md:mb-0 md:flex-row '>
+        <h1 className='font-headline text-4xl md:mb-10'>Books Reviews</h1>
+        <p className='font-light text-neutral-500 dark:text-slate-400 lg:text-base'>
+          Currently reading:{" "}
+          <a
+            href='https://www.goodreads.com/en/book/show/27036528'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='font-normal text-neutral-600 hover:underline dark:text-slate-300'
+          >
+            The Ego is the Enemy
+          </a>
+        </p>
+      </div>
       <div className='grid gap-4 md:gap-5 lg:grid-cols-2 lg:gap-6'>
         {/* BOOK BLOCKS */}
         {booksContent.map(({ author, comment, rating, title, yearRead, isbn, imgUrl, link }) => (

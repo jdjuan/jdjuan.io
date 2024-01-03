@@ -177,6 +177,7 @@ export const booksContent: Book[] = [
     author: "Marcus Aurelius",
     yearRead: 2022,
     rating: 4,
+    // isbn: "9781781391716",
     imgUrl: "https://i.ebayimg.com/images/g/HggAAOSwimBjL4BI/s-l1600.jpg",
     link: "https://www.goodreads.com/book/show/30659.Meditations?ref=nav_sb_ss_1_11",
   },
@@ -232,6 +233,14 @@ export const booksContent: Book[] = [
     comment: "",
     isbn: "9780812981605",
     link: "https://www.goodreads.com/book/show/12609433-the-power-of-habit?ref=nav_sb_ss_1_18",
+  },
+  {
+    title: "Obviously Awesome",
+    author: "April Dunford",
+    yearRead: 2023,
+    rating: 3,
+    isbn: "9781999023003",
+    link: "https://www.goodreads.com/en/book/show/45166937",
   },
   {
     title: "The leader who had no tittle",
