@@ -110,15 +110,6 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/45892276-you-re-not-listening",
   },
   {
-    title: "Bloodchild and other stories",
-    author: "Octavia E. Butler",
-    yearRead: 2021,
-    rating: 4,
-    comment: "My favorite fiction book.",
-    isbn: "1583226982",
-    link: "https://www.goodreads.com/book/show/60930.Bloodchild_and_Other_Stories?ref=nav_sb_ss_1_10",
-  },
-  {
     title: "Man's Search for Meaning",
     author: "Viktor Frankl",
     yearRead: 2022,
@@ -164,6 +155,15 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/6600.Los_cuatro_acuerdos?ref=nav_sb_ss_1_19",
   },
   {
+    title: "The Fruit of Knowledge",
+    author: "Liv Strömquist",
+    yearRead: 2024,
+    rating: 4,
+    comment: "Female genitalia properly explained.",
+    isbn: "978-0349010731",
+    link: "https://www.goodreads.com/book/show/36321848-fruit-of-knowledge?ref=nav_sb_ss_1_23",
+  },
+  {
     title: "Leaders Eat Last",
     author: "Simon Sinek",
     yearRead: 2018,
@@ -197,6 +197,14 @@ export const booksContent: Book[] = [
     comment: "",
     isbn: "9781422123126",
     link: "https://www.goodreads.com/book/show/2477223.Managing_Oneself?ref=nav_sb_ss_1_16",
+  },
+  {
+    title: "Bloodchild and other stories",
+    author: "Octavia E. Butler",
+    yearRead: 2021,
+    rating: 3,
+    isbn: "1583226982",
+    link: "https://www.goodreads.com/book/show/60930.Bloodchild_and_Other_Stories?ref=nav_sb_ss_1_10",
   },
   {
     title: "Designer Relationships",
@@ -374,6 +382,15 @@ export const booksContent: Book[] = [
     comment: "",
     isbn: "1443456624",
     link: "https://www.goodreads.com/book/show/37502596-the-5-am-club",
+  },
+  {
+    title: "Ego is the Enemy",
+    author: "Ryan Holiday",
+    yearRead: 2024,
+    rating: 1,
+    comment: "",
+    isbn: "978-1591847816",
+    link: "https://www.goodreads.com/en/book/show/27036528",
   },
   {
     title: "Talking to Robots",
