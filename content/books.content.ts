@@ -132,7 +132,7 @@ export const booksContent: Book[] = [
     author: "Daniel Kahneman",
     yearRead: 2018,
     rating: 4,
-    comment: "Deep insights into how we think",
+    comment: "Deep insights into how we think.",
     isbn: "9780141033570",
     link: "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow?ref=nav_sb_ss_1_22",
   },
