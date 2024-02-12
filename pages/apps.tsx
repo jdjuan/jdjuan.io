@@ -20,16 +20,16 @@ const Apps = () => {
           {/* APPS */}
           <div className='grid max-w-5xl gap-5 md:grid-cols-2 md:gap-6'>
             <App
-              title='HeadScroll'
-              description='HeadScroll was a website that allowed you to scroll music tabs with your head. Perfect for playing an instrument!'
-              image={headscroll}
-              url='https://www.youtube.com/watch?v=oFL9mT2qML8'
-            ></App>
-            <App
               title='Der Die Das'
               description='Look up the grammatical gender of any noun quickly and easily within your browser.'
               image={derdiedas}
               url='https://chromewebstore.google.com/detail/der-die-das/hmonhjepfljoekiljlfoeppbilobkbmj'
+            ></App>
+            <App
+              title='HeadScroll (Archived)'
+              description='HeadScroll was a website that allowed you to scroll music tabs with your head. Perfect for playing an instrument!'
+              image={headscroll}
+              url='https://www.youtube.com/watch?v=oFL9mT2qML8'
             ></App>
             <App
               title='P.A.D.A.'
@@ -44,13 +44,13 @@ const Apps = () => {
               url='https://jdjuan.github.io/ng-now/'
             ></App>
             <App
-              title='Kindd'
+              title='Kindd (Archived)'
               description='Social Media challenge to encourage people to share a kind advice with others.'
               image={kindd}
               url='https://photos.app.goo.gl/fABipdXjpe2gwP8VA'
             ></App>
             <App
-              title='The Compliment Project'
+              title='The Compliment Project (Archived)'
               description='An initiative to encourage people to express their feelings to their loved ones before it is too late.'
               image={compliment}
               url='https://drive.google.com/file/d/1j1NuLd-I-4mXb4-8BQFSKQ8a-hHs3iOo/view?usp=sharing'
