@@ -110,6 +110,15 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/45892276-you-re-not-listening",
   },
   {
+    title: "Der Ursprung Der Liebe",
+    author: "Liv Strömquist",
+    yearRead: 2024,
+    rating: 4,
+    comment: "Great insights on love and relationships.",
+    imgUrl: "https://m.media-amazon.com/images/I/71FtXp9Y7rL._SY522_.jpg",
+    link: "https://www.goodreads.com/book/show/39300293-der-ursprung-der-liebe",
+  },
+  {
     title: "Man's Search for Meaning",
     author: "Viktor Frankl",
     yearRead: 2022,

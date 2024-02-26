@@ -17,12 +17,12 @@ export const Books: NextPageWithLayout = () => {
         <p className='font-light text-neutral-500 dark:text-slate-400 lg:text-base'>
           Currently reading:{" "}
           <a
-            href='https://www.goodreads.com/book/show/39300293-der-ursprung-der-liebe'
+            href='https://www.goodreads.com/es/book/show/35957156'
             target='_blank'
             rel='noopener noreferrer'
             className='font-normal text-neutral-600 hover:underline dark:text-slate-300'
           >
-            Der Ursprung Der Liebe
+            Lost and Founder
           </a>
         </p>
       </div>
