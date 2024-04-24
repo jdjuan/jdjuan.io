@@ -29,7 +29,7 @@ export const Home: NextPageWithLayout = () => {
               ))}
             </div>
             <a
-              className='flex justify-center items-center pb-6 text-neutral-50 dark:text-slate-300 hover:underline'
+              className='flex items-center justify-center pb-6 text-neutral-500 hover:underline dark:text-slate-300'
               href={highlight.footerUrl}
               target={highlight.isFooterUrlExternal ? "_blank" : "_self"}
             >
@@ -37,7 +37,7 @@ export const Home: NextPageWithLayout = () => {
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
-                className='w-5 ml-0.5 mb-0.5 mr-4 icon-external-window'
+                className='icon-external-window ml-0.5 mb-0.5 mr-4 w-5'
               >
                 <path
                   className='fill-teal-800 dark:fill-teal-400'
