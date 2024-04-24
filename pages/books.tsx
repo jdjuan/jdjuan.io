@@ -13,7 +13,7 @@ export const Books: NextPageWithLayout = () => {
     <>
       <Navbar></Navbar>
       <div className='mb-4 flex flex-col items-center justify-between gap-2 md:mb-0 md:flex-row '>
-        <h1 className='font-headline text-4xl md:mb-10'>Books Reviews</h1>
+        <h1 className='font-headline text-4xl md:mb-10'>Book Reviews</h1>
         <p className='font-light text-neutral-500 dark:text-slate-400 lg:text-base'>
           Currently reading:{" "}
           <a
@@ -23,6 +23,15 @@ export const Books: NextPageWithLayout = () => {
             className='font-normal text-neutral-600 hover:underline dark:text-slate-300'
           >
             Lost and Founder
+          </a>{" "}
+          And{" "}
+          <a
+            href='https://www.goodreads.com/en/book/show/54944'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='font-normal text-neutral-600 hover:underline dark:text-slate-300'
+          >
+            The Ethical Slut
           </a>
         </p>
       </div>

@@ -164,11 +164,11 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/6600.Los_cuatro_acuerdos?ref=nav_sb_ss_1_19",
   },
   {
-    title: "The Fruit of Knowledge",
+    title: "Fruit of Knowledge",
     author: "Liv Strömquist",
     yearRead: 2024,
     rating: 4,
-    comment: "Female genitalia properly explained.",
+    comment: "Insights on society and women.",
     isbn: "978-0349010731",
     link: "https://www.goodreads.com/book/show/36321848-fruit-of-knowledge?ref=nav_sb_ss_1_23",
   },
