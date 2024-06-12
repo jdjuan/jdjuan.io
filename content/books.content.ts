@@ -163,6 +163,16 @@ export const booksContent: Book[] = [
     isbn: "9781878424938",
     link: "https://www.goodreads.com/book/show/6600.Los_cuatro_acuerdos?ref=nav_sb_ss_1_19",
   },
+
+  {
+    title: "The Ethical Slut",
+    author: "Dossie Easton and Janet Hardy",
+    yearRead: 2024,
+    rating: 4,
+    comment: "Best book about non-monogamy",
+    isbn: "9780399579660",
+    link: "https://www.goodreads.com/book/show/54944.The_Ethical_Slut",
+  },
   {
     title: "Fruit of Knowledge",
     author: "Liv Strömquist",
@@ -189,6 +199,15 @@ export const booksContent: Book[] = [
     // isbn: "9781781391716",
     imgUrl: "https://i.ebayimg.com/images/g/HggAAOSwimBjL4BI/s-l1600.jpg",
     link: "https://www.goodreads.com/book/show/30659.Meditations?ref=nav_sb_ss_1_11",
+  },
+  {
+    title: "Lost and Founder",
+    author: "Rand Fishkin",
+    comment: "A good picture into VC-funded companies",
+    yearRead: 2024,
+    rating: 4,
+    isbn: "0735213321",
+    link: "https://www.goodreads.com/en/book/show/54944",
   },
   {
     title: "Make",

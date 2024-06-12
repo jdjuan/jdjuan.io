@@ -17,21 +17,12 @@ export const Books: NextPageWithLayout = () => {
         <p className='font-light text-neutral-500 dark:text-slate-400 lg:text-base'>
           Currently reading:{" "}
           <a
-            href='https://www.goodreads.com/es/book/show/35957156'
+            href='https://www.goodreads.com/book/show/52523856-hell-yeah-or-no'
             target='_blank'
             rel='noopener noreferrer'
             className='font-normal text-neutral-600 hover:underline dark:text-slate-300'
           >
-            Lost and Founder
-          </a>{" "}
-          And{" "}
-          <a
-            href='https://www.goodreads.com/en/book/show/54944'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='font-normal text-neutral-600 hover:underline dark:text-slate-300'
-          >
-            The Ethical Slut
+            Hell Yeah or Not
           </a>
         </p>
       </div>
