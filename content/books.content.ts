@@ -2,6 +2,15 @@ import { Book } from "../models/book.interface";
 
 export const booksContent: Book[] = [
   {
+    title: "Hell Yeah or Not",
+    author: "Derek Sivers",
+    yearRead: 2024,
+    rating: 5,
+    comment: "Simple life-changing ideas.",
+    imgUrl: "https://m.media-amazon.com/images/I/61qdKIrzztL._SY522_.jpg",
+    link: "https://www.goodreads.com/book/show/52523856-hell-yeah-or-no",
+  },
+  {
     title: "Never Split the Difference",
     author: "Chris Voss",
     yearRead: 2023,
@@ -87,7 +96,7 @@ export const booksContent: Book[] = [
     author: "Rob Fitzpatrick",
     yearRead: 2023,
     rating: 4,
-    comment: "The right way to make interviews.",
+    comment: "The right way to get feedback.",
     isbn: "1492180742",
     link: "https://www.goodreads.com/en/book/show/52283963",
   },
