@@ -489,7 +489,8 @@ export const fullTimeline: YearTimeline[] = [
       },
       {
         text: () => <>Run my first improv show</>,
-        subtext: "I paired with Lynce to recreate Middleditch & Schwartz's show.",
+        subtext:
+          "I paired with Lynce to recreate Middleditch & Schwartz's show. It was my best creative performance ever. People loved it very much.",
         type: [HighlighType.Achievement],
       },
     ],
