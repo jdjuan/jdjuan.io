@@ -464,6 +464,36 @@ export const fullTimeline: YearTimeline[] = [
       },
     ],
   },
+  {
+    year: 30,
+    highlights: [
+      {
+        text: () => <>Started a minimalist lifestyle</>,
+        subtext: "Sold all my belongings and now only own 2 suitcases.",
+        type: [HighlighType.Achievement],
+      },
+      {
+        text: () => <>Started my sabbatical year</>,
+        subtext: "I moved to Colombia to spend time with my mom.",
+        type: [HighlighType.Achievement],
+      },
+      {
+        text: () => <>Constituted Parlai as a company</>,
+        subtext: "Nina and I are working on it full time.",
+        type: [HighlighType.Achievement],
+      },
+      {
+        text: () => <>Did my first standup comedy set</>,
+        subtext: "I told the story about the time I did a replica of my..",
+        type: [HighlighType.Achievement],
+      },
+      {
+        text: () => <>Run my first improv show</>,
+        subtext: "I paired with Lynce to recreate Middleditch & Schwartz's show.",
+        type: [HighlighType.Achievement],
+      },
+    ],
+  },
   // {
   //   year: 30,
   //   highlights: [],
