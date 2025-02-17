@@ -17,12 +17,12 @@ export const Books: NextPageWithLayout = () => {
         <p className='font-light text-neutral-500 dark:text-slate-400 lg:text-base'>
           Currently reading:{" "}
           <a
-            href='https://www.goodreads.com/book/show/29939161-radical-candor'
+            href='https://www.goodreads.com/en/book/show/209933737-useful-not-true'
             target='_blank'
             rel='noopener noreferrer'
             className='font-normal text-neutral-600 hover:underline dark:text-slate-300'
           >
-            Radical Candor
+            Useful not true
           </a>
         </p>
       </div>

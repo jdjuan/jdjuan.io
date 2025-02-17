@@ -92,6 +92,15 @@ export const booksContent: Book[] = [
     link: "https://www.goodreads.com/book/show/15014.Crucial_Conversations?from_search=true&from_srp=true&qid=lbv9e2m2Ag&rank=1",
   },
   {
+    title: "Deep Work",
+    author: "Cal Newport",
+    yearRead: 2025,
+    rating: 4,
+    comment: "Skyrocket your productivity.",
+    isbn: "1455586692",
+    link: "https://www.goodreads.com/book/show/25744928-deep-work",
+  },
+  {
     title: "The Mom Test",
     author: "Rob Fitzpatrick",
     yearRead: 2023,
@@ -347,6 +356,15 @@ export const booksContent: Book[] = [
     comment: "",
     imgUrl: "https://m.media-amazon.com/images/I/51u8ZRDCVoL._SX330_BO1,204,203,200_.jpg",
     link: "https://www.goodreads.com/book/show/69571.Rich_Dad_Poor_Dad",
+  },
+  {
+    title: "Radical Candor",
+    author: "Kim Scott",
+    yearRead: 2024,
+    rating: 3,
+    comment: "",
+    isbn: "1250103509",
+    link: "https://www.goodreads.com/book/show/29939161-radical-candor",
   },
   {
     title: "The way of the Superior Man",
