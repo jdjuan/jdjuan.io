@@ -3,7 +3,7 @@ import { Link } from "../models/link.interface";
 const Footer = () => {
   const links: Link[] = [
     { text: "Blog", link: "https://medium.com/@jdjuan" },
-    { text: "Twitter", link: "https://twitter.com/jdjuan" },
+    { text: "X", link: "https://twitter.com/jdjuan" },
     { text: "LinkedIn", link: "https://www.linkedin.com/in/jdjuan" },
   ];
   return (
