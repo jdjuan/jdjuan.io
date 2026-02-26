@@ -17,6 +17,17 @@ type Product = {
 type ExperienceStep = "intro" | "swiping" | "review" | "name" | "submitted";
 type SwipeDirection = "left" | "right";
 type SwipeRecord = { index: number; direction: SwipeDirection };
+type MarketplaceStorage = {
+  version: 1;
+  currentIndex: number;
+  sessionStartIndex: number;
+  pickedSlugs: string[];
+  passedCount: number;
+  swipeHistory: SwipeRecord[];
+  step: ExperienceStep;
+  offerAmount: number;
+  name: string;
+};
 
 const headlineFont = Fredoka({ subsets: ["latin"], weight: ["500", "600", "700"] });
 const bodyFont = Nunito({ subsets: ["latin"], weight: ["400", "600", "700"] });
@@ -27,6 +38,7 @@ const CARD_ENTER_MS = 480;
 const OFFER_MIN = 0;
 const OFFER_MAX = 80;
 const PRELOAD_AHEAD_COUNT = 6;
+const MARKETPLACE_STORAGE_KEY = "marketplace-state-v1";
 
 const BASE_PRODUCTS: Omit<Product, "slug">[] = [
   {
@@ -270,6 +282,8 @@ const MarketplacePage: NextPage = () => {
   const [dragOrigin, setDragOrigin] = useState<{ x: number; y: number } | null>(null);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const hasInitializedFromQueryRef = useRef(false);
+  const hasCheckedStorageRef = useRef(false);
+  const hasRestoredFromStorageRef = useRef(false);
   const preloadedImagePathsRef = useRef<Set<string>>(new Set());
   const audioContextRef = useRef<AudioContext | null>(null);
 
@@ -289,6 +303,7 @@ const MarketplacePage: NextPage = () => {
   const safeOfferAmount = Math.min(OFFER_MAX, Math.max(OFFER_MIN, offerAmount));
   const showSwipeDemo =
     step === "swiping" && currentIndex === sessionStartIndex && !hasSwipeInteraction && !dragOrigin && !isLeaving;
+  const productBySlug = useMemo(() => new Map(PRODUCTS.map((product) => [product.slug, product])), []);
 
   const preloadImagePath = useCallback((imagePath: string) => {
     if (typeof window === "undefined" || preloadedImagePathsRef.current.has(imagePath)) {
@@ -302,11 +317,110 @@ const MarketplacePage: NextPage = () => {
   }, []);
 
   useEffect(() => {
-    if (!router.isReady || hasInitializedFromQueryRef.current) {
+    if (typeof window === "undefined" || !router.isReady || hasCheckedStorageRef.current) {
+      return;
+    }
+
+    hasCheckedStorageRef.current = true;
+    const rawStorageState = window.localStorage.getItem(MARKETPLACE_STORAGE_KEY);
+
+    if (!rawStorageState) {
+      return;
+    }
+
+    try {
+      const parsedState = JSON.parse(rawStorageState) as Partial<MarketplaceStorage>;
+      if (!parsedState || parsedState.version !== 1) {
+        return;
+      }
+
+      const parsedCurrentIndex =
+        typeof parsedState.currentIndex === "number" && Number.isInteger(parsedState.currentIndex)
+          ? Math.min(Math.max(parsedState.currentIndex, 0), PRODUCTS.length)
+          : 0;
+
+      const parsedSessionStartIndex =
+        typeof parsedState.sessionStartIndex === "number" && Number.isInteger(parsedState.sessionStartIndex)
+          ? Math.min(Math.max(parsedState.sessionStartIndex, 0), parsedCurrentIndex)
+          : 0;
+
+      const parsedStep: ExperienceStep =
+        parsedState.step === "intro" ||
+        parsedState.step === "swiping" ||
+        parsedState.step === "review" ||
+        parsedState.step === "name" ||
+        parsedState.step === "submitted"
+          ? parsedState.step
+          : "intro";
+
+      const parsedSwipeHistory = Array.isArray(parsedState.swipeHistory)
+        ? parsedState.swipeHistory.filter(
+            (swipe): swipe is SwipeRecord =>
+              Boolean(swipe) &&
+              (swipe.direction === "left" || swipe.direction === "right") &&
+              Number.isInteger(swipe.index) &&
+              swipe.index >= 0 &&
+              swipe.index < PRODUCTS.length,
+          )
+        : [];
+
+      const parsedPickedProducts = Array.isArray(parsedState.pickedSlugs)
+        ? parsedState.pickedSlugs
+            .map((slug) => (typeof slug === "string" ? productBySlug.get(slug) : null))
+            .filter((product): product is Product => Boolean(product))
+        : [];
+
+      const parsedPassedCount =
+        typeof parsedState.passedCount === "number" && Number.isFinite(parsedState.passedCount)
+          ? Math.max(0, Math.floor(parsedState.passedCount))
+          : 0;
+
+      const parsedOfferAmount =
+        typeof parsedState.offerAmount === "number" && Number.isFinite(parsedState.offerAmount)
+          ? Math.min(OFFER_MAX, Math.max(OFFER_MIN, Math.floor(parsedState.offerAmount)))
+          : 0;
+
+      const parsedName = typeof parsedState.name === "string" ? parsedState.name : "";
+      const storageCurrentProduct = PRODUCTS[parsedCurrentIndex];
+
+      if (currentQueryItem && (!storageCurrentProduct || storageCurrentProduct.slug !== currentQueryItem)) {
+        return;
+      }
+
+      const normalizedStep: ExperienceStep =
+        parsedStep === "swiping" && parsedCurrentIndex >= PRODUCTS.length
+          ? "review"
+          : parsedStep === "name" && parsedPickedProducts.length === 0
+            ? "review"
+            : parsedStep === "submitted" && parsedPickedProducts.length === 0
+              ? "review"
+              : parsedStep;
+
+      setCurrentIndex(parsedCurrentIndex);
+      setSessionStartIndex(parsedSessionStartIndex);
+      setPickedProducts(parsedPickedProducts);
+      setPassedCount(parsedPassedCount);
+      setSwipeHistory(parsedSwipeHistory);
+      setStep(normalizedStep);
+      setOfferAmount(parsedOfferAmount);
+      setName(parsedName);
+      setHasSwipeInteraction(parsedSwipeHistory.length > 0);
+      hasRestoredFromStorageRef.current = true;
+    } catch {
+      window.localStorage.removeItem(MARKETPLACE_STORAGE_KEY);
+    }
+  }, [currentQueryItem, productBySlug, router.isReady]);
+
+  useEffect(() => {
+    if (!router.isReady || hasInitializedFromQueryRef.current || !hasCheckedStorageRef.current) {
       return;
     }
 
     hasInitializedFromQueryRef.current = true;
+
+    if (hasRestoredFromStorageRef.current) {
+      return;
+    }
 
     if (!currentQueryItem) {
       return;
@@ -321,6 +435,36 @@ const MarketplacePage: NextPage = () => {
     setCurrentIndex(sharedProductIndex);
     setStep("swiping");
   }, [currentQueryItem, router.isReady]);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || !router.isReady || !hasCheckedStorageRef.current) {
+      return;
+    }
+
+    const storageSnapshot: MarketplaceStorage = {
+      version: 1,
+      currentIndex,
+      sessionStartIndex,
+      pickedSlugs: pickedProducts.map((product) => product.slug),
+      passedCount,
+      swipeHistory,
+      step,
+      offerAmount: safeOfferAmount,
+      name,
+    };
+
+    window.localStorage.setItem(MARKETPLACE_STORAGE_KEY, JSON.stringify(storageSnapshot));
+  }, [
+    currentIndex,
+    sessionStartIndex,
+    pickedProducts,
+    passedCount,
+    swipeHistory,
+    step,
+    safeOfferAmount,
+    name,
+    router.isReady,
+  ]);
 
   useEffect(() => {
     if (!router.isReady || step !== "swiping" || !currentProduct) {
@@ -571,6 +715,10 @@ const MarketplacePage: NextPage = () => {
     setIsCardEntering(false);
     setHasSwipeInteraction(false);
     setActivePickedProduct(null);
+    hasRestoredFromStorageRef.current = false;
+    if (typeof window !== "undefined") {
+      window.localStorage.removeItem(MARKETPLACE_STORAGE_KEY);
+    }
     void router.replace("/marketplace", undefined, { shallow: true, scroll: false });
   }, [router]);
 
@@ -1126,8 +1274,7 @@ const MarketplacePage: NextPage = () => {
                 <div className='mx-auto max-w-3xl space-y-4 rounded-3xl bg-emerald-50 p-6 shadow-lg sm:p-8'>
                   <h2 className='text-3xl font-bold text-emerald-900'>Offer submitted</h2>
                   <p className='max-w-2xl text-sm text-emerald-800'>
-                    Thanks {name.trim()}. Your selection and offer were sent by email, and Juan will get back to you
-                    soon.
+                    Thanks {name.trim()}. Juan received your offer by email.
                   </p>
                   <Link
                     href='/'
