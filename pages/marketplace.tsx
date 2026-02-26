@@ -26,6 +26,7 @@ const SWIPE_EXIT_MS = 380;
 const CARD_ENTER_MS = 480;
 const OFFER_MIN = 0;
 const OFFER_MAX = 80;
+const PRELOAD_AHEAD_COUNT = 6;
 
 const BASE_PRODUCTS: Omit<Product, "slug">[] = [
   {
@@ -269,6 +270,7 @@ const MarketplacePage: NextPage = () => {
   const [dragOrigin, setDragOrigin] = useState<{ x: number; y: number } | null>(null);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const hasInitializedFromQueryRef = useRef(false);
+  const preloadedImagePathsRef = useRef<Set<string>>(new Set());
   const audioContextRef = useRef<AudioContext | null>(null);
 
   const currentProduct = PRODUCTS[currentIndex];
@@ -287,6 +289,17 @@ const MarketplacePage: NextPage = () => {
   const safeOfferAmount = Math.min(OFFER_MAX, Math.max(OFFER_MIN, offerAmount));
   const showSwipeDemo =
     step === "swiping" && currentIndex === sessionStartIndex && !hasSwipeInteraction && !dragOrigin && !isLeaving;
+
+  const preloadImagePath = useCallback((imagePath: string) => {
+    if (typeof window === "undefined" || preloadedImagePathsRef.current.has(imagePath)) {
+      return;
+    }
+
+    preloadedImagePathsRef.current.add(imagePath);
+    const preloader = new window.Image();
+    preloader.decoding = "async";
+    preloader.src = imagePath;
+  }, []);
 
   useEffect(() => {
     if (!router.isReady || hasInitializedFromQueryRef.current) {
@@ -320,6 +333,16 @@ const MarketplacePage: NextPage = () => {
 
     void router.replace(buildProductUrl(currentProduct.slug), undefined, { shallow: true, scroll: false });
   }, [currentProduct, currentQueryItem, router, step]);
+
+  useEffect(() => {
+    const preloadFromIndex = step === "swiping" ? currentIndex + 1 : sessionStartIndex;
+    if (preloadFromIndex >= PRODUCTS.length) {
+      return;
+    }
+
+    const productsToPreload = PRODUCTS.slice(preloadFromIndex, preloadFromIndex + PRELOAD_AHEAD_COUNT);
+    productsToPreload.forEach((product) => preloadImagePath(buildImagePath(product.file)));
+  }, [currentIndex, preloadImagePath, sessionStartIndex, step]);
 
   useEffect(() => {
     if (step === "swiping" && currentIndex >= PRODUCTS.length) {
@@ -789,6 +812,7 @@ const MarketplacePage: NextPage = () => {
                               alt={item.title}
                               width={36}
                               height={36}
+                              unoptimized
                               className='h-8 w-8 rounded-full bg-white object-contain p-0.5 sm:h-9 sm:w-9'
                             />
                           </button>
@@ -841,6 +865,8 @@ const MarketplacePage: NextPage = () => {
                               alt={currentProduct.title}
                               fill
                               sizes='(max-width: 640px) 90vw, (max-width: 1200px) 72vw, 920px'
+                              priority={currentIndex === sessionStartIndex}
+                              unoptimized
                               draggable={false}
                             />
                           </div>
@@ -954,6 +980,7 @@ const MarketplacePage: NextPage = () => {
                                 alt={item.title}
                                 width={84}
                                 height={84}
+                                unoptimized
                                 className='aspect-square h-full w-full rounded-lg object-contain'
                               />
                             </button>
@@ -1004,6 +1031,7 @@ const MarketplacePage: NextPage = () => {
                               alt={item.title}
                               width={240}
                               height={240}
+                              unoptimized
                             />
                             <p className='mt-1 line-clamp-2 text-left text-[11px] font-semibold text-slate-700'>
                               {item.title}
@@ -1128,6 +1156,7 @@ const MarketplacePage: NextPage = () => {
                   alt={activePickedProduct.title}
                   fill
                   sizes='(max-width: 640px) 90vw, 560px'
+                  unoptimized
                   className='object-contain object-center'
                 />
               </div>
