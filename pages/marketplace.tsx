@@ -979,6 +979,7 @@ const MarketplacePage: NextPage = () => {
                       <p className='text-sm text-rose-700'>
                         No products were picked yet, so there is no offer to submit.
                       </p>
+
                       <button
                         type='button'
                         className='mt-4 rounded-xl bg-white px-4 py-2 text-sm font-bold text-slate-900 hover:bg-slate-100'
