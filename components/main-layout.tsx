@@ -1,4 +1,4 @@
-import { Roboto, Inter } from "@next/font/google";
+import { Roboto, Inter } from "next/font/google";
 import { ReactNode, useEffect, useState } from "react";
 import Head from "next/head";
 import Footer from "./footer";

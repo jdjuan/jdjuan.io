@@ -1,6 +1,8 @@
+import type { ReactNode } from "react";
+
 export interface YearTimeline {
   year: number;
-  highlights: { text: () => JSX.Element; subtext?: string; type?: HighlighType[] }[];
+  highlights: { text: () => ReactNode; subtext?: string; type?: HighlighType[] }[];
 }
 
 export enum HighlighType {

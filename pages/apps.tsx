@@ -1,12 +1,12 @@
 import { ReactElement } from "react";
 import MainLayout from "../components/main-layout";
 import Navbar from "../components/navbar";
-import headscroll from "/public/headscroll.png";
-import pada from "/public/pada.png";
-import derdiedas from "/public/derdiedas.png";
-import angularnow from "/public/ngnow.png";
-import kindd from "/public/kindd.png";
-import compliment from "/public/compliment.png";
+import headscroll from "../public/headscroll.png";
+import pada from "../public/pada.png";
+import derdiedas from "../public/derdiedas.png";
+import angularnow from "../public/ngnow.png";
+import kindd from "../public/kindd.png";
+import compliment from "../public/compliment.png";
 import App from "../components/app";
 
 const Apps = () => {

@@ -1,5 +1,4 @@
 import HighlightText from "../components/highlight-text";
-import UpcomingArticle from "../components/upcoming-article";
 import { QuestionSheet } from "../models/insights.interface";
 
 export const insights: QuestionSheet[] = [

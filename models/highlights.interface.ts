@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface Highlight {
   title: string;
   description: string;
@@ -10,7 +12,7 @@ export interface Highlight {
 export interface HighlightBlock {
   title: string;
   topics: string[];
-  icon?: JSX.Element;
+  icon?: ReactNode;
   link: string;
   isExternalLink?: boolean;
 }

@@ -1,7 +1,7 @@
-import { QuestionSheet } from "../models/insights.interface";
+import type { QuestionSheet as QuestionSheetModel } from "../models/insights.interface";
 import Navbar from "./navbar";
 import UpcomingArticle from "./upcoming-article";
-type Props = { questionSheet: QuestionSheet };
+type Props = { questionSheet: QuestionSheetModel };
 import cx from "classnames";
 
 const QuestionSheet = ({ questionSheet }: Props) => {
