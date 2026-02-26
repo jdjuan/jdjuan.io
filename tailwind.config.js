@@ -18,6 +18,7 @@ module.exports = {
       },
     },
     colors: {
+      ...colors,
       slate: colors.slate,
       blue: {
         50: "#E3F8FF",
