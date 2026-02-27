@@ -48,28 +48,10 @@ const BASE_PRODUCTS: Omit<Product, "slug">[] = [
     tag: "DIY",
   },
   {
-    file: "Carabiner.jpg",
-    title: "Mini Carabiner Set (2 pcs)",
-    description: "Two mini metal carabiners for keys or gear.",
-    tag: "Travel",
-  },
-  {
     file: "air filter.jpg",
     title: "Levoit Air Purifier",
     description: "A compact Levoit air purifier for small rooms.",
     tag: "Home",
-  },
-  {
-    file: "amazon smart plug.jpg",
-    title: "Amazon Smart Plug",
-    description: "A smart plug for remote control of appliances.",
-    tag: "Smart Home",
-  },
-  {
-    file: "austria adapter.jpg",
-    title: "Austria Travel Adapter",
-    description: "A compact adapter for Austrian and EU wall sockets.",
-    tag: "Travel",
   },
   {
     file: "automatic night light.jpg",
@@ -102,46 +84,10 @@ const BASE_PRODUCTS: Omit<Product, "slug">[] = [
     tag: "Phone Accessory",
   },
   {
-    file: "cable organizer.jpg",
-    title: "Velcro Cable Ties",
-    description: "Reusable velcro ties for cable management.",
-    tag: "Desk",
-  },
-  {
-    file: "cables (usb-A to usb-C x2, usb-c to usb-c x1, convertor usb-c to usb, and hdmi convertor to usb-c).jpg",
-    title: "USB Cable & Adapter Kit",
-    description: "A mixed kit of USB cables and adapters.",
-    tag: "Electronics",
-  },
-  {
-    file: "camera holder for head.jpg",
-    title: "Head-Mount Camera Holder",
-    description: "An adjustable head mount for action cameras.",
-    tag: "Content",
-  },
-  {
-    file: "clothe hair remover.jpg",
-    title: "Lint Roller + Refill",
-    description: "A lint roller with an extra refill roll.",
-    tag: "Home",
-  },
-  {
     file: "colombian usb adapter.jpg",
     title: "US Plug USB Charger",
     description: "A wall charger with US prongs and USB output.",
     tag: "Travel",
-  },
-  {
-    file: "cooking utencils.jpg",
-    title: "6-Piece Cooking Utensil Set",
-    description: "A six-piece utensil set for everyday cooking.",
-    tag: "Kitchen",
-  },
-  {
-    file: "cuttlery box.jpg",
-    title: "Expandable Cutlery Organizer",
-    description: "An expandable organizer tray for kitchen cutlery.",
-    tag: "Kitchen",
   },
   {
     file: "faucet extensor.jpg",
@@ -168,36 +114,6 @@ const BASE_PRODUCTS: Omit<Product, "slug">[] = [
     tag: "Travel",
   },
   {
-    file: "magnets.jpg",
-    title: "Magnet Set (Discs + Color Pins)",
-    description: "Small magnets and colorful pins for boards.",
-    tag: "Office",
-  },
-  {
-    file: "mosquito electric racket.jpg",
-    title: "Electric Mosquito Racket",
-    description: "A rechargeable electric swatter for flying insects.",
-    tag: "Home",
-  },
-  {
-    file: "nail polish remover.jpg",
-    title: "Acetone-Free Nail Polish Remover",
-    description: "An acetone-free nail polish remover bottle.",
-    tag: "Personal Care",
-  },
-  {
-    file: "pens and markers with refill.jpg",
-    title: "Pens, Markers & Ink Refills",
-    description: "A mixed set of pens, markers, and refills.",
-    tag: "Office",
-  },
-  {
-    file: "pocket notebooks.jpg",
-    title: "Pocket Spiral Notebooks",
-    description: "Small spiral notebooks for quick notes.",
-    tag: "Office",
-  },
-  {
     file: "presentation clicker.jpg",
     title: "Logitech Presentation Clicker",
     description: "A wireless clicker for slide presentations.",
@@ -216,28 +132,10 @@ const BASE_PRODUCTS: Omit<Product, "slug">[] = [
     tag: "Office",
   },
   {
-    file: "stickers for your door.jpg",
-    title: "No-Advertising Door Stickers",
-    description: "Mailbox stickers to block unwanted advertising.",
-    tag: "Home",
-  },
-  {
-    file: "tapes.jpg",
-    title: "Tape Bundle + Dispenser",
-    description: "A bundle of tapes with a dispenser.",
-    tag: "Office",
-  },
-  {
     file: "wax for hair.jpg",
     title: "Hair Styling Wax",
     description: "Fiber hair wax for textured styling.",
     tag: "Personal Care",
-  },
-  {
-    file: "wood cuttlery.jpg",
-    title: "Wooden Cutlery Pack",
-    description: "Disposable wooden forks and knives in boxes.",
-    tag: "Kitchen",
   },
 ];
 
