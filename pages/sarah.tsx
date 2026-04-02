@@ -395,6 +395,24 @@ export default function SarahCountdownPage() {
     return soundContext;
   }, [getOpenSoundContext]);
 
+  const ensureBackgroundSongPlaying = useCallback(async () => {
+    const audio = audioRef.current;
+
+    if (!audio) {
+      return;
+    }
+
+    audio.volume = 0.45;
+
+    if (!audio.paused && !audio.ended) {
+      return;
+    }
+
+    try {
+      await audio.play();
+    } catch {}
+  }, []);
+
   const playOpenLetterSound = useCallback(() => {
     const soundContext = resumeOpenSoundContext();
 
@@ -547,26 +565,12 @@ export default function SarahCountdownPage() {
   }, [resumeOpenSoundContext]);
 
   useEffect(() => {
-    const audio = audioRef.current;
-
-    if (!audio) {
-      return;
-    }
-
-    audio.volume = 0.45;
-
-    const playAudio = async () => {
-      try {
-        await audio.play();
-      } catch {}
-    };
-
     const handleFirstInteraction = () => {
       resumeOpenSoundContext();
-      void playAudio();
+      void ensureBackgroundSongPlaying();
     };
 
-    void playAudio();
+    void ensureBackgroundSongPlaying();
 
     document.addEventListener("pointerdown", handleFirstInteraction, { once: true, passive: true });
     document.addEventListener("keydown", handleFirstInteraction, { once: true });
@@ -577,7 +581,7 @@ export default function SarahCountdownPage() {
       document.removeEventListener("keydown", handleFirstInteraction);
       document.removeEventListener("touchstart", handleFirstInteraction);
     };
-  }, [resumeOpenSoundContext]);
+  }, [ensureBackgroundSongPlaying, resumeOpenSoundContext]);
 
   useEffect(() => {
     const timeoutId = window.setTimeout(() => {
@@ -770,6 +774,7 @@ export default function SarahCountdownPage() {
                     disabled={(!unlocked && !hasBeenOpened) || pendingOpenDay !== null}
                     onClick={(event) => {
                       resumeOpenSoundContext();
+                      void ensureBackgroundSongPlaying();
 
                       if (hasBeenOpened) {
                         setActiveLetterDay(letter.day);
