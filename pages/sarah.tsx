@@ -676,7 +676,7 @@ export default function SarahCountdownPage() {
         <title>Para Sarah | 8 Días</title>
         <meta
           name='description'
-          content='Ocho pequeñas puertas para Sarah, con mensajes en español que se abren día a día hasta el encuentro.'
+          content='Ocho pequeñas puertas para Sarah, con puertas que se abren día a día hasta nuestro encuentro.'
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='robots' content='noindex,nofollow' />
