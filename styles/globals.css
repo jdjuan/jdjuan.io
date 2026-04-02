@@ -1,8 +1,354 @@
 @config "../tailwind.config.js";
 @import "tailwindcss";
 
+:root {
+  --paper-ivory: #fff8f4;
+  --rose-dawn: #ffb3cf;
+  --gold-light: #ffd37d;
+  --night-plum: #130915;
+}
+
+html,
+body,
+#__next {
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 * {
   transition-property: transform, background-color, transform;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes reveal-scale {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: translateX(140%);
+    opacity: 0;
+  }
+}
+
+@keyframes sarah-burst {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.35) rotate(var(--burst-rotate-from, 0deg));
+  }
+  18% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--burst-x, 0), var(--burst-y, 0), 0) scale(1) rotate(var(--burst-rotate-to, 0deg));
+  }
+}
+
+@keyframes sarah-burst-glow {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.2);
+  }
+  24% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(1.35);
+  }
+}
+
+@keyframes sarah-burst-ring {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.35);
+  }
+  16% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(1.6);
+  }
+}
+
+@keyframes sarah-openable-breathe {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.992);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.008);
+  }
+}
+
+@keyframes sarah-open-chip-glow {
+  0%,
+  100% {
+    box-shadow: 0 8px 20px rgba(195, 125, 134, 0.12);
+  }
+  50% {
+    box-shadow: 0 12px 26px rgba(195, 125, 134, 0.2);
+  }
+}
+
+.reveal-up {
+  animation: reveal-up 650ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.reveal-scale {
+  animation: reveal-scale 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.animation-delay-150 {
+  animation-delay: 150ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.sarah-open-now-chip {
+  border-color: #efc8cf;
+  background: linear-gradient(180deg, rgba(255, 251, 250, 0.98), rgba(255, 241, 241, 0.96));
+  color: #b25567;
+  box-shadow: 0 8px 20px rgba(195, 125, 134, 0.12);
+  animation: sarah-open-chip-glow 2.2s ease-in-out infinite;
+}
+
+.sarah-openable-halo {
+  pointer-events: none;
+  border: 1px solid rgba(240, 205, 210, 0.78);
+  box-shadow:
+    0 0 0 1px rgba(255, 244, 246, 0.7),
+    0 0 28px rgba(240, 201, 207, 0.24),
+    inset 0 0 18px rgba(255, 244, 246, 0.12);
+  animation: sarah-openable-breathe 2.4s ease-in-out infinite;
+}
+
+.sarah-letter-sheet {
+  overflow: hidden;
+  position: absolute;
+}
+
+.sarah-letter-sheet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.52), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(246, 231, 226, 0.42)),
+    repeating-linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 1.42rem,
+      rgba(234, 208, 208, 0.32) 1.42rem,
+      rgba(234, 208, 208, 0.32) 1.48rem
+    );
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.sarah-door-leaf {
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(120, 77, 39, 0.88);
+  background:
+    linear-gradient(180deg, rgba(255, 246, 220, 0.14), rgba(71, 42, 19, 0.08)),
+    linear-gradient(135deg, #b8834e 0%, #996536 36%, #875327 70%, #75451f 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 241, 214, 0.34),
+    inset 0 -22px 28px rgba(72, 41, 17, 0.2),
+    0 10px 24px rgba(117, 74, 43, 0.14);
+}
+
+.sarah-door-leaf::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 231, 184, 0.16) 0%, transparent 14%, transparent 82%, rgba(70, 38, 18, 0.18) 100%),
+    radial-gradient(ellipse at 24% 26%, rgba(255, 219, 167, 0.08), transparent 20%),
+    radial-gradient(ellipse at 72% 68%, rgba(71, 42, 18, 0.12), transparent 18%);
+  pointer-events: none;
+}
+
+.sarah-door-panel {
+  border: 1px solid rgba(219, 178, 129, 0.34);
+  background:
+    linear-gradient(180deg, rgba(255, 243, 214, 0.14), rgba(101, 63, 33, 0.04)),
+    linear-gradient(180deg, rgba(255, 244, 220, 0.03), rgba(95, 57, 29, 0.14));
+  box-shadow:
+    inset 0 0 0 1px rgba(252, 236, 202, 0.1),
+    inset 0 12px 18px rgba(255, 240, 208, 0.06),
+    inset 0 -14px 18px rgba(70, 41, 18, 0.12);
+}
+
+.sarah-door-edge {
+  background: linear-gradient(90deg, #7e4e28 0%, #c7925d 46%, #69401e 100%);
+  box-shadow: 0 0 14px rgba(116, 75, 42, 0.2);
+}
+
+.sarah-door-hinge {
+  background: linear-gradient(180deg, #fff2df 0%, #e2bb84 42%, #946236 100%);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.45),
+    0 1px 3px rgba(124, 85, 44, 0.2);
+}
+
+.sarah-door-knob-plate {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 246, 235, 0.94) 0%,
+    rgba(229, 195, 137, 0.9) 46%,
+    rgba(169, 114, 58, 0.9) 100%
+  );
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.5),
+    0 1px 4px rgba(120, 79, 38, 0.18);
+}
+
+.sarah-door-knob {
+  background: radial-gradient(circle at 35% 35%, #fff9ef 0%, #efd8ac 38%, #c48946 63%, #8f5c31 100%);
+  border: 1px solid rgba(145, 96, 43, 0.45);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.58),
+    0 1px 5px rgba(120, 81, 40, 0.22);
+}
+
+.sarah-door-number {
+  -webkit-text-stroke: 1px rgba(96, 60, 30, 0.34);
+  paint-order: stroke fill;
+  color: #fff5ea;
+  text-shadow:
+    0 1px 0 rgba(93, 56, 28, 0.28),
+    0 0 14px rgba(255, 234, 196, 0.22),
+    0 12px 20px rgba(69, 38, 16, 0.34);
+}
+
+.sarah-celebration-glow,
+.sarah-celebration-ring,
+.sarah-celebration-piece {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sarah-celebration-glow,
+.sarah-celebration-ring {
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.sarah-celebration-glow {
+  border-radius: 9999px;
+  animation: sarah-burst-glow 900ms cubic-bezier(0.16, 0.84, 0.3, 1) forwards;
+}
+
+.sarah-celebration-glow-primary {
+  height: 8.5rem;
+  width: 8.5rem;
+  background: radial-gradient(circle, rgba(255, 221, 225, 0.95) 0%, rgba(255, 221, 225, 0.1) 62%, transparent 80%);
+  filter: blur(8px);
+}
+
+.sarah-celebration-glow-secondary {
+  height: 12rem;
+  width: 12rem;
+  background: radial-gradient(circle, rgba(255, 244, 246, 0.9) 0%, rgba(255, 244, 246, 0.08) 65%, transparent 84%);
+  animation-duration: 1100ms;
+  filter: blur(18px);
+}
+
+.sarah-celebration-ring {
+  height: 6.5rem;
+  width: 6.5rem;
+  border: 1px solid rgba(221, 149, 161, 0.45);
+  border-radius: 9999px;
+  animation: sarah-burst-ring 980ms cubic-bezier(0.16, 0.84, 0.3, 1) forwards;
+}
+
+.sarah-celebration-piece {
+  animation: sarah-burst var(--burst-duration, 1200ms) cubic-bezier(0.18, 0.86, 0.26, 1) var(--burst-delay, 0ms)
+    forwards;
+  transform-origin: center;
+}
+
+.sarah-celebration-petal {
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--burst-color, #f0b7c2) 78%, white) 0%,
+    var(--burst-color, #f0b7c2) 100%
+  );
+  box-shadow: 0 2px 10px rgba(196, 124, 138, 0.16);
+}
+
+.sarah-celebration-heart {
+  color: var(--burst-color, #d96f80);
+  line-height: 1;
+  text-shadow: 0 0 14px rgba(255, 240, 243, 0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-up,
+  .reveal-scale,
+  .sarah-celebration-glow,
+  .sarah-celebration-ring,
+  .sarah-celebration-piece,
+  .sarah-open-now-chip,
+  .sarah-openable-halo {
+    animation: none !important;
+  }
 }
