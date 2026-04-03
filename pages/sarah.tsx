@@ -234,7 +234,7 @@ const LETTERS: Letter[] = [
     cardGlowClass: "from-[#f6d7da]/70 via-[#fff4f2]/18 to-transparent",
     photoSrc: "/sarah/dia%203.jpg",
     message: [
-      "Me encanta lo que ojos bellos me dicen cuando me miras sonriente y enamorada. Gracias porque ésta es una de las sensaciones más bellas que me me provocas. Te amo mucho mi corazón bonito hermoso 😍",
+      "Me encanta lo que tus ojos bellos me dicen cuando me miras sonriente y enamorada. Gracias porque ésta es una de las sensaciones más bellas que me provocas. \n\nQuiero además recordarte que tienes los ojos más bellos, las cejas más divinas, y las pestañas más hermosas. Me encanta verte y que me veas. No cambiaría tu mirada por nada en el mundo, en serio, por nada 🥹\n\n Te amo mucho mi corazón bonito hermoso 😍",
     ],
   },
   {
@@ -244,7 +244,7 @@ const LETTERS: Letter[] = [
     cardGlowClass: "from-[#efd0d4]/70 via-[#fff5f4]/18 to-transparent",
     photoSrc: "/sarah/dia%204.jpg",
     message: [
-      "Amorcito, hay algo que me encanta de ti y ese amor que irradias, que emana de ti tan naturalmente, no sólo hacia mi sino hacia todos y todo. Gracias por ser un ser humano tan espectacular 😍",
+      "Amorcito, hay algo que me encanta de ti y ese amor que irradias, que emana de ti tan naturalmente, no sólo hacia mi sino hacia todos y todo.\n\nTienes una bondad innata que se nota en todo lo que haces por los demás. Estoy seguro que en tu vida vas a ayudar a miles de personas. \n\nGracias por ser un ser humano tan espectacular 😍",
     ],
   },
   {
@@ -254,7 +254,7 @@ const LETTERS: Letter[] = [
     cardGlowClass: "from-[#f4d8cf]/70 via-[#fff6f1]/18 to-transparent",
     photoSrc: "/sarah/dia%205.jpg",
     message: [
-      "Ya me hace mucha ilusión construir un hogar contigo mi amor, y pasar mucho tiempo a tu lado construyendo nuestros sueños. Qué emoción! Voy a apapacharte todos los días! ❤️",
+      "Ya me hace mucha ilusión construir un hogar contigo mi amor, y pasar mucho tiempo a tu lado construyendo nuestros sueños. Qué emoción!\n\nPero sabes lo que más quiero, apapayarte todos los días! Llenarte de abrazos certeros llenos de energía y amor, sentir tu piel, tu cuerpo, y tu ser. \n\nNo te puedes rehusar! ❤️ ok ok?\n\nCierra los ojos por unos segundos, y siente como te tomo la carita y te la lleno de besos.",
     ],
   },
   {
@@ -264,7 +264,7 @@ const LETTERS: Letter[] = [
     cardGlowClass: "from-[#f5d4d8]/70 via-[#fff5f2]/18 to-transparent",
     photoSrc: "/sarah/dia%206.jpg",
     message: [
-      "Sabes cuál es mi parte favorita de ti? Tus nalgas! haha sí, me encantan y las voy a agarrar siempre con mucho amor, ternura y deseo.",
+      "Sabes cuál es mi parte favorita de ti? Tus nalgas! haha sí, me encantan y las voy a agarrar siempre con mucho amor, ternura y deseo.\n\nPero también tengo otra parte favorita, tus labios hermosos y suaves que me besan.\n\nEspera! También me encantan tus ojos, y también me encantan tus manos! \n\nAy no! Amorcito, me temo que todo de ti es mi parte favorita 💛",
     ],
   },
   {
@@ -274,7 +274,7 @@ const LETTERS: Letter[] = [
     cardGlowClass: "from-[#f3d1cb]/70 via-[#fff6f1]/18 to-transparent",
     photoSrc: "/sarah/dia%207.jpg",
     message: [
-      "Te deseo un viaje muy bonito mi amor, me aseguraré que todo sea perfecto para que disfrutemos al máximo. Te amo mucho!",
+      "Te deseo un viaje muy bonito mi amor, estaré muy pendiente hoy de ti, ok ok?\n\nPuedes estar segura que ahora mismo me estoy llenando de mucho emoción de verte.\n\nVoy a darte un beso gigante como si fuera el primero, voy a darte un abrazo eterno como si no nos hubiéramos visto en años, y voy a quedarme mirándote como si ya te conociera de una vida pasada y por fin nos reencontramos. \n\nTe espero! ❤️",
     ],
   },
   {
@@ -284,7 +284,7 @@ const LETTERS: Letter[] = [
     cardGlowClass: "from-[#f6d4d9]/70 via-[#fff5f4]/18 to-transparent",
     photoSrc: "/sarah/dia%208.jpg",
     message: [
-      "Me alegra mucho que éstes aquí mi amor, me haces muy feliz, gracias por estar a mi lado en esta vida, me llena el corazón infinitamente ❤️",
+      "Amor de mi vida, por fin estás aquí. Quiero que sostengas mi mano, y me mires a los ojos por unos segundos.\n\nEl día que nos conocimos no teníamos ni idea de lo que nos esperaba. De los feliz que seríamos.\n\nHoy quiero recordarnos que éste es solo el principio de nuestra relación. Que no tenemos ni idea del amor infinito que nos espera, de las aventuras que viviremos, y de los sueños que cumpliremos.\n\nTambién nos esperan desafíos, algunas tormentas, y momentos difíciles, pero estoy feliz de vivirlo todo a tu lado.\n\nUn día, cuando me despida de este mundo, estaré muy feliz de haber compartido mi vida contigo.\n\nGracias por ser mi compañera de vida ❤️",
     ],
   },
 ];
