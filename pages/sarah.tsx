@@ -234,7 +234,7 @@ const LETTERS: Letter[] = [
     cardGlowClass: "from-[#f6d7da]/70 via-[#fff4f2]/18 to-transparent",
     photoSrc: "/sarah/dia%203.jpg",
     message: [
-      "Me encanta lo que tus ojos bellos me dicen cuando me miras sonriente y enamorada. Gracias porque ésta es una de las sensaciones más bellas que me provocas. \n\nQuiero además recordarte que tienes los ojos más bellos, las cejas más divinas, y las pestañas más hermosas. Me encanta verte y que me veas. No cambiaría tu mirada por nada en el mundo, en serio, por nada 🥹\n\n Te amo mucho mi corazón bonito hermoso 😍",
+      "Me encanta lo que tus ojos bellos me dicen cuando me miras sonriente y enamorada. Gracias porque ésta es una de las sensaciones más bellas que me provocas. \n\nQuiero además recordarte que tienes los ojos más hermosos, las cejas más divinas, y las pestañas más lindas. Me encanta verte y que me veas. No cambiaría tu mirada por nada en el mundo, en serio, por nada 🥹\n\n Te amo mucho mi corazón bonito hermoso 😍",
     ],
   },
   {
