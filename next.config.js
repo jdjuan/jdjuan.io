@@ -6,7 +6,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/heath",
+        source: "/health",
         destination: "https://health-vert-ten.vercel.app/login",
         permanent: false,
       },
